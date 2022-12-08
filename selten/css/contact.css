@@ -36,8 +36,8 @@ height: 25% !important;
     color: rgb(8, 9, 9);
   
 }
-.about-cardt5{
-    border: none !important;
+.about-card{
+    border:none !important;
 }
 .cfeild{
     padding: 5%;
@@ -74,6 +74,40 @@ height: 25% !important;
     font-size: larger !important;
     font-weight: bold !important;
 }
+.cform::placeholder {
+    color:black;
+    opacity: 1; /* Firefox */
+  }
+/*form  phone number arrow icon remove start */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}
+/*form  phone number arrow icon remove end */
+.c-dropdown{
+    color:black !important ;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    
+}
+/* .c-dropdown:invalid{
+    color: green;
+} */
+
+.c-dropdown::-ms-expand {
+    display: none !important;
+}
+.c-dropdown:invalid {
+    color: green !important;
+  }
+option:nth-child(1){
+    color: #69757d !important;
+}
+
 
 .ccontact {
     color: black !important;

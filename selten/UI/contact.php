@@ -13,7 +13,7 @@ include_once ('header.php');
 <div class="col-md-4 contact-form">
   
   <h1 class="formhead">Get In Touch</h1>
-  <div class="card">
+  <div class="card about-card">
   <form class="cfeild">
   <div class="form-group mt-3">
    
@@ -30,22 +30,29 @@ include_once ('header.php');
     <input type="text" class="form-control cform" id="exampleInputPassword1" placeholder="Enter The Email">
   </div>
   <div class="form-group mt-3">
+   
+   <input type="number" class="form-control cform" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Phone Number" >
+   
+ </div>
+  <div class="dropdown mt-3 cform">
+ 
+   
+  
+  <select name="languages" class="c-dropdown">
+        <option class="lfs" value="" >Looking For Services</option>
+        <option class="ifs" value="crm_services">CRM Services</option>
+        <option class="ifs" value="integration_services">Integration Services</option>
+        <option class="ifs" value="digital_marketing">Digital Marketing</option>
+        <option class="ifs" value="e_commerce">E-Commerce</option>
+        <option class="ifs" value="mobile-app-develpment">Mobile App Development</option>
+        <option class="ifs" value="website_design">Website Design & Development</option>
+      </select>
+</div>
+  <div class="form-group mt-3">
   <textarea class="form-control cform" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
     
   </div>
-  <div class="dropdown mt-3">
-  <button class="btn btn- dropdown-toggle cform" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-    Servericer Fooking For
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-  </ul>
-</div>
+ 
   
   <button type="submit" class="btn btn-primary mt-3">Submit</button>
 </form>

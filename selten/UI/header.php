@@ -28,6 +28,7 @@
     <!-- <script src="..\assets\js\my.js"></script> -->
     <script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script>
@@ -55,13 +56,15 @@
             <div class="col-md-8 ">
                 <div class="info navbar-right  ">
                     <ul class="info-ul">
-                        <li class="info-li"><span class="info-detail ">
+                        <li class="info-li">
+                            <span class="info-detail ">
                                 <table class="info-table">
                                     <tr>
                                         <td class="info-main "><span class="info-email"> <a href="https://www.w3schools.com/" class="hemail "><i class="fa-solid fa-envelope   info-icon "></i><span class="info-fix">social.seltentechnologies@gmail.com </span></a></span><span class="info-phone"><a href="https://www.youtube.com/" class="hemail "> <i class="fa-solid fa-phone   info-icon "></i><span class="info-fix">+91 9876543210</span></a></span></td>
                                     </tr>
                                 </table>
-                            </span></li>
+                            </span>
+                        </li>
 
                     </ul>
 
@@ -70,22 +73,22 @@
             <div class="row">
                 <div class="col-md-12 ">
                     <div>
-                        <button class="navbar-toggler toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+                    <button class="navbar-toggler toggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-                        <!-- <div class="collapse navbar-collapse" id="navbarNav"> -->
-                        <ul class="nav navbar-nav nav-ul navbar-right ">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                           <ul class="nav navbar-nav nav-ul navbar-right " >
                             <li class="nav-item nav-li <?php echo $GLOBALS['home']; ?>"><a href="index.php">Home</a></li>
                             <li class="nav-item  nav-li <?php echo $GLOBALS['service']; ?>"><a href="service.php">Services</a></li>
                             <li class="nav-item nav-li <?php echo $GLOBALS['blog']; ?>"><a href="blog.php">Blog</a> </li>
                             <li class="nav-item nav-li <?php echo $GLOBALS['about']; ?>"><a href="About.php">About Us</a></li>
-                            <li class="nav-item nav-li <?php echo $GLOBALS['contacts']; ?>"><a href="contact.php">Contacts Us</a></li>
+                            <li class="nav-item nav-li <?php echo $GLOBALS['contact']; ?>"><a href="contact.php">Contacts Us</a></li>
 
-                        </ul>
+                          </ul>
                         <div>
 
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -95,4 +98,14 @@
     <script src="..\assets\js\aos.js"></script>
     <script>
         AOS.init({});
-    </script>
+// toggle function //
+$(document).ready(function(){
+  $("#toggle").click(function(){
+    $("#navbarnav").toggle();
+  });
+});
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+   

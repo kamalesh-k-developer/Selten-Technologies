@@ -1,4 +1,5 @@
 <?php 
+$GLOBALS['blog'] = 'active';
 include_once ('header.php');
 ?>
 

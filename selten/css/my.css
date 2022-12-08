@@ -31,11 +31,23 @@ body {
     position: relative;
     top: 15px;
 }
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: right !important;
+    float: right;
+}
 
 .nav-ul {
     float: right;
     text-decoration: none !important;
     word-wrap: nowrap;
+}
+.navbar-nav>.active>a {
+    background-color: #002244;
+    color: #B9D9EB;
+    padding: 7px;
+    border-radius: 5px;
 }
 
 .nav-li a {
@@ -160,7 +172,7 @@ body {
     }
 
     .info-main {
-        width: 464px !important;
+        width: 515px !important;
     }
 
     .nav-li a {
@@ -245,7 +257,7 @@ body {
     }
 
     .info-main {
-        width: 464px !important;
+        width: 523px !important;
         right: 5px;
     }
 
@@ -260,7 +272,7 @@ body {
     }
 
     .info li a {
-        font-size: 13px !important;
+        font-size: 11px !important;
     }
 
     .logo img {
