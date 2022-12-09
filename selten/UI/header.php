@@ -72,13 +72,11 @@
             </div>
             <div class="row">
                 <div class="col-md-12 ">
-                    <div>
-                    <button class="navbar-toggler toggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
+                    <div class="nav">
+                    <div class="open-menu"><i class="fa fa-bars"></i></div>
+                    <div class="close-menu"><i class="fa fa-times"></i></div>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                           <ul class="nav navbar-nav nav-ul navbar-right " >
+                           <ul class="nav navbar-nav nav-ul navbar-right " id="toggle" >
                             <li class="nav-item nav-li <?php echo $GLOBALS['home']; ?>"><a href="index.php">Home</a></li>
                             <li class="nav-item  nav-li <?php echo $GLOBALS['service']; ?>"><a href="service.php">Services</a></li>
                             <li class="nav-item nav-li <?php echo $GLOBALS['blog']; ?>"><a href="blog.php">Blog</a> </li>
@@ -86,6 +84,7 @@
                             <li class="nav-item nav-li <?php echo $GLOBALS['contact']; ?>"><a href="contact.php">Contacts Us</a></li>
 
                           </ul>
+                         
                         <div>
 
                         
@@ -99,11 +98,22 @@
     <script>
         AOS.init({});
 // toggle function //
-$(document).ready(function(){
-  $("#toggle").click(function(){
-    $("#navbarnav").toggle();
-  });
-});
+const nav = document.querySelector('.nav-ul');
+const closeMenu = document.querySelector('.close-menu');
+const openMenu= document.querySelector('.open-menu');
+
+openMenu.addEventListener('click',show);
+closeMenu.addEventListener('click',close);
+
+function show (){
+    nav.style.display = 'flex';
+    nav.style.top = '0';
+}
+function close (){
+    nav.style.top = '0%';
+}
+
+
 </script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
