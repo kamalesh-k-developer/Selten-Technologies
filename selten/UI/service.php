@@ -17,7 +17,7 @@ include_once ('header.php');
                 <!-- <div class="card card-side card-4 m-3 pt-3">
 
                 </div> -->
-                <div class="card card-head  card-1 m-3 pt-3" data-aos="fade-right">
+                <div class="card card-head  card-1 m-3 pt-3" >
                     <div class="sheading">
 
                         <h4>CRM <br> SERVICES </h4>
