@@ -19,10 +19,10 @@ body {
 }
 
 .animated {
-    -webkit-animation-duration: 1s;
-    -moz-animation-duration: 1s;
-    -o-animation-duration: 1s;
-    animation-duration: 1s;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
     -webkit-animation-fill-mode: both;
     -moz-animation-fill-mode: both;
     -o-animation-fill-mode: both;
@@ -707,6 +707,7 @@ body {
     -o-animation-name: flip;
     backface-visibility: visible !important;
     animation-name: flip;
+    transition:10s ;
 }
 
 @-webkit-keyframes flipInX {

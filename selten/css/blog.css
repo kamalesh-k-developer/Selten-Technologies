@@ -27,6 +27,7 @@
     text-align: right;
     position: relative;
     right: 441px;
+    color:black;
   }
   
   .blog-banner {
@@ -44,7 +45,7 @@
   
   .main-section {
     text-align: center;
-    color: white;
+    color: black !important;
     background-color: #0039a6;
     position: relative;
     top: 160px;
@@ -124,10 +125,49 @@
   .para1 {
     font-style: bold;
     text-decoration: none !important;
+    font-size: 14px;
+    padding: 16px;
+    position: relative;
+    bottom: 83px;
   
   }
-  
+  .para2{
+    position: relative;
+    font-size: smaller;
+    padding: 12px;
+    bottom: 70px;
+  }
+  .para3{
+    position: relative;
+    font-size: smaller;
+    bottom: 48px;
+    padding: 7px;
+  }
+  .para4{
+    position: relative;
+    bottom: 59px;
+    padding: 15px;
+    font-size: smaller;
+  }
   .b-click {
     text-decoration: none !important;
     color: #0a2351 !important;
   }
+  @media  (max-width: 1024px){
+    .blog-heading{
+      position: relative;
+      left: -287px;
+    }
+  }
+  @media  (max-width: 425px){
+  .blog-banner{
+
+  }
+}
+  @media  (max-width: 768px){
+    .blog-heading{
+      position: relative;
+      left: -188px;
+    }
+  }
+  

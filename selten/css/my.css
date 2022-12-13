@@ -527,7 +527,7 @@ div#slider figure {
     color: rgb(9, 9, 9);
     font-size: large;
     font-weight: bold;
-    border-radius: 0px 0px 0px 0px;
+    border-radius: 0px 12px 10px 0px;
     font-family: cursive;
     /* background: red;
     animation: mymove 5s infinite; */
@@ -553,6 +553,62 @@ div#slider figure {
 .para-3{
     background-image: linear-gradient(143deg,#7baeff 74%,#9fc3ff 5%);
 }
+@media (max-width:600px){
+    .app1{
+        display: flex;
+        position: relative;
+        right: 28px;
+    }
+}
+@media (max-width:500px){
+    .app2{
+        display: flex;
+        position: relative;
+        left: 28px;
+    }
+}
+@media (max-width:1024px){
+    .app2{
+        display: flex;
+        position: relative;
+        left: -2px;
+    }
+    }
+    .app3{
+        display: flex;
+        position: relative;
+        left: 236px;
+        top: -65px;
+    }
+    .para-1{
+        display: flex;
+        position: relative;
+        left: 240px;
+    }
+
+@media (max-width:768px){
+    .app2{
+        display: flex;
+    position: relative;
+    left: 0px;
+    top: -22px;
+    }
+}
+    .app3{
+        display: flex;
+        position: relative;
+        left: 179px;
+        top: -46px;
+    }
+@media (max-width:425px){
+    .first-col{
+        width:1px;
+    }
+    }
+
+
+
+
 /* our mission our vission we atre selten end */
 
 /* testimonial */

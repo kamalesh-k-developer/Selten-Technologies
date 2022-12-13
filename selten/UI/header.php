@@ -18,8 +18,9 @@
     <link rel="stylesheet" href="..\css\footer.css">
     <link rel="stylesheet" href="..\css\services.css">
     <link rel="stylesheet" href="..\assets\css\wanimate.css">
-    <link rel="stylesheet" href="..\assets\css/newAnimate.css">
+    <link rel="stylesheet" href="..\assets\css\newAnimate.css">
     <link rel="stylesheet" href="..\css\blog.css">
+
 
     <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
 
