@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="..\css\blog.css">
 
     <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
-
+<script src="..\assets\js\my.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="..\assets\js\aos.js"></script>
     <!-- <script src="..\assets\js\my.js"></script> -->
@@ -73,15 +73,18 @@
             <div class="row">
                 <div class="col-md-12 ">
                     <div class="nav">
-                    <div class="open-menu"><i class="fa fa-bars"></i></div>
-                    <div class="close-menu"><i class="fa fa-times"></i></div>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                           <ul class="nav navbar-nav nav-ul navbar-right " id="toggle" >
-                            <li class="nav-item nav-li <?php echo $GLOBALS['home']; ?>"><a href="index.php">Home</a></li>
-                            <li class="nav-item  nav-li <?php echo $GLOBALS['service']; ?>"><a href="service.php">Services</a></li>
-                            <li class="nav-item nav-li <?php echo $GLOBALS['blog']; ?>"><a href="blog.php">Blog</a> </li>
-                            <li class="nav-item nav-li <?php echo $GLOBALS['about']; ?>"><a href="About.php">About Us</a></li>
-                            <li class="nav-item nav-li <?php echo $GLOBALS['contact']; ?>"><a href="contact.php">Contacts Us</a></li>
+                    <!-- <div class="hamburger">
+                                 <span class="bar"></span>
+                                  <span class="bar"></span>
+                                    <span class="bar"></span>
+                     </div> -->
+                        <div class="collapse nav navbar-collapse" id="navbarSupportedContent">
+                           <ul class=" navbar-nav nav-ul navbar-right " id="toggle" style="display: flex !important;">
+                            <li class="nav-item nav-li <?php echo $GLOBALS['home']; ?>"><a class="nav-link" href="index.php">Home</a></li>
+                            <li class="nav-item  nav-li <?php echo $GLOBALS['service']; ?>"><a class="nav-link" href="service.php">Services</a></li>
+                            <li class="nav-item nav-li <?php echo $GLOBALS['blog']; ?>"><a class="nav-link" href="blog.php">Blog</a> </li>
+                            <li class="nav-item nav-li <?php echo $GLOBALS['about']; ?>"><a class="nav-link" href="About.php">About Us</a></li>
+                            <li class="nav-item nav-li <?php echo $GLOBALS['contact']; ?>"><a class="nav-link" href="contact.php">Contacts Us</a></li>
 
                           </ul>
                          
@@ -98,20 +101,27 @@
     <script>
         AOS.init({});
 // toggle function //
-const nav = document.querySelector('.nav-ul');
-const closeMenu = document.querySelector('.close-menu');
-const openMenu= document.querySelector('.open-menu');
+$( document ).ready(function() {
 
-openMenu.addEventListener('click',show);
-closeMenu.addEventListener('click',close);
+$( ".cross" ).hide();
+$( ".nav-ul" ).hide();
+$( ".hamburger" ).click(function() {
+$( ".nav-ul" ).slideToggle( "slow", function() {
+$( ".hamburger" ).hide();
+$( ".cross" ).show();
+});
+});
 
-function show (){
-    nav.style.display = 'flex';
-    nav.style.top = '0';
-}
-function close (){
-    nav.style.top = '0%';
-}
+$( ".cross" ).click(function() {
+$( ".nav-ul" ).slideToggle( "slow", function() {
+$( ".cross" ).hide();
+$( ".hamburger" ).show();
+});
+});
+
+});
+
+
 
 
 </script>

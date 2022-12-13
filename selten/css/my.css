@@ -31,6 +31,7 @@ body {
     position: relative;
     top: 15px;
 }
+
 .navbar-collapse {
     flex-basis: 100%;
     flex-grow: 1;
@@ -42,20 +43,23 @@ body {
     float: right !important;
     text-decoration: none !important;
     word-wrap: nowrap;
-    display: flex;
+    display: flex !important;
 }
+.nav-ul{
+    display: flex !important;
+}
+
 .navbar-nav>.active>a {
-    background-color: #002244;
-    color: #B9D9EB;
-    padding: 7px;
-    border-radius: 5px;
+   
+    color:red !important;
+   
 }
 
 .nav-li a {
     text-decoration: none !important;
     position: relative;
     bottom: 20px;
-    color: black;
+    color: white;
     margin-right: 40px;
     font-size: 22px;
     white-space: nowrap;
@@ -147,18 +151,40 @@ body {
     font-size: 14px !important;
 }
 
-.open-menu {
-    display: none !important;
-    font-size: 2rem;
-    cursor: pointer;
-    margin: 20px;
+
+
+/* .hamburger {
+    display: none;
+    float: right;
+    position: relative;
+    right: 20px;
 }
 
-.close-menu {
-    display: none !important;
-    font-size: 2rem;
-    cursor: pointer;
+.bar {
+    width: 1.5rem;
+    height: 3px;
+    display: block;
+    color: black;
+    padding: 0;
+    margin: 6px;
+    margin-right: 20px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background-color: black;
 }
+
+.bar:nth-child(1) {
+    width: 100%;
+}
+
+.bar:nth-child(2) {
+    width: 200%;
+}
+
+.bar:nth-child(3) {
+    width: 300%;
+} */
+
 @media (max-width:1024px) {
     .logo img {
         width: 150px;
@@ -218,22 +244,44 @@ body {
 } */
 @media (max-width: 768px) {
 
-  
 
-    .nav {
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 2;
-    flex-direction: row;
+
+    .nav-ul {
+        width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column !important;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: center;
     align-items: center;
-    background: red;
-    transition: 1s ease;
-    display: none;
-    }
+    position: fixed;
+    top: 80px;
+    right: 0%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    margin: 0 auto;
+    display: none !important;
+    
+      }
+    
+    /* .nav-link a {
+        margin: 1rem 0;
+        color: rgb(218, 17, 17);
+        z-index: 1;
+        display: none !important;
+      }
+      .active {
+        right: 49px;
+        z-index: 100;
+        transition: 0.2s ease;
+      } */
+
     /* nav ul li  {
     display: block;
     width: 100%;
@@ -244,24 +292,34 @@ body {
         top: 0px;
     } */
 
-     .close-menu{
-    display: block  !important;
-    position: absolute;
-    /* top: 20px;
-    right: 20px; */
-    color: #002244;
-   }
-     .open-menu{
+    /* .hamburger {
         display: block !important;
-        float: right;
-    }
-    
-    .nav-li a:hover{
-    background: none !important;
-    color:green;
-    font-size: 1.6rem;
 
-}
+    }
+
+    .active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(-315deg);
+        transform: translateY(8px) rotate(-315deg);
+        width: 300%;
+    }
+
+    .active .bar:nth-child(3) {
+        -webkit-transform: translateY(-10px) rotate(-45deg);
+        transform: translateY(-10px) rotate(-45deg);
+        width: 300%;
+    }
+
+    .nav-li a:hover {
+        background: none !important;
+        color: green;
+        font-size: 1.6rem;
+
+    } */
+
     .logo img {
         position: relative !important;
         top: 35px;
@@ -275,42 +333,40 @@ body {
 }
 
 @media (max-width:767px) {
-   
-    .nav-ul {
-        
-            height: 100vh;
-            position: fixed;
-            top: 0;
-            right: 0;
-            left: 0;
-            z-index: 2;
-            flex-direction: column !important;
-            justify-content: center;
-            align-items: center;
-            background: red;
-            transition: 1s ease;
-            display: none;
-            
-       }
-        .nav-ul .close-menu{
-        display: block  !important;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-       }
-       .close-menu{
-        color: black;
-       }
-         .open-menu{
-            display: block !important;
-        }
-        
-     .nav-ul li a:hover{
-        background: none !important;
-        color:green !important;
-        font-size: 1.6rem;
+
+    /* .nav-ul {
+        width: 100%;
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 75px;
+        right: -100%;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        margin: 0 auto;
+        display: none !important;
+      }
     
-    }
+
+  
+
+    .nav-ul li a:hover {
+        background: none !important;
+        color: green !important;
+        font-size: 1.6rem;
+
+    } */
+
     .info-ul {
         display: block !important;
         position: relative;
@@ -344,7 +400,7 @@ body {
         height: 55px;
     }
 
-  
+
 
     .toggle {
         display: block !important;
@@ -363,33 +419,37 @@ body {
 
 }
 
-@media (max-width:575px){
+@media (max-width:575px) {
 
-.nav-ul li a{
-    display: block;
-     position: relative;
-     width: 100%;
-     height: 100hv;
-     left: 0;
-     background-color: #c2ed00;
+    .nav-ul li a {
+        display: none;
+        position: relative;
+        width: 100%;
+        height: 100hv;
+        left: 0;
+        background-color: #c2ed00;
 
     }
-    nav ul li   {
-    display: block;
-    width: 100%;
-    margin:0;
+
+    nav ul li {
+        display: none;
+        width: 100%;
+        margin: 0;
     }
 }
-@media (max-width:500px){
+
+@media (max-width:500px) {
     .info-main {
         width: 560px !important;
         right: 5px;
     }
+
     .info li a {
         font-size: 7px !important;
     }
+
     .nav li {
-        display: block;
+        display: none;
     }
 }
 
@@ -425,7 +485,7 @@ body {
 }
 
 /* home page start */
-div#slider {
+/* div#slider {
     overflow: hidden;
 }
 
@@ -452,7 +512,65 @@ div#slider figure {
 
 .sliter {
     height: 100px;
+} */
+
+.carousel{
+    width: 100%;
+    height:500px ;
+    position: relative;
 }
+.carousel > ul {
+    margin: 0%;
+    padding: 0;
+    list-style: none;
+}
+.slide{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay:200ms ;
+}
+.slide > img{
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+.slide[data-active]{
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+}
+.carousel-button{
+    position: absolute;
+    background: none;
+    z-index: 2;
+    border: none;
+    font-size: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, .5);
+    border-radius:.25rem;
+    background-color: rgba(0,0,0, .1);
+}
+.carousel-button:hover,
+.carousel-button:focus{
+    color: white;
+    background-color: rgbs(0,0,0.2);
+}
+.carousel-button:focus{
+    outline:1px solid black;
+}
+.carousel-button.prev{
+    
+    left: 1rem;
+}
+.carousel-button.next{
+    right: 1rem;
+}
+
 
 /* our services */
 .index-ser {
@@ -585,40 +703,40 @@ div#slider figure {
 .card:hover .our-service-icon i {
     transform: rotate(360deg);
 }
+
 /* our services end */
 
 /* our mission our vission we atre selten */
- 
-.app1{
+
+.app1 {
     position: relative;
     width: 106%;
-    top:3px;
-}
-.app1:hover{
-    
+    top: 3px;
 }
 
+.app1:hover {}
 
-.app2{
+
+.app2 {
     position: relative;
     width: 106%;
     bottom: 35px;
     right: 45px;
 }
-.app2:hover{
-    
-}
 
-.app3{
+.app2:hover {}
+
+.app3 {
     position: relative;
     width: 58%;
     left: 41%;
     bottom: 71px;
 }
-.app3:hover{
-}
-.paras{
-  
+
+.app3:hover {}
+
+.paras {
+
     position: relative;
     top: 20px;
     width: 600px;
@@ -634,31 +752,36 @@ div#slider figure {
     /* background: red;
     animation: mymove 5s infinite; */
 }
- /* @keyframes mymove{
+
+/* @keyframes mymove{
     from {background-color: #cc5333;}
     to {background-color: #23074d;}
   }  */
-.first-col{
+.first-col {
     height: 278px;
     margin-top: 5px;
     width: 600px;
     overflow: hidden;
     position: relative;
-    right:19px;
+    right: 19px;
 }
-.para-1{
-    background-image: linear-gradient(143deg,#c2ed00 74%,#daf400 5%);
+
+.para-1 {
+    background-image: linear-gradient(143deg, #c2ed00 74%, #daf400 5%);
 }
-.para-2{
-    background-image: linear-gradient(143deg,#fdcf34 74%,#fde249 5%);
+
+.para-2 {
+    background-image: linear-gradient(143deg, #fdcf34 74%, #fde249 5%);
 }
-.para-3{
-    background-image: linear-gradient(143deg,#7baeff 74%,#9fc3ff 5%);
+
+.para-3 {
+    background-image: linear-gradient(143deg, #7baeff 74%, #9fc3ff 5%);
 }
+
 /* our mission our vission we atre selten end */
 
 /* testimonial */
-.test-container{
+.test-container {
     width: 800px;
     height: 400px;
     /* position: absolute; */
@@ -666,17 +789,20 @@ div#slider figure {
     left: 50%;
     /* transform: translate(-50%, -50%); */
 }
+
 .testimonials-head {
     text-align: center;
     padding-top: 80px;
     font-size: 40px;
     color: rgb(192, 43, 43);
 }
-.testimonial{
+
+.testimonial {
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
+
 .test-row {
     display: flex;
     width: 3200px;
@@ -688,19 +814,21 @@ div#slider figure {
     height: 400px;
     position: relative;
 }
-.test-img{
+
+.test-img {
     position: absolute;
     top: 0;
     right: 0;
     height: 100%;
 
 }
-.test-img img{
+
+.test-img img {
     height: 100%;
     border-radius: 10px;
 }
 
-.test-user{
+.test-user {
     background: #002244;
     width: 520px;
     height: 270px;
@@ -714,20 +842,23 @@ div#slider figure {
     box-sizing: border-box;
     z-index: 2;
 }
-.test-user p{
+
+.test-user p {
     font-size: 18px;
     line-height: 24px;
 }
-.test-indicator{
+
+.test-indicator {
     position: relative;
     left: 50%;
     transform: translateY(-50%);
     margin-top: 20px;
-    
+
     transition: 0.5s;
-    
+
 }
-.test-btn{
+
+.test-btn {
     display: inline-block;
     height: 15px;
     width: 15px;
@@ -736,6 +867,7 @@ div#slider figure {
     background-color: #002244;
     cursor: pointer;
 }
-.active-test{
+
+.active-test {
     width: 45px;
 }

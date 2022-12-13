@@ -9,7 +9,7 @@ include_once('header.php');
   </script> -->
 
 <body>
-  <div id="slider">
+  <!-- <div id="slider">
     <figure>
       <img src="..\images\banners\CRM gif_0.gif" alt>
       <img src="..\images\banners\CRM gif_0.gif" alt>
@@ -18,7 +18,32 @@ include_once('header.php');
       <img src="..\images\banners\CRM gif_0.gif" alt>
 
     </figure>
-  </div>
+  </div> -->
+
+  <section aria-label="newest photos">
+    <div class="carousel" data-carousel>
+      <button class="carousel-button prev" data-carousel-button="prev">&#8249;</button>
+      <button class="carousel-button next" data-carousel-button="next">&#8250;</button>
+<ul data-slides>
+  <li class="slide" data-active>
+  <img src="../images/imageslider/slider-1.png" alt="crm " srcset="">
+  </li>
+  <li class="slide">
+  <img src="../images/imageslider/slider-2.png" alt="crm " srcset="">
+  </li>
+  <li class="slide">
+  <img src="../images/imageslider/slider-3.png" alt="crm " srcset="">
+  </li>
+  <li class="slide">
+  <img src="../images/imageslider/slider-4.png" alt="crm " srcset="">
+  </li>
+  <li class="slide">
+  <img src="../images/imageslider/slider-5.png" alt="crm " srcset="">
+  </li>
+</ul>
+</div>
+  </section>
+
   <!-- our services -->
   <div class="index-ser">
     <h1>OUR SERVICES</h1>
@@ -141,6 +166,7 @@ include_once('header.php');
 </div>
 
   </div>
+  
 </body>
 <script>
   $(document).ready(function(){
@@ -260,6 +286,8 @@ btn [3].onclick = function (){
       this.classList.add("active-test");
     }
 }
+// slider//
+
 </script>
 </body>
 <?php
