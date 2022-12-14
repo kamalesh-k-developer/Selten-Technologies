@@ -19,13 +19,13 @@ include_once('header.php');
 
     </figure>
   </div> -->
-
+<div>
   <section aria-label="newest photos">
     <div class="carousel" data-carousel>
       <button class="carousel-button prev" data-carousel-button="prev">&#8249;</button>
       <button class="carousel-button next" data-carousel-button="next">&#8250;</button>
-<ul data-slides>
-  <li class="slide" data-active>
+<ul data-slides class="mySlides">
+  <li class="slide" id="slide" data-active>
   <img src="../images/imageslider/slider-1.png" alt="crm " srcset="">
   </li>
   <li class="slide">
@@ -43,7 +43,8 @@ include_once('header.php');
 </ul>
 </div>
   </section>
-
+  
+  </div>
   <!-- our services -->
   <div class="index-ser">
     <h1>OUR SERVICES</h1>
@@ -253,39 +254,39 @@ console.log('test');
   </div>
 
 <script>
-  var btn = document.getElementsByClassName ("btn");
-var testslide = document.getElementById ("testslide")
+//   var btn = document.getElementsByClassName ("btn");
+// var testslide = document.getElementById ("testslide")
 
-btn [0].onclick = function (){
-    testslide.style.transform = "translateX(0px)";
-    for (i=0; i<4; i++){
-      btn[i].classList.remove("active-test");
-      this.classList.add("active-test");
-    }
-}
-btn [1].onclick = function (){
-    testslide.style.transform = "translateX(-800px)";
-    for (i=0; i<4; i++){
-      btn[i].classList.remove("active-test");
-      this.classList.add("active-test");
-    }
-}
+// btn [0].onclick = function (){
+//     testslide.style.transform = "translateX(0px)";
+//     for (i=0; i<4; i++){
+//       btn[i].classList.remove("active-test");
+//       this.classList.add("active-test");
+//     }
+// }
+// btn [1].onclick = function (){
+//     testslide.style.transform = "translateX(-800px)";
+//     for (i=0; i<4; i++){
+//       btn[i].classList.remove("active-test");
+//       this.classList.add("active-test");
+//     }
+// }
 
-btn [2].onclick = function (){
-    testslide.style.transform = "translateX(-1600px)";
-    for (i=0; i<4; i++){
-      btn[i].classList.remove("active-test");
-      this.classList.add("active-test");
-    }
-}
+// btn [2].onclick = function (){
+//     testslide.style.transform = "translateX(-1600px)";
+//     for (i=0; i<4; i++){
+//       btn[i].classList.remove("active-test");
+//       this.classList.add("active-test");
+//     }
+// }
 
-btn [3].onclick = function (){
-    testslide.style.transform = "translateX(-2400px)";
-    for (i=0; i<4; i++){
-      btn[i].classList.remove("active-test");
-      this.classList.add("active-test");
-    }
-}
+// btn [3].onclick = function (){
+//     testslide.style.transform = "translateX(-2400px)";
+//     for (i=0; i<4; i++){
+//       btn[i].classList.remove("active-test");
+//       this.classList.add("active-test");
+//     }
+// }
 // slider//
 
 </script>

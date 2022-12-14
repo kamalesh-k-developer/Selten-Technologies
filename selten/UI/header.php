@@ -22,13 +22,13 @@
     <link rel="stylesheet" href="..\css\blog.css">
 
     <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
-<script src="..\assets\js\my.js" defer></script>
+    <script src="..\assets\js\my.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="..\assets\js\aos.js"></script>
     <!-- <script src="..\assets\js\my.js"></script> -->
     <script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script>
@@ -73,59 +73,54 @@
             <div class="row">
                 <div class="col-md-12 ">
                     <div class="nav">
-                    <!-- <div class="hamburger">
-                                 <span class="bar"></span>
-                                  <span class="bar"></span>
-                                    <span class="bar"></span>
-                     </div> -->
+                        <div class="hamburger">
+                            <!-- material icons https://material.io/resources/icons/ -->
+                            <i class="menuIcon fa-solid fa-bars"></i>
+                            <i class="closeIcon fa-solid fa-close" style="display:none"></i>
+    </div>
                         <div class="collapse nav navbar-collapse" id="navbarSupportedContent">
-                           <ul class=" navbar-nav nav-ul navbar-right " id="toggle" style="display: flex !important;">
-                            <li class="nav-item nav-li <?php echo $GLOBALS['home']; ?>"><a class="nav-link" href="index.php">Home</a></li>
-                            <li class="nav-item  nav-li <?php echo $GLOBALS['service']; ?>"><a class="nav-link" href="service.php">Services</a></li>
-                            <li class="nav-item nav-li <?php echo $GLOBALS['blog']; ?>"><a class="nav-link" href="blog.php">Blog</a> </li>
-                            <li class="nav-item nav-li <?php echo $GLOBALS['about']; ?>"><a class="nav-link" href="About.php">About Us</a></li>
-                            <li class="nav-item nav-li <?php echo $GLOBALS['contact']; ?>"><a class="nav-link" href="contact.php">Contacts Us</a></li>
+                            <ul class=" navbar-nav nav-ul navbar-right " id="toggle" style="display: flex !important;">
+                                <li class="nav-item nav-li <?php echo $GLOBALS['home']; ?>"><a class="nav-link" href="index.php">Home</a></li>
+                                <li class="nav-item  nav-li <?php echo $GLOBALS['service']; ?>"><a class="nav-link" href="service.php">Services</a></li>
+                                <li class="nav-item nav-li <?php echo $GLOBALS['blog']; ?>"><a class="nav-link" href="blog.php">Blog</a> </li>
+                                <li class="nav-item nav-li <?php echo $GLOBALS['about']; ?>"><a class="nav-link" href="About.php">About Us</a></li>
+                                <li class="nav-item nav-li <?php echo $GLOBALS['contact']; ?>"><a class="nav-link" href="contact.php">Contacts Us</a></li>
 
-                          </ul>
-                         
-                        <div>
+                            </ul>
 
-                        
+                            <div>
+
+
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
     </nav>
 
     <script src="..\assets\js\aos.js"></script>
     <script>
         AOS.init({});
-// toggle function //
-$( document ).ready(function() {
+        // toggle function //
+        $(document).ready(function() {
 
-$( ".cross" ).hide();
-$( ".nav-ul" ).hide();
-$( ".hamburger" ).click(function() {
-$( ".nav-ul" ).slideToggle( "slow", function() {
-$( ".hamburger" ).hide();
-$( ".cross" ).show();
-});
-});
+            $(".cross").hide();
+            $(".nav-ul").hide();
+            $(".hamburger").click(function() {
+                $(".nav-ul").slideToggle("slow", function() {
+                    $(".hamburger").hide();
+                    $(".cross").show();
+                });
+            });
 
-$( ".cross" ).click(function() {
-$( ".nav-ul" ).slideToggle( "slow", function() {
-$( ".cross" ).hide();
-$( ".hamburger" ).show();
-});
-});
+            $(".cross").click(function() {
+                $(".nav-ul").slideToggle("slow", function() {
+                    $(".cross").hide();
+                    $(".hamburger").show();
+                });
+            });
 
-});
-
-
-
-
-</script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-   
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
