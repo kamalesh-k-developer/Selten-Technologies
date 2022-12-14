@@ -1,134 +1,173 @@
-<?php 
-include_once ('header.php');
+<?php
+include_once('header.php');
 ?>
 
 <body>
     <div class="row">
         <div class="col-sm-12 blog-bannel w3-animate-zoom">
             <div class="div">
-                
-                <div class="col-sm-2">
+
+                <!-- <div class="col-sm-2">
                 <img src="..\images\banners\summer-unscreen.gif" class="blog-banner1" alt="">
-                </div>
-                <div class="col-sm-6">
+                </div> -->
+                <!-- <div class="col-sm-6">
                 <img src="..\images\banners\3236267-removebg-preview.png" class="blog-banner" alt="">
-                </div>
-                <div class="col-sm-2">
+                </div> -->
+                <!-- <div class="col-sm-2">
                 <h4 class="blog-heading w3-jumbo">BLOG</h4>
                 </div>
-               
-               
-                </div>
-            
+         -->
+
+
+            </div>
+
             <div class="col-sm-6">
-                
+
+            </div>
+            <div>
+
             </div>
         </div>
     </div>
-    <!-- <div class="blog-bannel">
-        <span class="main-section">
-            <h3 class="blogii">blog</h3>
-            <h4 class="blog-main">blog</h4>
-        </span>
-    </div> -->
+
     <!--card1 -->
-    <div class="container">
-        <div class="row first-row">
-            <div class="col-lg-6 mb-5 col-1">
-                <div class=" card blog-card m-3 w3-animate-left ">
-                    <div>
-                        <a href="www.w3schools.com" class="b-click" target="_blank">
-                         <div>   
-                           <!-- <img src="..\images\banners\API-Integration-Services-FAQ.png" class="p-5 blog-img" alt="" srcset=""> -->
-                           <img src="..\images\images\blog-image1-removebg-preview.png" class="p-5 blog-img" alt="" srcset="">
-                         </div>
-                            <div class="card-content">
-                              <p class="pb-5 para1 m-3">ERP is an application that automates business processes, and provides internal controls, drawing on a central database that collects inputs from departments including accounting, supply chain, sales, marketing, and human resources (HR). It provides real-time and accurate information that helps stakeholders make good business decisions based on the data generation. By collecting a company’s shared</p>
-                            </div>
-                        </a>              
-                    </div>
+    <div class="container s-container">
+
+        <div class="row mainservices s-row ">
+
+            <div class="col-md-6 scol mb-5">
+                <!-- <div class="card card-side card-4 m-3 pt-3">
+
+        </div> -->
+                <div class="card card-head  card-1 m-3 pt-3">
+                    <a href="" class="b-click" target="_blank">
+                        <div class="sheading">
+
+                            <h4>CRM <br> SERVICES </h4>
+                        </div>
+                        <!-- <div class="sicon rounded-circle">
+                <i class="fa-solid fa-house-user mt-0 sicon-icon mb-1 fa-3x"></i>
+            </div> -->
+                        <div>
+                            <img src="..\images\images\blog-image1-removebg-preview.png" class="blog-img1" alt="">
+                        </div>
+                        <div class="spara">
+                            <p>CRM services provided by Selten Technologies comes in three distinct modules: Marketing,
+                                Sales, and Customer Service. Every one of these modules helps organizations to store and
+                                deal with their contacts, customize email campaigns, and examine it for effective marketing.
+                                CRM is generally being embraced by the vast majority of the organizations to make a strong
+                                promotion and deals intended to drive in higher incomes.</p>
+                        </div>
+                    </a>
+                    <!-- <div class="know-more">
+                <center> <button class="btn btn-danger mt-4"><a href="" class="know-more-button know-more-1">Know More</a></button></center>
+            </div> -->
                 </div>
             </div>
 
 
-            <!--card2  -->
-         <div class="col-lg-6 mb-5">
-             <div class="card  blog-card m-3 w3-animate-right ">
-                <div>
-                    <a href="www.google.com" class="b-click" target="_blank">
-                       <div>   
-                            <img src="..\images\images\blog-image2-removebg-preview.png" class=" p-5 blog-img2" alt="" srcset="">
-                       </div>
-                        <div class="card-content">
-                           <p class="pb-5 para2 m-3">This weblog is based on developing a mobile application with react native from the expo and how it works? and why we are using this expo project instead of creating with android and Xcode. Why are we using React Native projects instead of creating with Android Studio and XCode(Developing mobile applications for android and iOS)?
-                          </p>
-                       </div>
+            <!-- card 2 -->
+            <div class="col-md-6 mb-5">
+                <!-- <div class="card card-side card-4 m-3  pt-3">
+
+
+        </div> -->
+                <div class="card card-head card-2 m-3 pt-3">
+                    <a href="" class="b-click" target="_blank">
+                        <div class="sheading">
+                            <h4>WEB DESIGN /<br>WEB DEVOLOPMENT</h4>
+                        </div>
+                        <!-- <div class="sicon rounded-circle">
+                <i class="fa-solid fa-earth-americas  mb-1 sicon-icon  mt-1 fa-3x"></i>
+            </div> -->
+                        <div>
+                            <img src="..\images\images\blog-image2-removebg-preview.png" class="blog-img2" alt="">
+                        </div>
+                        <div class="spara">
+                            <p>Selten Technologies is a superior web application Development Company that affords
+                                world-class standardized service. We generally anticipate giving imaginative web solutions
+                                that meet the B2B and B2C business necessities. Web application has become a required
+                                decision for all organizations that it might be a little or huge scope business. Moreover
+                                everything our main motive is to create user-friendly applications.</p>
+                        </div>
                     </a>
-                 </div>
-             </div>
-         </div>
 
-
-
-            <!--card3  -->
-            <div class="col-lg-6 mb-5">
-            
-                <div class="card  blog-card m-3 w3-animate-left ">
-                <div>
-                        <a href="www.google.com" class="b-click" target="_blank">
-
-                     <div>   
-               
-                    <img src="..\images\images\blog-image3-removebg-preview.png" class="p-5 blog-img3" alt="" srcset="">
-</div>
-                    <div class="card-content">
-                        <p class="pb-5 para3 m-3">All digital marketing should do one of three things: Inform, entertain or inspire.
-
-It’s easy to forget this simple precept and fall into the habit of turning every piece of collateral into a thinly-veiled sales pitch. The resulting content is forced, ineffective and, most importantly, uninspired. And at the end of the day, inspiration is what separates the mediocre marketers from the great ones
-                        </p>
-
-                    </div>
-                    </a>
-                    
-</div>
-                
                 </div>
             </div>
 
 
+            <!-- card 3 -->
+            <div class="col-md-6 mb-5">
+                <!-- <div class="card card-side card-4 m-3  pt-3">
 
-            <!-- card4 -->
-        <div class="col-lg-6 mb-5">
-           
-                <div class="card  blog-card m-3 w3-animate-right ">
-                <div>
-                        <a href="www.google.com" class="b-click" target="_blank">
 
-                     <div>   
-                        <!-- <img src="..\images\banners\what-is-crm-system-anodius-removebg-preview (1).png" class="p-5 blog-img4" alt="" srcset=""> -->
-                        <img src="..\images\images\blog-image4-removebg-preview.png" class="p-5 blog-img4" alt="" srcset="">
-                     </div>
-                     <div class="card-content">
-                        <p class="pb-5 para4 m-3">Web development refers to the creating, building, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management. It is the creation of an application that works over the internet i.e. websites.
-                        </p>
-
-                     </div>
+        </div> -->
+                <div class="card card-head card-3 m-3 pt-3">
+                    <a href="" class="b-click" target="_blank">
+                        <div class="sheading">
+                            <h4>DIGITAL <br> MARKETING</h4>
+                        </div>
+                        <!-- <div class="sicon rounded-circle">
+                <i class="fa-solid fa-bullhorn     sicon-icon mt-1 fa-3x"></i>
+            </div> -->
+                        <div>
+                            <img src="..\images\images\blog-image3-removebg-preview.png" class="blog-img3" alt="">
+                        </div>
+                        <div class="spara">
+                            <p>Time to start branding your business online, join hands with Selten Technologies, the leading
+                                digital marketing company that helps you elevate your brand online. We follow an exceptional
+                                style of methodologies to advance your business depending on the classification of the
+                                business. Here we do both paid and unpaid marketing services that include Search Engine
+                                Optimisation (SEO) and Social Media Marketing (SMM).</p>
+                        </div>
                     </a>
+                    <!-- <div>
+                <center> <button class="btn btn-danger know-more mt-4"><a href="" class="know-more-button know-more-3">Know More</a></button></center>
+            </div> -->
                 </div>
-            
-                
-            
-                
             </div>
+
+            <!-- card 4 -->
+            <div class="col-md-6 mb-5">
+
+                <!-- <div class="card card-side card-4 m-3 pt-3">
+
+        </div> -->
+                <div class="card card-head card-4 m-3 pt-3">
+                    <a href="" class="b-click" target="_blank">
+                        <div class="sheading">
+                            <h4>MOBILE APP<br> DEVOLOPMENT</h4>
+                        </div>
+
+                        <!-- <div class="sicon rounded-circle">
+                <i class="fa-solid fa-mobile   sicon-icon   fa-3x"></i>
+            </div> -->
+                        <div>
+                            <img src="..\images\images\blog-image4-removebg-preview.png" class="blog-img4" alt="">
+                        </div>
+                        <div class="spara">
+                            <p>A greater part of the population these days utilizes mobile applications for their everyday
+                                needs. It hardly encourages people to facilitate their work and save time in the
+                                quick-moving world! Indeed, they get each and every one of their needs through mobile apps
+                                rather than moving to shop and hanging tight in long queues for billing. Time to get started
+                                with your mobile application from Selten Technologies.</p>
+                        </div>
+                    </a>
+                    <!-- <div>
+                <center> <button class="btn btn-danger know-more mt-4 "><a href="" class="know-more-button know-more-4">Know More</a></button></center>
+            </div> -->
+                </div>
+            </div>
+
         </div>
     </div>
     </div>
+    </div>
 
-            <!--card5  -->
 
 </body>
-<?php 
-include_once ('footer.php');
+<?php
+include_once('footer.php');
 ?>
 
 </html>

@@ -546,6 +546,11 @@ div#slider figure {
 }
 .para-1{
     background-image: linear-gradient(143deg,#c2ed00 74%,#daf400 5%);
+    display: flex;
+    position: relative;
+    left: 30px;
+    width: 403px;
+    font-size: inherit;
 }
 .para-2{
     background-image: linear-gradient(143deg,#fdcf34 74%,#fde249 5%);
