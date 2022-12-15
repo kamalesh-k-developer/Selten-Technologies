@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="..\assets\css/newAnimate.css">
     <link rel="stylesheet" href="..\css\blog.css">
 
+
     <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
     <script src="..\assets\js\my.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -77,12 +78,121 @@
                             <!-- material icons https://material.io/resources/icons/ -->
                             <i class="menuIcon fa-solid fa-bars"></i>
                             <i class="closeIcon fa-solid fa-close" style="display:none"></i>
-    </div>
+                        </div>
                         <div class="collapse nav navbar-collapse" id="navbarSupportedContent">
                             <ul class=" navbar-nav nav-ul navbar-right " id="toggle" style="display: flex !important;">
                                 <li class="nav-item nav-li <?php echo $GLOBALS['home']; ?>"><a class="nav-link" href="index.php">Home</a></li>
-                                <li class="nav-item  nav-li <?php echo $GLOBALS['service']; ?>"><a class="nav-link" href="service.php">Services</a></li>
-                                <li class="nav-item nav-li <?php echo $GLOBALS['blog']; ?>"><a class="nav-link" href="blog.php">Blog</a> </li>
+                                <li class="nav-item  nav-li <?php echo $GLOBALS['service']; ?>" id="nav-ul"><a class="nav-link " href="#">Services <i class="fa-sharp fa-solid fa-caret-down"></i></a>
+                                <div class="mega-box">
+                                    <div class="content">
+                                        <div class="mega-main">
+                                            <div >
+                                            <p>Web Development</p>
+                                            </div>
+                                            <ul class="mega-ul">
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">web</a>
+                                                </li>
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">web</a>
+                                                </li>
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">web</a>
+                                                </li>
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">web</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-main">
+                                            <p>Digital marketing</p>
+                                            <ul class="mega-ul">
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">digial</a>
+                                                </li>
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">digital</a>
+                                                </li>
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">digital</a>
+                                                </li>
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">digital</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-main">
+                                            <p>CRM Services</p>
+                                            <ul class="mega-ul">
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">CRM</a>
+                                                </li>
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">CRM</a>
+                                                </li>
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">CRM</a>
+                                                </li>
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">CRM</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-main">
+                                            <p>App Development</p>
+                                            <ul class="mega-ul">
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">App</a>
+                                                </li>
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">App</a>
+                                                </li>
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">App</a>
+                                                </li>
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">App</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-main">
+                                            <p>Integration Services</p>
+                                            <ul class="mega-ul">
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">Integration</a>
+                                                </li>
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">Integration</a>
+                                                </li>
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">Integration</a>
+                                                </li>
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">Integration</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-main">
+                                            <p>E-Comerce</p>
+                                            <ul class="mega-ul">
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">E-Comerce</a>
+                                                </li>
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">E-Comerce</a>
+                                                </li>
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">E-Comerce</a>
+                                                </li>
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">E-Comerce</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                                <li class="nav-item nav-li <?php echo $GLOBALS['blog']; ?>"><a class="nav-link" href="blog.php">Blog</a></li>
                                 <li class="nav-item nav-li <?php echo $GLOBALS['about']; ?>"><a class="nav-link" href="About.php">About Us</a></li>
                                 <li class="nav-item nav-li <?php echo $GLOBALS['contact']; ?>"><a class="nav-link" href="contact.php">Contacts Us</a></li>
 

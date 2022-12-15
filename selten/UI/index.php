@@ -19,8 +19,8 @@ include_once('header.php');
 
     </figure>
   </div> -->
-<div>
-  <section aria-label="newest photos">
+
+  <section aria-label="newest photos" class="image-slide">
     <div class="carousel" data-carousel>
       <button class="carousel-button prev" data-carousel-button="prev">&#8249;</button>
       <button class="carousel-button next" data-carousel-button="next">&#8250;</button>
@@ -44,18 +44,19 @@ include_once('header.php');
 </div>
   </section>
   
-  </div>
+  
   <!-- our services -->
+  <div class=" index-service">
   <div class="index-ser">
     <h1>OUR SERVICES</h1>
   </div>
-  <div class=" container">
+  <div class=" container index-3-service">
 
 
-    <div class="row">
+    <div class="row ">
 
       <div class="col-md-4  equal-height  ">
-        <div class="main-ser w3-animate-left">
+        <div class="main-ser ">
           <div class="card serivice-card ">
             <div class="our-service-icon">
               <i class="fas fa-desktop"></i>
@@ -70,12 +71,12 @@ include_once('header.php');
             </div>
 
           </div>
-          <div class="shadowone"></div>
-          <div class="shadowtwo"></div>
+          <div class="index-shadowone"></div>
+          <div class="index-shadowtwo"></div>
 
         </div>
       </div>
-      <div class="col-md-4  equal-height animate__animated animate__fadeInDown">
+      <div class="col-md-4 equal-height ">
         <div class="main-ser">
           <div class="card serivice-card">
             <div class="our-service-icon">
@@ -91,13 +92,13 @@ include_once('header.php');
             </div>
 
           </div>
-          <div class="shadowone"></div>
-          <div class="shadowtwo"></div>
+          <div class="index-shadowone"></div>
+          <div class="index-shadowtwo"></div>
 
         </div>
       </div>
       <div class="col-md-4  equal-height ">
-        <div class="main-ser w3-animate-right">
+        <div class="main-ser ">
           <div class="card serivice-card">
             <div class="our-service-icon">
               <i class="fa-solid fa-earth-americas"></i>
@@ -112,8 +113,8 @@ include_once('header.php');
             </div>
 
           </div>
-          <div class="shadowone"></div>
-          <div class="shadowtwo"></div>
+          <div class="index-shadowone"></div>
+          <div class="index-shadowtwo"></div>
 
         </div>
       </div>
@@ -152,6 +153,7 @@ include_once('header.php');
     
   </div> -->
     </div>
+  </div>
   </div>
 <!-- our mission our vission we are selten -->
 <div class="row ">

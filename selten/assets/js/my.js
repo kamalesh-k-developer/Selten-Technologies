@@ -13,7 +13,7 @@ const buttons = document.querySelectorAll("[data-carousel-button]")
         slides.children[newIndex].dataset.active = true
         delete activeSlide.dataset.active
     })
- })
+ });
 
 
  function showSlides() {
