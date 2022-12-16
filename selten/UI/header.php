@@ -21,14 +21,15 @@
     <link rel="stylesheet" href="..\assets\css/newAnimate.css">
     <link rel="stylesheet" href="..\css\blog.css">
 
-    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
 
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <script src="..\assets\js\my.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="..\assets\js\aos.js"></script>
     <!-- <script src="..\assets\js\my.js"></script> -->
     <script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script>
@@ -73,49 +74,163 @@
             <div class="row">
                 <div class="col-md-12 ">
                     <div class="nav">
-                    <div class="open-menu"><i class="fa fa-bars"></i></div>
-                    <div class="close-menu"><i class="fa fa-times"></i></div>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                           <ul class="nav navbar-nav nav-ul navbar-right " id="toggle" >
-                            <li class="nav-item nav-li <?php echo $GLOBALS['home']; ?>"><a href="index.php">Home</a></li>
-                            <li class="nav-item  nav-li <?php echo $GLOBALS['service']; ?>"><a href="service.php">Services</a></li>
-                            <li class="nav-item nav-li <?php echo $GLOBALS['blog']; ?>"><a href="blog.php">Blog</a> </li>
-                            <li class="nav-item nav-li <?php echo $GLOBALS['about']; ?>"><a href="About.php">About Us</a></li>
-                            <li class="nav-item nav-li <?php echo $GLOBALS['contact']; ?>"><a href="contact.php">Contacts Us</a></li>
+                        <div class="hamburger">
+                            <!-- material icons https://material.io/resources/icons/ -->
+                            <i class="menuIcon fa-solid fa-bars"></i>
+                            <i class="closeIcon fa-solid fa-close" style="display:none"></i>
+                        </div>
+                        <div class="collapse nav navbar-collapse" id="navbarSupportedContent">
+                            <ul class=" navbar-nav nav-ul navbar-right " id="toggle" style="display: flex !important;">
+                                <li class="nav-item nav-li <?php echo $GLOBALS['home']; ?>"><a class="nav-link" href="index.php">Home</a></li>
+                                <li class="nav-item  nav-li <?php echo $GLOBALS['service']; ?>" id="nav-ul"><a class="nav-link " href="#">Services <i class="fa-sharp fa-solid fa-caret-down"></i></a>
+                                <div class="mega-box">
+                                    <div class="content">
+                                        <div class="mega-main">
+                                            <div >
+                                            <p>Web Development</p>
+                                            </div>
+                                            <ul class="mega-ul">
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">web</a>
+                                                </li>
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">web</a>
+                                                </li>
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">web</a>
+                                                </li>
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">web</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-main">
+                                            <p>Digital marketing</p>
+                                            <ul class="mega-ul">
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">digial</a>
+                                                </li>
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">digital</a>
+                                                </li>
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">digital</a>
+                                                </li>
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">digital</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-main">
+                                            <p>CRM Services</p>
+                                            <ul class="mega-ul">
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">CRM</a>
+                                                </li>
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">CRM</a>
+                                                </li>
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">CRM</a>
+                                                </li>
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">CRM</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-main">
+                                            <p>App Development</p>
+                                            <ul class="mega-ul">
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">App</a>
+                                                </li>
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">App</a>
+                                                </li>
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">App</a>
+                                                </li>
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">App</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-main">
+                                            <p>Integration Services</p>
+                                            <ul class="mega-ul">
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">Integration</a>
+                                                </li>
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">Integration</a>
+                                                </li>
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">Integration</a>
+                                                </li>
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">Integration</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-main">
+                                            <p>E-Comerce</p>
+                                            <ul class="mega-ul">
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">E-Comerce</a>
+                                                </li>
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">E-Comerce</a>
+                                                </li>
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">E-Comerce</a>
+                                                </li>
+                                                <li class="mega-li">
+                                                    <a href="" class="mega-link">E-Comerce</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                                <li class="nav-item nav-li <?php echo $GLOBALS['blog']; ?>"><a class="nav-link" href="blog.php">Blog</a></li>
+                                <li class="nav-item nav-li <?php echo $GLOBALS['about']; ?>"><a class="nav-link" href="About.php">About Us</a></li>
+                                <li class="nav-item nav-li <?php echo $GLOBALS['contact']; ?>"><a class="nav-link" href="contact.php">Contacts Us</a></li>
 
-                          </ul>
-                         
-                        <div>
+                            </ul>
 
-                        
+                            <div>
+
+
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
     </nav>
 
     <script src="..\assets\js\aos.js"></script>
     <script>
         AOS.init({});
-// toggle function //
-const nav = document.querySelector('.nav-ul');
-const closeMenu = document.querySelector('.close-menu');
-const openMenu= document.querySelector('.open-menu');
+        // toggle function //
+        $(document).ready(function() {
 
-openMenu.addEventListener('click',show);
-closeMenu.addEventListener('click',close);
+            $(".cross").hide();
+            $(".nav-ul").hide();
+            $(".hamburger").click(function() {
+                $(".nav-ul").slideToggle("slow", function() {
+                    $(".hamburger").hide();
+                    $(".cross").show();
+                });
+            });
 
-function show (){
-    nav.style.display = 'flex';
-    nav.style.top = '0';
-}
-function close (){
-    nav.style.top = '0%';
-}
+            $(".cross").click(function() {
+                $(".nav-ul").slideToggle("slow", function() {
+                    $(".cross").hide();
+                    $(".hamburger").show();
+                });
+            });
 
-
-</script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-   
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

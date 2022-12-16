@@ -9,114 +9,132 @@
     grid-template-columns: auto-fit, minmax(300px);
 }
 
-.mainservices {
-    margin: 50px;
-    position: relative;
-    left: 40px;
 
-
-}
-
-.services {
-    background-image: url("../images/banners/sbanner.jpg");
-    height: 250px;
-    background-position: center center;
-    /* -webkit-text-fill-color: transparent; */
-    vertical-align: middle;
-
-
-}
-
-.mainheading {
-    position: relative;
-    top: 50%;
-
-    transform: translate(-50%, -50%);
-    color: rgb(16, 16, 16);
+.main-ser {
+    width: 100%;
+    height: 350px;
     text-align: center;
-    white-space: nowrap;
-
-}
-
-
-
-.card-head {
-
-    width: 300px;
-    height: 510px;
-    border-radius: 0% 15% 0% 15%;
-    margin: none !important;
-    background-color: #008282;
     position: relative;
-    top: 20px;
-    right: 30px;
-    box-shadow:10px black ;
-}
-.card-head:hover{
- z-index: 1000;
- -webkit-box-sizing: border-box;
- box-sizing: border-box;
-    transition: all 0.2s ease ;
-    background-color: rgb(220, 23, 23);
-}
-
-.cardheading {
-    /* position: relative !important;
-    left: 75px; */
-    justify-content: center;
-    background-color: blue !important;
+    cursor: pointer;
+    margin-top: 240px;
 
 }
 
-.sheading,
-h4 {
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    text-decoration: none !important;
-}
+@keyframes fadeInLef {
+    0% {
+        opacity: 0;
+        transform: translateY(-300px);
+    }
 
-.sicon {
-    height: 100px;
-    width: 100px;
-    margin-left: 36%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center !important;
-    /* color: rgb(206, 23, 23); */
-    /* border: 1px solid #008080; */
-    /* border-radius: 50%; */
-    background: white;
-}
-
-.sicon-icon {
-    color: #008080;
-    font-size: 52px !important;
-}
-
-.spara {
-    color: white;
-    font-size: 15px;
-    padding-top: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
-    word-spacing: 5px;
-    line-height: 18px;
-    font-weight: 500;
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 
-.know-more {
-    position: relative !important;
-    top: 0%;
+.equal-height{
+    row-gap: 20px;
+} 
+.serivice-card {
+    background-color: #B0C4DE;
+    padding: 30px;
+    border-radius: 10px;
+    position: absolute;
+    gap: 10px 20px 40px 40px;
+    bottom: 0%;
+    z-index: 1;
+    transition: transform .8s;
+    box-shadow: 0 0 20px -15px #030380;
 }
 
-.know-more-button {
-    text-decoration: none !important;
-    color: white;
+.our-service-icon {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: -90px auto 0;
+    background-color: #B0C4DE;
+    border: 10px solid white;
 }
 
+.our-service-icon i {
+    font-size: 50px;
+    margin-top: 35px;
+    /* margin-left: 20px; */
+    transition: transform 1s;
+
+}
+
+.our-service-heading h4 {
+    height: 35px;
+    width: 80%;
+    font-size: 25px;
+    color: black;
+    background: #B0C4DE;
+    margin: 50px auto;
+    position: relative;
+}
+
+.our-service-heading h4::after {
+    content: '';
+    width: 40px;
+    height: 30px;
+    background-color: #4C516D;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    z-index: -1;
+
+}
+
+.our-service-heading h4::before {
+    content: '';
+    width: 40px;
+    height: 30px;
+    background-color: #4C516D;
+    position: absolute;
+    left: -5px;
+    bottom: -5px;
+    z-index: -1;
+}
+
+.shadowone {
+    height: 200px;
+    width: 80%;
+    background-color: #B0C4DE;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 10%;
+    z-index: -1;
+    box-shadow: 0 0 20px -15px #030380;
+    transition: transform .8s;
+}
+
+.shadowtwo {
+    height: 200px;
+    width: 64%;
+    background-color: #B0C4DE;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 18%;
+    z-index: -2;
+    box-shadow: 0 0 20px -15px #030380;
+    transition: transform .8s;
+}
+
+.main-ser:hover .card {
+    transform: translateY(-50px);
+}
+
+.main-ser:hover .shadowone {
+    transform: translateY(-25px);
+}
+
+.card:hover .our-service-icon i {
+    transform: rotate(360deg);
+}
 @media (max-width:574px) {
 
 

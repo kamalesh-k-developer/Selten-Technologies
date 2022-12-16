@@ -9,7 +9,7 @@ include_once('header.php');
   </script> -->
 
 <body>
-  <div id="slider">
+  <!-- <div id="slider">
     <figure>
       <img src="..\images\banners\CRM gif_0.gif" alt>
       <img src="..\images\banners\CRM gif_0.gif" alt>
@@ -18,18 +18,45 @@ include_once('header.php');
       <img src="..\images\banners\CRM gif_0.gif" alt>
 
     </figure>
-  </div>
+  </div> -->
+
+  <section aria-label="newest photos" class="image-slide">
+    <div class="carousel" data-carousel>
+      <button class="carousel-button prev" data-carousel-button="prev">&#8249;</button>
+      <button class="carousel-button next" data-carousel-button="next">&#8250;</button>
+<ul data-slides class="mySlides">
+  <li class="slide" id="slide" data-active>
+  <img src="../images/imageslider/slider-1.png" alt="crm " srcset="">
+  </li>
+  <li class="slide">
+  <img src="../images/imageslider/slider-2.png" alt="crm " srcset="">
+  </li>
+  <li class="slide">
+  <img src="../images/imageslider/slider-3.png" alt="crm " srcset="">
+  </li>
+  <li class="slide">
+  <img src="../images/imageslider/slider-4.png" alt="crm " srcset="">
+  </li>
+  <li class="slide">
+  <img src="../images/imageslider/slider-5.png" alt="crm " srcset="">
+  </li>
+</ul>
+</div>
+  </section>
+  
+  
   <!-- our services -->
+  <div class=" index-service">
   <div class="index-ser">
     <h1>OUR SERVICES</h1>
   </div>
-  <div class=" container">
+  <div class=" container index-3-service">
 
 
-    <div class="row">
+    <div class="row ">
 
       <div class="col-md-4  equal-height  ">
-        <div class="main-ser w3-animate-left">
+        <div class="main-ser ">
           <div class="card serivice-card ">
             <div class="our-service-icon">
               <i class="fas fa-desktop"></i>
@@ -44,12 +71,12 @@ include_once('header.php');
             </div>
 
           </div>
-          <div class="shadowone"></div>
-          <div class="shadowtwo"></div>
+          <div class="index-shadowone"></div>
+          <div class="index-shadowtwo"></div>
 
         </div>
       </div>
-      <div class="col-md-4  equal-height animate__animated animate__fadeInDown">
+      <div class="col-md-4 equal-height ">
         <div class="main-ser">
           <div class="card serivice-card">
             <div class="our-service-icon">
@@ -65,13 +92,13 @@ include_once('header.php');
             </div>
 
           </div>
-          <div class="shadowone"></div>
-          <div class="shadowtwo"></div>
+          <div class="index-shadowone"></div>
+          <div class="index-shadowtwo"></div>
 
         </div>
       </div>
       <div class="col-md-4  equal-height ">
-        <div class="main-ser w3-animate-right">
+        <div class="main-ser ">
           <div class="card serivice-card">
             <div class="our-service-icon">
               <i class="fa-solid fa-earth-americas"></i>
@@ -86,8 +113,8 @@ include_once('header.php');
             </div>
 
           </div>
-          <div class="shadowone"></div>
-          <div class="shadowtwo"></div>
+          <div class="index-shadowone"></div>
+          <div class="index-shadowtwo"></div>
 
         </div>
       </div>
@@ -127,6 +154,7 @@ include_once('header.php');
   </div> -->
     </div>
   </div>
+  </div>
 <!-- our mission our vission we are selten -->
 <div class="row ">
     <div class="col-md-6">
@@ -141,6 +169,7 @@ include_once('header.php');
 </div>
 
   </div>
+  
 </body>
 <script>
   $(document).ready(function(){
@@ -227,39 +256,41 @@ console.log('test');
   </div>
 
 <script>
-  var btn = document.getElementsByClassName ("btn");
-var testslide = document.getElementById ("testslide")
+//   var btn = document.getElementsByClassName ("btn");
+// var testslide = document.getElementById ("testslide")
 
-btn [0].onclick = function (){
-    testslide.style.transform = "translateX(0px)";
-    for (i=0; i<4; i++){
-      btn[i].classList.remove("active-test");
-      this.classList.add("active-test");
-    }
-}
-btn [1].onclick = function (){
-    testslide.style.transform = "translateX(-800px)";
-    for (i=0; i<4; i++){
-      btn[i].classList.remove("active-test");
-      this.classList.add("active-test");
-    }
-}
+// btn [0].onclick = function (){
+//     testslide.style.transform = "translateX(0px)";
+//     for (i=0; i<4; i++){
+//       btn[i].classList.remove("active-test");
+//       this.classList.add("active-test");
+//     }
+// }
+// btn [1].onclick = function (){
+//     testslide.style.transform = "translateX(-800px)";
+//     for (i=0; i<4; i++){
+//       btn[i].classList.remove("active-test");
+//       this.classList.add("active-test");
+//     }
+// }
 
-btn [2].onclick = function (){
-    testslide.style.transform = "translateX(-1600px)";
-    for (i=0; i<4; i++){
-      btn[i].classList.remove("active-test");
-      this.classList.add("active-test");
-    }
-}
+// btn [2].onclick = function (){
+//     testslide.style.transform = "translateX(-1600px)";
+//     for (i=0; i<4; i++){
+//       btn[i].classList.remove("active-test");
+//       this.classList.add("active-test");
+//     }
+// }
 
-btn [3].onclick = function (){
-    testslide.style.transform = "translateX(-2400px)";
-    for (i=0; i<4; i++){
-      btn[i].classList.remove("active-test");
-      this.classList.add("active-test");
-    }
-}
+// btn [3].onclick = function (){
+//     testslide.style.transform = "translateX(-2400px)";
+//     for (i=0; i<4; i++){
+//       btn[i].classList.remove("active-test");
+//       this.classList.add("active-test");
+//     }
+// }
+// slider//
+
 </script>
 </body>
 <?php

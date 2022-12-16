@@ -8,11 +8,11 @@ include_once ('header.php');
                 <div class="col-md-3">
                     <h4 class="footer-header">Quick links</h4>
                     <ul class="list-unstyled flist ">
-                        <li><a href="" class="footer-link">Home</a></li>
-                        <li><a href="" class="footer-link">About us</a></li>
-                        <li><a href="" class="footer-link">Contact us</a></li>
-                        <li><a href="" class="footer-link">Blog</a></li>
-                        <li><a href="" class="footer-link">Servies</a></li>
+                        <li><a href="index.php" class="footer-link">Home</a></li>
+                        <li><a href="about.php" class="footer-link">About us</a></li>
+                        <li><a href="contact.php" class="footer-link">Contact us</a></li>
+                        <li><a href="blog.php" class="footer-link">Blog</a></li>
+                        <li><a href="service.php" class="footer-link">Servies</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 mb-3">
