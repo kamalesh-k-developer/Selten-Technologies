@@ -445,10 +445,13 @@ body {
 
 
 
-    .toggle {
+    .hamburger {
+        position: absolute;
+        z-index: 100;
+        top: 49% !important;
+        right: 3rem;
+        cursor: pointer;
         display: block !important;
-        position: relative;
-        bottom: 60px;
     }
 
     .navbar {
@@ -464,21 +467,23 @@ body {
 
 @media (max-width:575px) {
 
-    .nav-ul li a {
-        display: none;
+
+    /* .nav-ul li a {
+        display: block;
         position: relative;
         width: 100%;
         height: 100hv;
         left: 0;
         background-color: #c2ed00;
 
-    }
 
-    nav ul li {
+    } */
+
+    /* nav ul li {
         display: none;
         width: 100%;
         margin: 0;
-    }
+    } */
 }
 
 @media (max-width:500px) {
@@ -492,7 +497,7 @@ body {
     }
 
     .nav li {
-        display: none;
+        display: block;
     }
 }
 
@@ -557,7 +562,7 @@ body {
 
 .mega-main p {
     color: black;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: bold;
     text-align: center;
 }
@@ -576,7 +581,7 @@ body {
 }
 
 .mega-link {
-    font-size: 15px !important;
+    font-size: 11px !important;
     padding: 0 20px;
     color: #125df0;
     display: inline-block;
@@ -614,38 +619,8 @@ body {
     left: 0; 
   }
 
-/*  */
 
-/* home page start */
-/* div#slider {
-    overflow: hidden;
-}
-
-div#slider figure img {
-    width: 20%;
-    float: left;
-    border-radius: 10px;
-}
-
-div#slider figure {
-    margin-bottom: 200px;
-
-    position: relative;
-    width: 500%;
-    height: auto;
-    margin: 0;
-    left: 0;
-    text-align: left;
-    font-size: 0;
-    animation: 30s slidy infinite;
-
-
-}
-
-.sliter {
-    height: 100px;
-} */
-/*  */
+/*image  */
 .image-slide {
     z-index: -3 !important;
 }
@@ -693,11 +668,11 @@ div#slider figure {
     z-index: 2;
     border: none;
     font-size: 4rem;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(255, 255, 255, .5);
+    /* top: 50%; */
+    transform: translateY(200px);
+    background: rgba(251, 248, 248, 0.5);
     border-radius: .25rem;
-    background-color: rgba(0, 0, 0, .1);
+    background-color: rgba(228, 58, 58, );
 }
 
 .carousel-button:hover,
@@ -742,15 +717,49 @@ div#slider figure {
 .active-carousel {
     width: 45px;
 }
+@media (max-width:1024px) {
+    .carousel-button{
+        transform: translateY(100px);
+        font-size: 3rem;
+        
+    }
+}
+@media (max-width:768px) {
+    .carousel-button{
+        transform: translateY(80px);
+        font-size: 2rem;
+        
+    }
+}
+@media (max-width:500px) {
+    .carousel-button{
+        transform: translateY(50px);
+        font-size: 1.5rem;
+        
+    }
+}
+@media (max-width:375px) {
+    .carousel-button{
+        transform: translateY(50px);
+        font-size: 1rem;
+        
+    }
+}
+
 
 
 
 /* our services */
-.index-service {
 
-    margin-top: 20px;
+.index-service {
+overflow: hidden;
+    margin-top: -20px;
     background-color: #deebee;
-    height: 700px;
+    height:100;
+    padding: 20px;
+}
+.index-equal-height{
+    gap: 20px;
 }
 
 .index-ser {
@@ -763,8 +772,9 @@ div#slider figure {
 
 }
 
+
 .index-3-service {
-    margin-top: 40px;
+   
 
 }
 
@@ -792,18 +802,18 @@ div#slider figure {
 
 
 
-.serivice-card {
+.index-serivice-card {
     background-color: #B0C4DE;
     padding: 30px;
     border-radius: 10px;
-    position: absolute;
+    position: relative;
     bottom: 0%;
     z-index: 1;
     transition: transform .8s;
     box-shadow: 0 0 20px -15px #030380;
 }
 
-.our-service-icon {
+.our-index-service-icon {
     width: 130px;
     height: 130px;
     border-radius: 50%;
@@ -812,15 +822,15 @@ div#slider figure {
     border: 10px solid white;
 }
 
-.our-service-icon i {
+.our-index-service-icon i {
     font-size: 50px;
-    margin-top: 35px;
-    /* margin-left: 20px; */
+    margin-top: 32px;
+    margin-left: 30px;
     transition: transform 1s;
 
 }
 
-.our-service-heading h4 {
+.our-index-service-heading h4 {
     height: 35px;
     width: 80%;
     font-size: 25px;
@@ -828,11 +838,12 @@ div#slider figure {
     background: #B0C4DE;
     margin: 50px auto;
     position: relative;
+    text-align: center;
 }
 
-.our-service-heading h4::after {
+.our-index-service-heading h4::after {
     content: '';
-    width: 40px;
+    width: 70px;
     height: 30px;
     background-color: #4C516D;
     position: absolute;
@@ -842,7 +853,7 @@ div#slider figure {
 
 }
 
-.our-service-heading h4::before {
+.our-index-service-heading h4::before {
     content: '';
     width: 40px;
     height: 30px;
@@ -853,43 +864,43 @@ div#slider figure {
     z-index: -1;
 }
 
-.index-shadowone {
+.index-shadowone{
     height: 200px;
     width: 80%;
     background-color: #B0C4DE;
-    position: absolute;
+    position: relative;
     border-radius: 10px;
-    bottom: 0;
+    bottom: 200px;
     left: 10%;
     z-index: -1;
     box-shadow: 0 0 20px -15px #030380;
     transition: transform .8s;
-    display: block;
+
 }
 
 .index-shadowtwo {
     height: 200px;
     width: 64%;
     background-color: #B0C4DE;
-    position: absolute;
+    position: relative;
     border-radius: 10px;
-    bottom: 0;
+    bottom: 400px;
     left: 18%;
     z-index: -2;
     box-shadow: 0 0 20px -15px #030380;
     transition: transform .8s;
-    display: block;
+   
 }
 
-.main-ser:hover .card {
+.index-main-ser:hover .index-serivice-card  {
     transform: translateY(-50px);
 }
 
-.main-ser:hover .index-shadowone {
+.index-main-ser:hover .index-shadowone {
     transform: translateY(-25px);
 }
 
-.card:hover .our-service-icon i {
+.index-serivice-card:hover .our-service-icon i {
     transform: rotate(360deg);
 }
 
@@ -903,7 +914,9 @@ div#slider figure {
     top: 3px;
 }
 
-.app1:hover {}
+/* .app1:hover {
+    
+} */
 
 
 .app2 {
@@ -913,7 +926,7 @@ div#slider figure {
     right: 45px;
 }
 
-.app2:hover {}
+/* .app2:hover {} */
 
 .app3 {
     position: relative;

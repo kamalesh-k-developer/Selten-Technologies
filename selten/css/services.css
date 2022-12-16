@@ -124,7 +124,7 @@
     transition: transform .8s;
 }
 
-.main-ser:hover .card {
+.main-ser:hover .serivice-card {
     transform: translateY(-50px);
 }
 
@@ -132,7 +132,7 @@
     transform: translateY(-25px);
 }
 
-.card:hover .our-service-icon i {
+.serivice-card:hover .our-service-icon i {
     transform: rotate(360deg);
 }
 @media (max-width:574px) {
