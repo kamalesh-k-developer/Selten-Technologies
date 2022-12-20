@@ -53,11 +53,11 @@ include_once('header.php');
     <div class="" style="width:100%">
     <!-- <div class="w3-left curousel-btn w3-hover-text-khaki" onclick="plusDivs(-1)"><i class="fa-duotone fa-arrow-right"></i></div>
     <div class="w3-right  curousel-btn w3-hover-text-khaki" onclick="plusDivs(1)"><i class="fa-duotone fa-arrow-lrft"></i></div> -->
-    <span class="w3-badge slider-button demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-    <span class="w3-badge slider-button demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-    <span class="w3-badge slider-button demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-    <span class="w3-badge slider-button demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
-    <span class="w3-badge slider-button demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+    <!-- <span class="w3-badge slider-button demo w3-border w3-transparent w3-hover-red" onclick="currentDiv(1)"></span>
+    <span class="w3-badge slider-button demo w3-border w3-transparent w3-hover-red" onclick="currentDiv(2)"></span>
+    <span class="w3-badge slider-button demo w3-border w3-transparent w3-hover-red" onclick="currentDiv(3)"></span>
+    <span class="w3-badge slider-button demo w3-border w3-transparent w3-hover-red" onclick="currentDiv(4)"></span>
+    <span class="w3-badge slider-button demo w3-border w3-transparent w3-hover-red" onclick="currentDiv(5)"></span> -->
   </div>
   </div>
 <script>var slideIndex = 1;
@@ -168,41 +168,7 @@ function showDivs(n) {
     </div>
   </div>
   <!-- our mission our vission we are selten -->
-  <div class="row ">
-    <div class="col-md-6">
-      <img src="..\images\images\whatsapp1-removebg-preview.png" class="app1" alt="" id="mission_image">
-      <img src="..\images\images\whatsapp2-removebg-preview.png" class="app2" alt="" id="vission_image">
-      <img src="..\images\images\whatsapp3-removebg-preview.png" class="app3" alt="" id="our_image">
-    </div>
-    <div class="col-md-6 first-col">
-      <p class="paras para-1" id="mission_para">our mission of young minds showcasing our talent to the CRM and Marketing world to ease the processes of clients business and have happy customers. We offer services on various platforms across the globe which includes small, medium and large scale business. We are growing as team along with the clients to provide best cost effective solutions to improve the business</p>
-      <p class="paras para-2" id="vission_para">our vission of young minds showcasing our talent to the CRM and Marketing world to ease the processes of clients business and have happy customers. We offer services on various platforms across the globe which includes small, medium and large scale business. We are growing as team along with the clients to provide best cost effective solutions to improve the business</p>
-      <p class="paras para-3" id="our_para">selten are group of young minds showcasing our talent to the CRM and Marketing world to ease the processes of clients business and have happy customers. We offer services on various platforms across the globe which includes small, medium and large scale business. We are growing as team along with the clients to provide best cost effective solutions to improve the business</p>
-    </div>
-
-  </div>
-
-</body>
-<script>
-  $(document).ready(function() {
-    console.log('test');
-    $('#mission_image').click(function() {
-      $('#mission_para').show()
-      $('#vission_para').hide()
-      $('#our_para').hide()
-    });
-    $('#vission_image').click(function() {
-      $('#vission_para').show()
-      $('#mission_para').hide()
-      $('#our_para').hide()
-    });
-    $('#our_image').click(function() {
-      $('#vission_para').hide()
-      $('#mission_para').hide()
-      $('#our_para').show()
-    });
-  });
-</script>
+  
 <!-- testimonial start -->
 <div class="testimonial-start">
 <div class="testimonials-head">

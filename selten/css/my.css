@@ -602,6 +602,14 @@ body {
     cursor: pointer
 }
 
+@media (max-width:768) {
+    .slider-button {
+        height: 12px;
+        width: 13px;
+        left: 45%;
+    }
+}
+
 
 
 /* our services */
@@ -658,10 +666,6 @@ body {
     /* margin-top: 240px; */
 }
 
-
-
-
-
 .index-serivice-card {
     background-color: #B0C4DE;
     padding: 30px;
@@ -685,7 +689,7 @@ body {
 .our-index-service-icon i {
     font-size: 50px;
     margin-top: 32px;
-    margin-left: 30px;
+    margin-left: 0px;
     transition: transform 1s;
 
 }
@@ -787,7 +791,7 @@ body {
     .our-index-service-icon i {
         font-size: 40px;
         margin-top: 32px;
-        margin-left: 30px;
+        margin-left: 0px;
         transition: transform 1s;
 
     }
@@ -939,7 +943,9 @@ body {
     .index-col-3 {
         margin-top: 68%;
     }
-    .our-index-service-heading h4::after,.our-index-service-heading h4::before{
+
+    .our-index-service-heading h4::after,
+    .our-index-service-heading h4::before {
         display: none;
     }
 
@@ -951,7 +957,7 @@ body {
 
 
     }
-   
+
 
     .index-shadowtwo {
         height: 200px;
@@ -968,8 +974,9 @@ body {
         position: relative;
         right: 7%;
     }
-    .index-service{
-        
+
+    .index-service {
+
         height: 2400px;
     }
 
@@ -988,7 +995,7 @@ body {
         height: 200px;
         width: 64%;
         position: relative;
-        left: 26%;
+        left: 19%;
 
 
     }
@@ -997,47 +1004,62 @@ body {
         height: 200px;
         width: 42%;
         position: relative;
-        left: 38%;
+        left: 31%;
 
     }
 
 }
-@media (max-width:350px){
+
+@media (max-width:375px) {
     .index-service-row {
         position: relative;
         right: 7%;
     }
+
+    .index-service {
+
+        height: 2200px;
+    }
+
     .index-serivice-card {
         width: 270px;
-        height: 650px !important;
+        height: 570px !important;
         margin-left: 10%;
     }
+
     .our-index-service-icon {
         width: 109px;
         height: 106px;
-       
+
     }
+
     .our-index-service-heading h4 {
         height: 35px;
         width: 80%;
         font-size: 18px;
         margin-top: 10px;
         margin-bottom: 10px;
-      
+
     }
-    
+
+    .index-col-2,
+    .index-col-3 {
+        margin-top: 110%;
+    }
+
 
     .our-index-service-icon i {
         font-size: 32px;
         margin-top: 28px;
-     
+
 
     }
+
     .index-shadowone {
         height: 200px;
-        width: 73%;
+        width: 70%;
         position: relative;
-        left: 26%;
+        left: 18%;
 
 
     }
@@ -1046,10 +1068,60 @@ body {
         height: 200px;
         width: 50%;
         position: relative;
-        left: 38%;
+        left: 29%;
+    }
+}
+
+@media (max-width:350px) {
+
+    .index-shadowone,
+    .index-shadowtwo {
+        display: none;
+
 
     }
 }
+
+@media (max-width:320px) {
+
+    .index-shadowone,
+    .index-shadowtwo {
+        display: none;
+
+    }
+
+    .index-service-row {
+        position: relative;
+        right: 7%;
+    }
+
+    .index-serivice-card {
+        width: 250px;
+        height: 570px !important;
+        margin-left: 10%;
+    }
+
+    .index-col-2,
+    .index-col-3 {
+        margin-top: 130%;
+    }
+
+    .our-index-service-icon {
+        width: 91px;
+        height: 98px;
+    }
+
+    .our-index-service-icon i {
+        font-size: 26px;
+        margin-top: 18px;
+
+
+    }
+
+}
+
+
+
 
 /* our services end */
 
@@ -1230,4 +1302,202 @@ body {
 
 .active-test {
     width: 45px;
+}
+
+@media (max-width:991px) {
+    .test-img {
+        position: absolute;
+        top: 89px;
+        right: 97px;
+        height: 56%;
+
+    }
+
+    .test-user {
+        background: #002244;
+        width: 520px;
+        height: 204px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 10px;
+        color: white;
+        padding: 45px;
+        box-sizing: border-box;
+        z-index: 2;
+    }
+
+    .test-user p {
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+    .test-indicator {
+        left: 36%;
+        top: -17%;
+
+    }
+
+    .test-btn {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        margin: 4px;
+        border-radius: 15px;
+        background-color: #002244;
+        cursor: pointer;
+    }
+
+    .active-test {
+        width: 45px;
+    }
+}
+
+@media (max-width:767px) {
+    .testimonial-start {
+
+        height: 418px;
+        width: 100%;
+
+    }
+
+    .test-row {
+        margin-top: -13%;
+    }
+
+    .test-img {
+        position: absolute;
+        top: 89px;
+        right: 97px;
+        height: 56%;
+
+    }
+
+    .test-user {
+        width: 416px;
+        height: 150px;
+        padding: 10px;
+
+    }
+
+    .test-img {
+        position: absolute;
+        top: 102px;
+        right: 259px;
+        height: 54%;
+
+    }
+
+    .test-img img {
+        height: 80%;
+        border-radius: 50%;
+    }
+
+    .test-user p {
+        font-size: 12px;
+        line-height: 21px;
+    }
+
+    .test-indicator {
+        left: 31%;
+        top: -55%;
+
+
+    }
+
+    .test-btn {
+        display: inline-block;
+        height: 5px;
+        width: 1px;
+        margin: 4px;
+        border-radius: 15px;
+        background-color: #002244;
+        cursor: pointer;
+    }
+
+    .active-test {
+        width: 18px;
+    }
+
+    @media (max-width:575px) {
+        .test-indicator {
+            left: 21%;
+            top: -55%;
+
+        }
+    }
+
+}
+
+@media (max-width:550px) {
+
+    .testimonials-head {
+        text-align: center;
+        padding-top: 28px;
+        font-size: 40px;
+        color: rgb(192, 43, 43);
+    }
+    
+    .testimonial-start {
+
+        height: 418px;
+        width: 100%;
+
+    }
+
+    .test-row {
+        margin-top: -13%;
+    }
+
+
+    .test-user {
+        width: 380px;
+        height: 130px;
+        padding: 5px;
+
+    }
+    .test-user h3{
+     font-size: 17px;
+     font-weight: bold;
+    }
+
+    .test-img {
+        position: absolute;
+        top: 121px;
+        right: 312px;
+        height: 50%;
+
+    }
+
+    .test-img img {
+        height: 70%;
+        border-radius: 50%;
+    }
+
+    .test-user p {
+        font-size: 12px;
+        line-height: 21px;
+    }
+
+    .test-indicator {
+        left: 31%;
+        top: -55%;
+
+
+    }
+
+    .test-btn {
+        display: inline-block;
+        height: 5px;
+        width: 1px;
+        margin: 4px;
+        border-radius: 15px;
+        background-color: #002244;
+        cursor: pointer;
+    }
+
+    .active-test {
+        width: 18px;
+    }
 }
