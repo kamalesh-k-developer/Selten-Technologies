@@ -98,7 +98,7 @@ function showDivs(n) {
 
         <div class="row index-service-row ">
 
-          <div class="col-md-4  index-col-1 ">
+          <div class="col-md-4  index-col-1 animate__animated animate__fadeInDown">
             <div class="index-main-ser">
               <div class="card index-serivice-card ">
                 <div class="our-index-service-icon">
@@ -114,13 +114,14 @@ function showDivs(n) {
                 </div>
 
               </div>
-              <div class="index-shadowtwo"></div>
               <div class="index-shadowone"></div>
+              <div class="index-shadowtwo"></div>
+              
               
 
             </div>
           </div>
-          <div class="col-md-4 index-col-2 ">
+          <div class="col-md-4 index-col-2 animate__animated animate__fadeInDown ">
             <div class="index-main-ser">
               <div class="card index-serivice-card">
                 <div class="our-index-service-icon">
@@ -136,12 +137,13 @@ function showDivs(n) {
                 </div>
 
               </div>
-              <div class="index-shadowtwo"></div>
               <div class="index-shadowone"></div>
+              <div class="index-shadowtwo"></div>
+              
 
             </div>
           </div>
-          <div class="col-md-4 index-col-3 ">
+          <div class="col-md-4 index-col-3 animate__animated animate__fadeInDown ">
             <div class="index-main-ser ">
               <div class="card index-serivice-card">
                 <div class="our-index-service-icon">
@@ -157,8 +159,9 @@ function showDivs(n) {
                 </div>
 
               </div>
-              <div class="index-shadowtwo"></div>
               <div class="index-shadowone"></div>
+              <div class="index-shadowtwo"></div>
+             
 
             </div>
           </div>
@@ -183,7 +186,7 @@ function showDivs(n) {
     <div class="test-row" id="testslide">
       <div class="test-col">
         <div class="test-user">
-          <p>Like a scene in a movie or a verse in a song, paragraphs are the building blocks of any good piece of writing. Paragraphs lend a natural rhythm to your writing that makes it a joy to read. The question is, how do you handle them successfully</p>
+          <p>We choose CRM for all our marketing and manage the leads in different areas. Selten Technologies Guided to implementation of integrating CRM with various applications and tremendously support and successfully Delivered on time.</p>
           <h3>Messi</h3>
         </div>
         <div class="test-img">
@@ -193,7 +196,7 @@ function showDivs(n) {
 
       <div class="test-col">
         <div class="test-user">
-          <p>Like a scene in a movie or a verse in a song, paragraphs are the building blocks of any good piece of writing. Paragraphs lend a natural rhythm to your writing that makes it a joy to read. The question is, how do you handle them successfully</p>
+          <p>We Built a CRM for Call  centre to manage the leads and Integrating with Twilio and Vici dial. Selten Technologies provided the timely solution for better integration of CRM and leads management.</p>
           <h3>Ranaldo</h3>
 
         </div>
@@ -204,8 +207,8 @@ function showDivs(n) {
 
       <div class="test-col">
         <div class="test-user">
-          <p>Like a scene in a movie or a verse in a song, paragraphs are the building blocks of any good piece of writing. Paragraphs lend a natural rhythm to your writing that makes it a joy to read. The question is, how do you handle them successfully</p>
-          <h3>Dhoni</h3>
+        <p>We Built a CRM for Call  centre to manage the leads and Integrating with Twilio and Vici dial. Selten Technologies provided the timely solution for better integration of CRM and leads management.</p>
+          <h3>Ranaldo</h3>
 
         </div>
         <div class="test-img">
@@ -215,8 +218,8 @@ function showDivs(n) {
 
       <div class="test-col">
         <div class="test-user">
-          <p>Like a scene in a movie or a verse in a song, paragraphs are the building blocks of any good piece of writing. Paragraphs lend a natural rhythm to your writing that makes it a joy to read. The question is, how do you handle them successfully</p>
-          <h3>Mangoliya</h3>
+        <p>We Built a CRM for Call  centre to manage the leads and Integrating with Twilio and Vici dial. Selten Technologies provided the timely solution for better integration of CRM and leads management.</p>
+          <h3>Ranaldo</h3>
 
         </div>
         <div class="test-img">

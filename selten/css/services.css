@@ -3,10 +3,26 @@
     margin: 0%;
 }
 
-.s-container {
+.our-6-service {
     display: grid;
     gap: 20px;
     grid-template-columns: auto-fit, minmax(300px);
+    
+}
+
+.service-col-1,
+.service-col-2,
+.service-col-3,
+.service-col-4,
+.service-col-5,
+.service-col-6 {
+    margin-top: 50px;
+    
+}
+.service-col-4,
+.service-col-5,
+.service-col-6{
+    margin-bottom: 50px;
 }
 
 
@@ -33,9 +49,10 @@
 }
 
 
-.equal-height{
+.equal-height {
     row-gap: 20px;
-} 
+}
+
 .serivice-card {
     background-color: #B0C4DE;
     padding: 30px;
@@ -135,6 +152,7 @@
 .serivice-card:hover .our-service-icon i {
     transform: rotate(360deg);
 }
+
 @media (max-width:574px) {
 
 
@@ -143,114 +161,227 @@
         height: 500px;
     }
 }
-
 @media (max-width:1199px) {
-
-
-    .card-head {
-        width: 247px;
-        height: 582px;
+    .service-col-1,
+    .service-col-2,
+    .service-col-3,
+    .service-col-4,
+    .service-col-5,
+    .service-col-6 {
+        margin-top: 140px;
+        
     }
-
-    .mainservices {
-        position: relative;
-        left: 17px !important;
+    .service-col-4,
+    .service-col-5,
+    .service-col-6{
+        margin-bottom: 50px;
     }
-
-    .spara {
-        font-size: 15px;
-    }
-
-    .sicon-icon {
-
-        font-size: 57px !important;
-    }
-
-    .sheading h4 {
-        font-size: 20px;
+    
+    .our-service-heading h4 {
+        height: 35px;
+        width: 80%;
+        font-size: 21px;
+       
     }
 }
 
-@media (max-width:767px) {
-    .mainservices {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /* position: relative !important;
-        left: -12px !important; */
+@media (max-width:1024px) {
+    .service-col-1,
+    .service-col-2,
+    .service-col-3,
+    .service-col-4,
+    .service-col-5,
+    .service-col-6 {
+        margin-top: 140px;
+        
     }
-    .card-head {
-        width: 306px !important;
-        height: 487px !important;
+    .service-col-4,
+    .service-col-5,
+    .service-col-6{
+        margin-bottom: 50px;
     }
-    .mainservices {
-        margin-left: 32% !important;
+    
+    .our-service-heading h4 {
+        height: 35px;
+        width: 80%;
+        font-size: 21px;
+       
     }
+
+
+
 
 
 }
 
 @media (max-width:991px) {
-   
 
-    .card-head {
-        width: 189px;
-        height: 599px;
+    .service-col-1,
+    .service-col-2,
+    .service-col-3,
+    .service-col-4,
+    .service-col-5,
+    .service-col-6 {
+        margin-top: 350px;
+        
     }
-
-    .mainservices {
-        position: relative;
-        left: -34px  !important;
+    .service-col-4,
+    .service-col-5,
+    .service-col-6{
+        margin-bottom: 50px;
     }
-
-    .spara {
-        font-size: 15px;
-    }
-
-    .sicon-icon {
-        font-size: 57px !important;
-    }
-
-    .sheading h4 {
+    
+    .our-service-heading h4 {
+        height: 35px;
+        width: 80%;
         font-size: 20px;
+       
+    }
+    .our-service-heading h4::before,.our-service-heading h4::after{
+        display: none;
+    }
+}
+
+@media (max-width:767px) {
+   
+    .service-col-1,
+    .service-col-2,
+    .service-col-3,
+    .service-col-4,
+    .service-col-5,
+    .service-col-6 {
+        margin-top: 0px;
+        
+    }
+    .service-col-4,
+    .service-col-5,
+    .service-col-6{
+        margin-bottom: 0px;
+    }
+    .service-col-6{
+        margin-bottom: 30px;
+    }
+    
+    .our-service-heading h4 {
+        height: 35px;
+        width: 80%;
+        font-size: 25px;
+       
+    }
+    .our-service-heading h4::before,.our-service-heading h4::after{
+        display: block;
+    }
+
+}
+
+@media (max-width:525px) {
+    .service-row {
+        position: relative;
+        right: 1%;
     }
 }
 
 @media (max-width:425px) {
-  
-
-    .card-head {
-        width: 290px !important;
-        height: 500px !important;
-        justify-content: center;
-
+    .service-col-1,
+    .service-col-2,
+    .service-col-3,
+    .service-col-4,
+    .service-col-5,
+    .service-col-6 {
+        margin-top: 74px;
+        
+    }
+    .service-col-4,
+    .service-col-5,
+    .service-col-6{
+        margin-bottom: 0px;
+    }
+    .service-col-6{
+        margin-bottom: 30px;
+    }
+    
+    .our-service-heading h4 {
+        height: 35px;
+        width: 80%;
+        font-size: 25px;
+       
+    }
+    .our-service-heading h4::before,.our-service-heading h4::after{
+        display: block;
     }
 
-    .spara {
-        font-size: 15px;
-    }
+}
 
-    .sicon-icon {
-        font-size: 57px !important;
+
+
+@media (max-width:375px) {
+    .service-col-1,
+    .service-col-2,
+    .service-col-3,
+    .service-col-4,
+    .service-col-5,
+    .service-col-6 {
+        margin-top: 70px;
+        
+    }
+    .service-col-4,
+    .service-col-5,
+    .service-col-6{
+        margin-bottom: 0px;
+    }
+    .service-col-6{
+        margin-bottom: 30px;
+    }
+    
+    .our-service-heading h4 {
+        height: 35px;
+        width: 80%;
+        font-size: 25px;
+       
+    }
+    .our-service-heading h4::before,.our-service-heading h4::after{
+        display: block;
     }
 }
 
-@media (max-width:375px) {
-    .mainservices {
-        position: relative !important;
-        left: -68px !important;
-    }
-    .card-head {
-        width: 200px !important;
-        height: 500px !important;
-        justify-content: center;
+@media (max-width:350px) {
+
+    .shadowone,
+    .shadowtwo {
+        display: none;
+
 
     }
 }
 
 @media (max-width:320px) {
-    .mainservices {
-        position: relative !important;
-        left: -90px !important;
+
+    .service-col-1,
+    .service-col-2,
+    .service-col-3,
+    .service-col-4,
+    .service-col-5,
+    .service-col-6 {
+        margin-top: 152px;
+        
     }
+    .service-col-4,
+    .service-col-5,
+    .service-col-6{
+        margin-bottom: 0px;
+    }
+    .service-col-6{
+        margin-bottom: 30px;
+    }
+    
+    .our-service-heading h4 {
+        height: 35px;
+        width: 80%;
+        font-size: 25px;
+       
+    }
+    .our-service-heading h4::before,.our-service-heading h4::after{
+        display: none;
+    }
+
 }
