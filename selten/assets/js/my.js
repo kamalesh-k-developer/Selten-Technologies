@@ -15,23 +15,26 @@ const buttons = document.querySelectorAll("[data-carousel-button]")
     })
  });
 
+ $(function() {
+  
+  $('.carousel').carousel({
+    interval: 5000
+  });
+  
+});
 
- function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
-  }
+//Make the caption responsive to window width
+$(document).ready(function() {
+    $('.carousel .carousel-caption').css('zoom', $('.carousel').width()/1250);
+  });
+
+  $(window).resize(function() {
+    $('.carousel .carousel-caption').css('zoom', $('.carousel').width()/1250);
+  });
+
+
+// nav-design//
+
 //  humburger menu
 
 
