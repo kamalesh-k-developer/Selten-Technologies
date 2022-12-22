@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="..\css\contact.css">
     <link rel="stylesheet" href="..\css\footer.css">
     <link rel="stylesheet" href="..\css\services.css">
-    <link rel="stylesheet" href="..\assets\css\wanimate.css">
     <link rel="stylesheet" href="..\assets\css/newAnimate.css">
     <link rel="stylesheet" href="..\css\blog.css">
     <link rel="stylesheet" href="..\css\about.css">
@@ -50,7 +49,7 @@
 
         <div class="row">
             <div class="col-md-4 ">
-                <a class="navbar-brand logo text-center mx-3" href="#">
+                <a class="navbar-brand logo  mx-3" href="#">
                     <img class="animate__animated animate__fadeIn " src="..\images\logo\logo.png" height="70px" /></a>
 
             </div>
@@ -86,7 +85,8 @@
                                 
                                 <li class="nav-item  nav-li <?php echo $GLOBALS['service']; ?>" id="nav-ul"><a class="nav-link " href="#">Services <i class="fa-sharp fa-solid fa-caret-down"></i></a>
                                 <div class="mega-box">
-                                    <div class="content">
+                                    <div class="mega-content">
+                                        
                                         <div class="mega-main">
                                             <div >
                                             <p>Web Development</p>
