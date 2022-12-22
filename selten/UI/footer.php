@@ -37,7 +37,7 @@ include_once ('header.php');
                         <li><a href="" class="footer-link"><i class="fa-regular fa-envelope fa-1x px-3"
                                     style='color: #0066FF '></i>social.Seltentechnologies@gmail.com</a></li>
                     </ul><br>
-                    <a href="" class="footer-icon"><i class="fa-brands fa-facebook fa-2x px-3 footer-icon" data-aos="fade-up"
+                    <a href="" class="footer-icon"><i class="fa-brands fa-facebook fa-2x px-3 footer-icon" 
                             style='color:#fafafa'></i></a>
                     <a href="" class="footer-icon"><i class="fa-brands fa-square-twitter fa-2x px-3 footer-icon"
                             style='color: #00acee'></i></a>
