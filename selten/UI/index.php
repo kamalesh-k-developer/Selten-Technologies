@@ -11,12 +11,14 @@ include_once('header.php');
 <body>
 
 
-  <div class="" style="max-width:100%; width:100%;">
-    <img class="mySlides" src="../images/imageslider/slider-1.png" style="width:100%">
-    <img class="mySlides" src="../images/imageslider/slider-2.png" style="width:100%">
-    <img class="mySlides" src="../images/imageslider/slider-3.png" style="width:100%">
-    <img class="mySlides" src="../images/imageslider/slider-4.png" style="width:100%">
-    <img class="mySlides" src="../images/imageslider/slider-5.png" style="width:100%">
+  <div class="" style="max-width:100%; width:100%;" onmouseover="stopShow()" onmouseout="runShow()">
+  
+    <img class="mySlides" src="../images/imageslider/slider-1.png" style="width:100%" onmouseover="stopShow()" onmouseout="runShow()">
+    <img class="mySlides" src="../images/imageslider/slider-2.png" style="width:100%" onmouseover="stopShow()" onmouseout="runShow()">
+    <img class="mySlides" src="../images/imageslider/slider-3.png" style="width:100%" onmouseover="stopShow()" onmouseout="runShow()">
+    <img class="mySlides" src="../images/imageslider/slider-4.png" style="width:100%" onmouseover="stopShow()" onmouseout="runShow()">
+    <img class="mySlides" src="../images/imageslider/slider-5.png" style="width:100%" onmouseover="stopShow()" onmouseout="runShow()">
+</div>
     <div class="" style="width:100%">
       <!-- <div class="w3-left curousel-btn w3-hover-text-khaki" onclick="plusDivs(-1)"><i class="fa-duotone fa-arrow-right"></i></div>
     <div class="w3-right  curousel-btn w3-hover-text-khaki" onclick="plusDivs(1)"><i class="fa-duotone fa-arrow-lrft"></i></div> -->
@@ -28,35 +30,24 @@ include_once('header.php');
     </div>
   </div>
   <script>
-    var slideIndex = 1;
-    showDivs(slideIndex);
+    var myIndex = 0;
+    var timer;
+    carousel();
 
-    function plusDivs(n) {
-      showDivs(slideIndex += n);
-    }
-
-    function currentDiv(n) {
-      showDivs(slideIndex = n);
-    }
-
-    function showDivs(n) {
+    function carousel() {
       var i;
+      var timer;
       var x = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("demo");
-      if (n > x.length) {
-        slideIndex = 1
-      }
-      if (n < 1) {
-        slideIndex = x.length
-      }
       for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
+      
       }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" w3-white", "");
+      myIndex++;
+      if (myIndex > x.length) {
+        myIndex = 1
       }
-      x[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " w3-white";
+      // x[myIndex - 1].style.display = "block";
+      timer=setTimeout(carousel, 5000); // Change image every 2 seconds
     }
   </script>
 
@@ -249,24 +240,7 @@ include_once('header.php');
 
 
 
-  <script>
-    var myIndex = 0;
-    carousel();
-
-    function carousel() {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      myIndex++;
-      if (myIndex > x.length) {
-        myIndex = 1
-      }
-      x[myIndex - 1].style.display = "block";
-      setTimeout(carousel, 3000); // Change image every 2 seconds
-    }
-  </script>
+  
 </body>
 <?php
 include_once('footer.php');
