@@ -83,7 +83,7 @@
                             <ul class=" navbar-nav nav-ul navbar-right " id="toggle" style="display: flex !important;">
                                 <li class="nav-item nav-li  <?php echo $GLOBALS['home']; ?>"><a class="nav-link" href="index.php">Home</a></li>
                                 
-                                <li class="nav-item  nav-li <?php echo $GLOBALS['service']; ?>" id="nav-ul"><a class="nav-link " href="#">Services <i class="fa-sharp fa-solid fa-caret-down"></i></a>
+                                <li class="nav-item  nav-li <?php echo $GLOBALS['service']; ?>" id="nav-ul"><a class="nav-link " href="#">Services <i class="fa fa-caret-down"></i></a>
                                 <div class="mega-box">
                                     <div class="mega-content">
                                         
