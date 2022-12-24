@@ -10,7 +10,8 @@
 .topic2{
     position: relative;
     top: 74px;
-    font-size: medium;
+    font-size: smaller;
+    left: 64px;
 }
 .top-img{
     width: 107%;
@@ -22,10 +23,10 @@
   transform: scaleX(-1);
 }
 .starate-icon{
-    position: relative;
-    right: -126px;
-    top: 128px;
-    width: 53%;
+  position: relative;
+  right: -156px;
+  top: 77px;
+  width: 53%;
 }
 .starate-icon i{
     font-size: medium;
@@ -93,9 +94,9 @@ transform: rotateY(180deg);
     font-size: xxx-large;
     font-family: serif;
     text-align: center;
-    left:290px;
+
 }
-.inte-para{
+/* .inte-para{
     position: relative;
     font-size: small;
     left: 101px;
@@ -136,7 +137,7 @@ transform: rotateY(180deg);
     bottom: 90px;
     background-image: linear-gradient(143deg,white 2%,#72A0C1 74%);
     border-radius: 54px 121px 143px 134px;
-}
+} */
 
 .found{
     background-color: aliceblue;
@@ -237,7 +238,7 @@ transform: rotateY(180deg);
   .timeline .timeline-body > .journey-para {
     margin-bottom: 0;
     /* background-color: #ccebff; */
-    color:white;
+    color:rgb(24, 23, 23);
   }
   
   @media (min-width: 768px) {
@@ -344,6 +345,7 @@ transform: rotateY(180deg);
       font-size: 2.5rem;
       margin-top: 0;
       margin-bottom: 1rem;
+      color: aliceblue;
   }
   .text-about {
       text-transform: uppercase !important;
@@ -351,6 +353,7 @@ transform: rotateY(180deg);
   
   .about-section h3.section-subheading, .about-section .section-subheading h3 {
       font-size: -6.5rem;
+      color: rgb(17, 17, 17);
       font-weight: 400;
       font-style: italic;
       font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -399,21 +402,150 @@ transform: rotateY(180deg);
   .container-about
   {
     position: relative;
-    bottom: 146px;
-    background-image: linear-gradient(147deg, #C33764 2%, #1D2671 74%);
+    bottom:27px;
+    /* background-image: linear-gradient(147deg, #F0F2F0 2%, #000C40 74%); */
   
 
   
   }
-  .techrow{
-    position: relative;
-  
-  }
+ /* new changs */
   .techrow2{
     position: relative;
+    width: 172%;
+    height: 375px;
+    justify-content: center;
+    left: 119px;
   }
-  .ourval-head{
+  .new-inte{
     position: relative;
+     width:50%;
+     top:10px;
+  transition: all 2s;
+}
+.new-inte:hover{
+    transform: rotateY(180deg);
+}
+  .new-para1{
+    position: relative;
+    top: 14px;
+    font-size: 20px;
+    font-family: cursive;
+  }
+  .new-passi{
+     position: relative;
+     width: 82%;
+     bottom: 24px;
+  transition: all 2s;
+}
+.new-passi:hover{
+    transform: rotateY(180deg);
+}
+  .new-para2{
+    
+    position: relative;
+    bottom: 63px;
+    font-size: 20px;
+    font-family: cursive;
+  }
+  .new-learn{
+     position: relative;
+    width: 115%;
+    right: 20px;
+    transition: all 2s;
+  }
+  .new-learn:hover{
+      transform: rotateY(180deg);
   }
   
+  .new-para3{
+    position: relative;
+    bottom: 20px;
+    font-size: 20px;
+    font-family: cursive;
+  }
+  .new-team{
+    
+     position: relative;
+     width: 82%;
+     bottom: 16px;
+     transition: all 2s;
+    }
+    .new-team:hover{
+        transform: rotateY(180deg);
+    }
+  
+  .new-para4{
+    
+    position: relative;
+    bottom: 66px;
+    font-size: 20px;
+    font-family: cursive;
+  }
+.our-goal{
+  position: relative;
+  font-size: 2.5rem;
+  right: 301px;
+  font-family: revert;
+  font-style: revert;
+  top: 46px;
+}
+.goal-img{
+  /* position: relative;
+    width: 60%;
+    top: 31px; */
+    /* width: 100%;
+    height: 416px;
+    position: relative;
+    top: 26px; */
+    width: 52%;
+    height: 311px;
+    position: relative;
+    top: 32px;
+    left: 45px;
+}
+
+
+.goal-para{
+  position: relative;
+  float: left;
+  font-size: 20px;
+  font-family: serif;
+  color: #101628;
+  right: 100px;
+  border: 5px solid black;
+  border-radius: 10px 65px 0px 16px;
+  background-color: #FEBE10;
+}
+.our-our{
+  position: relative;
+  font-size: large;
+  top: 22px;
+  right: 295px;
+  top: 65px;
+}
+.ourgoal-right{
+  position: relative;
+  background-color:
+  top:28px;
+}
+.inte-head{
+  position: relative;
+  right: 50px;
+}
+.passi-head{
+  position: relative;
+  right:21px;
+}
+
+.learn-head{
+  position: relative;
+}
+
+.team-head{
+  position: relative;
+  left:26px;
+}
+
+
+
 
