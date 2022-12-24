@@ -14,24 +14,24 @@ include_once ('header.php');
   
   <h1 class="formhead">Get In Touch</h1>
   <div class="card about-card">
-  <form class="cfeild">
+  <form class="cfeild" method = "POST">
   <div class="form-group mt-3">
    
-    <input type="text" class="form-control cform" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First Name" >
+    <input type="text" class="form-control cform" id="exampleInputEmail1" name = "fname" aria-describedby="emailHelp" placeholder="First Name" >
     
   </div>
   <div class="form-group mt-3">
  
-    <input type="text" class="form-control cform" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Last Name">
+    <input type="text" class="form-control cform" id="exampleInputEmail1" name = "lname" aria-describedby="emailHelp" placeholder="Last Name">
    
   </div>
   <div class="form-group mt-3">
 
-    <input type="text" class="form-control cform" id="exampleInputPassword1" placeholder="Enter The Email">
+    <input type="text" class="form-control cform" id="exampleInputPassword1" name = "email" placeholder="Enter The Email">
   </div>
   <div class="form-group mt-3">
    
-   <input type="number" class="form-control cform" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Phone Number" >
+   <input type="number" class="form-control cform" id="exampleInputEmail1" name = "phone_number" aria-describedby="emailHelp" placeholder="Phone Number" >
    
  </div>
   <div class="dropdown mt-3 cform">
@@ -49,12 +49,12 @@ include_once ('header.php');
       </select>
 </div>
   <div class="form-group mt-3">
-  <textarea class="form-control cform" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+  <textarea class="form-control cform" id="exampleFormControlTextarea1" name = "message" rows="3" placeholder="Message"></textarea>
     
   </div>
  
   
-  <button type="submit" class="btn btn-primary mt-3">Submit</button>
+  <button type="submit" name = "submit" class="btn btn-primary mt-3">Submit</button>
 </form>
 </div>
 </div>
@@ -87,5 +87,28 @@ include_once ('header.php');
 </body>
 <?php 
 include_once ('footer.php');
+?>
+<?php
+//db insert query
+ include_once('contact.php');
+ include 'connect.php';
+ if(isset($_POST['submit'])){
+    $FirstName = $_POST['fname'];
+    $LastName = $_POST['lname'];
+    $Email = $_POST['email'];
+    $PhoneNumber = $_POST['phone_number'];
+    $LookingForServices = $_POST['languages'];
+    $Message = $_POST['message'];
+
+
+    $sql = "INSERT INTO `contact_form`(first_name,last_name,email,phone_number,looking_for_services,message)
+            VALUES ('$FirstName','$LastName','$Email','$PhoneNumber','$LookingForServices','$Message')";
+    $result = mysqli_query($connection,$sql);
+    if($result){
+       echo '<script> alert("data inserted in database sucessfully")</script>';
+      }else {
+       die(mysqli_error($connection,$result));
+      }
+ }
 ?>
 </html>
