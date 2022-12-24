@@ -61,7 +61,7 @@
                             <span class="info-detail ">
                                 <table class="info-table">
                                     <tr>
-                                        <td class="info-main "><span class="info-email"> <a href="https://www.w3schools.com/" class="hemail "><i class="fa-solid fa-envelope   info-icon "></i><span class="info-fix">social.seltentechnologies@gmail.com </span></a></span><span class="info-phone"><a href="https://www.youtube.com/" class="hemail "> <i class="fa-solid fa-phone   info-icon "></i><span class="info-fix">+91 9876543210</span></a></span></td>
+                                        <td class="info-main "><span class="info-email"> <a href="https://www.w3schools.com/" class="hemail "><i class="fa fa-envelope   info-icon "></i><span class="info-fix">social.seltentechnologies@gmail.com </span></a></span><span class="info-phone"><a href="https://www.youtube.com/" class="hemail "> <i class="fa fa-phone   info-icon "></i><i class="fa-brands fa-whatsapp info-icon p-2"></i><span class="info-fix">+91 9876543210</span></a></span></td>
                                     </tr>
                                 </table>
                             </span>
@@ -91,6 +91,7 @@
                                             <div >
                                             <p>Web Development</p>
                                             </div>
+                                            
                                             <ul class="mega-ul">
                                                 <li class="mega-li">
                                                     <a href="" class="mega-link">web</a>
@@ -106,6 +107,7 @@
                                                 </li>
                                             </ul>
                                         </div>
+                                        
                                         <div class="mega-main">
                                             <p>Digital marketing</p>
                                             <ul class="mega-ul">
@@ -157,40 +159,8 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                        <div class="mega-main">
-                                            <p>Integration Services</p>
-                                            <ul class="mega-ul">
-                                                <li class="mega-li">
-                                                    <a href="" class="mega-link">Integration</a>
-                                                </li>
-                                                <li class="mega-li">
-                                                    <a href="" class="mega-link">Integration</a>
-                                                </li>
-                                                <li class="mega-li">
-                                                    <a href="" class="mega-link">Integration</a>
-                                                </li>
-                                                <li class="mega-li">
-                                                    <a href="" class="mega-link">Integration</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="mega-main">
-                                            <p>E-Comerce</p>
-                                            <ul class="mega-ul">
-                                                <li class="mega-li">
-                                                    <a href="" class="mega-link">E-Comerce</a>
-                                                </li>
-                                                <li class="mega-li">
-                                                    <a href="" class="mega-link">E-Comerce</a>
-                                                </li>
-                                                <li class="mega-li">
-                                                    <a href="" class="mega-link">E-Comerce</a>
-                                                </li>
-                                                <li class="mega-li">
-                                                    <a href="" class="mega-link">E-Comerce</a>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                      
+                                       
                                     </div>
                                 </div>
                             </li>

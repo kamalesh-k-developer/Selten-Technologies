@@ -11,15 +11,15 @@ include_once('header.php');
 <body>
 
 
-  <div class="" style="max-width:100%; width:100%;" onmouseover="stopShow()" onmouseout="runShow()">
+  <!-- <div class="" style="max-width:100%; width:100%;" onmouseover="stopShow()" onmouseout="runShow()">
   
-    <img class="mySlides" src="../images/imageslider/slider-1.png" style="width:100%" onmouseover="stopShow()" onmouseout="runShow()">
-    <img class="mySlides" src="../images/imageslider/slider-2.png" style="width:100%" onmouseover="stopShow()" onmouseout="runShow()">
-    <img class="mySlides" src="../images/imageslider/slider-3.png" style="width:100%" onmouseover="stopShow()" onmouseout="runShow()">
-    <img class="mySlides" src="../images/imageslider/slider-4.png" style="width:100%" onmouseover="stopShow()" onmouseout="runShow()">
-    <img class="mySlides" src="../images/imageslider/slider-5.png" style="width:100%" onmouseover="stopShow()" onmouseout="runShow()">
+    <img class="mySlides" src="../images/imageslider/slider-1.png" style="width:100%" >
+    <img class="mySlides" src="../images/imageslider/slider-2.png" style="width:100%" >
+    <img class="mySlides" src="../images/imageslider/slider-3.png" style="width:100%" >
+    <img class="mySlides" src="../images/imageslider/slider-4.png" style="width:100%" >
+    <img class="mySlides" src="../images/imageslider/slider-5.png" style="width:100%" >
 </div>
-    <div class="" style="width:100%">
+    <div class="" style="width:100%"> -->
       <!-- <div class="w3-left curousel-btn w3-hover-text-khaki" onclick="plusDivs(-1)"><i class="fa-duotone fa-arrow-right"></i></div>
     <div class="w3-right  curousel-btn w3-hover-text-khaki" onclick="plusDivs(1)"><i class="fa-duotone fa-arrow-lrft"></i></div> -->
       <!-- <span class="w3-badge slider-button demo w3-border w3-transparent w3-hover-red" onclick="currentDiv(1)"></span>
@@ -29,26 +29,45 @@ include_once('header.php');
     <span class="w3-badge slider-button demo w3-border w3-transparent w3-hover-red" onclick="currentDiv(5)"></span> -->
     </div>
   </div>
-  <script>
-    var myIndex = 0;
-    var timer;
-    carousel();
 
-    function carousel() {
-      var i;
-      var timer;
-      var x = document.getElementsByClassName("mySlides");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      
-      }
-      myIndex++;
-      if (myIndex > x.length) {
-        myIndex = 1
-      }
-      // x[myIndex - 1].style.display = "block";
-      timer=setTimeout(carousel, 5000); // Change image every 2 seconds
-    }
+  <!-- slider -->
+  <div id="slider">
+      <img src="..\images\imageslider\slider-1.png" alt="Image 1" style="width:100%" >
+      <img src="..\images\imageslider\slider-2.png" alt="Image 2" style="width:100%">
+      <img src="..\images\imageslider\slider-3.png" alt="Image 3" style="width:100%">
+      <img src="..\images\imageslider\slider-4.png" alt="Image 4" style="width:100%">
+      <img src="..\images\imageslider\slider-5.png" alt="Image 5" style="width:100%">
+    </div>
+
+  <!-- slide end -->
+  <script>
+    var index = 0;
+var images = document.getElementById("slider").children;
+var timer;
+
+function slide() {
+  for (var i = 0; i < images.length; i++) {
+    images[i].style.display = "none";
+  }
+  index++;
+  if (index >= images.length) {
+    index = 0;
+  }
+  images[index].style.display = "block";
+}
+
+function startTimer() {
+  timer = setInterval(slide, 3000);
+}
+
+function stopTimer() {
+  clearInterval(timer);
+}
+
+document.getElementById("slider").addEventListener("mouseenter", stopTimer);
+document.getElementById("slider").addEventListener("mouseleave", startTimer);
+
+startTimer();
   </script>
 
   <!-- our services -->
