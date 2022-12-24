@@ -28,8 +28,9 @@ include_once('header.php');
                 <div class="row techrow2 ">
                 
                     <h5 class="ourval">our values</h5>
-                    <div class="col-md-4">
-                        <img src="..\images\images\a-integrative.jpeg" class="inte " alt="">
+
+                    <!-- <div class="col-md-4">
+                        <img src="..\images\images\a-integrative-removebg-preview.png" class="inte " alt="">
                         <p class="inte-para">Our first principal is honesty, which helps us meet the expectations we create.</p>
                     </div>
                     <div class="col-md-4">
@@ -45,10 +46,43 @@ include_once('header.php');
                         <img src="..\images\images\a-team.png" class="team" alt="">
                         <p class="team-para">Our team members are all about helping each other.</p>
                     </div>
+ -->
 
+  <div class="col-md-3 inte-head" style="background-image:linear-gradient(147deg, #1c92d2 2%, #f2fcfe 74%);">
+  <center> <img src="..\images\images\a-integrative-removebg-preview.png" class="new-inte" alt=""></center>
+   
+    <p class="new-para1">Our first principal is honesty, which helps us meet the expectations we create.</p>
+  </div>
+  <div class="col-md-3 passi-head" style="background-image:linear-gradient(147deg, #1c92d2 2%, #f2fcfe 74%);">
+  <center> <img src="..\images\images\a-passion.png" class="new-passi" alt=""></center>
+   
+   <p class="new-para2">Passion drives us to perform better, progress continually, and deliver timely.</p>
+  </div>
+  <div class="col-md-3 learn-head" style="background-image:linear-gradient(147deg, #83c5e7 2%,  #f2fcfe 74%)">
+  <center> <img src="..\images\images\a-elearn.png" class="new-learn" alt=""></center>
+   
+   <p class="new-para3">learn-para">Our team is always learning something new to get better at what they do.</p>
+  </div>
+  <div class="col-md-3 team-head" style="background-image:linear-gradient(147deg, #1c92d2 2%, #f2fcfe 74%);">
+  <center> <img src="..\images\images\a-team.png" class="new-team" alt=""></center>
+   
+   <p class="new-para4">team-para">Our team members are all about helping each other</p>
+  </div>
+</div>
 
                 </div>
                 
+            </div>
+            <!-- our goal -->
+            <div class="row">
+                <div class="col-md-6">
+                  <img src="..\images\images\employeewomen-removebg-preview.png" class="goal-img" alt="">
+                </div>
+                <div class="col-md-6 ourgoal-right">
+                    <h6 class="our-our">our</h6>
+                    <h4 class="our-goal"> goal <br>statement</h4>
+                    <p class="goal-para">The selten family believes in action, progress, and growth. The young startup has achieved several milestones in its active years till now, but nothing keeps us from seeking more and more. Since more and more people seem to indulge in video, we aim to break our own record in hours of video produced. That's not all, we are also determined to become HubSpot Elite Partners by the end of 2022.</p>
+                </div>
             </div>
             
             <!-- our journey -->
