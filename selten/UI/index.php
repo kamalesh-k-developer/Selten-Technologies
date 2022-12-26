@@ -20,54 +20,54 @@ include_once('header.php');
     <img class="mySlides" src="../images/imageslider/slider-5.png" style="width:100%" >
 </div>
     <div class="" style="width:100%"> -->
-      <!-- <div class="w3-left curousel-btn w3-hover-text-khaki" onclick="plusDivs(-1)"><i class="fa-duotone fa-arrow-right"></i></div>
+  <!-- <div class="w3-left curousel-btn w3-hover-text-khaki" onclick="plusDivs(-1)"><i class="fa-duotone fa-arrow-right"></i></div>
     <div class="w3-right  curousel-btn w3-hover-text-khaki" onclick="plusDivs(1)"><i class="fa-duotone fa-arrow-lrft"></i></div> -->
-      <!-- <span class="w3-badge slider-button demo w3-border w3-transparent w3-hover-red" onclick="currentDiv(1)"></span>
+  <!-- <span class="w3-badge slider-button demo w3-border w3-transparent w3-hover-red" onclick="currentDiv(1)"></span>
     <span class="w3-badge slider-button demo w3-border w3-transparent w3-hover-red" onclick="currentDiv(2)"></span>
     <span class="w3-badge slider-button demo w3-border w3-transparent w3-hover-red" onclick="currentDiv(3)"></span>
     <span class="w3-badge slider-button demo w3-border w3-transparent w3-hover-red" onclick="currentDiv(4)"></span>
     <span class="w3-badge slider-button demo w3-border w3-transparent w3-hover-red" onclick="currentDiv(5)"></span> -->
-    </div>
+  </div>
   </div>
 
   <!-- slider -->
   <div id="slider">
-      <img src="..\images\imageslider\slider-1.png" alt="Image 1" style="width:100%" >
-      <img src="..\images\imageslider\slider-2.png" alt="Image 2" style="width:100%">
-      <img src="..\images\imageslider\slider-3.png" alt="Image 3" style="width:100%">
-      <img src="..\images\imageslider\slider-4.png" alt="Image 4" style="width:100%">
-      <img src="..\images\imageslider\slider-5.png" alt="Image 5" style="width:100%">
-    </div>
+    <img src="..\images\imageslider\slider-1.png" alt="Image 1" style="width:100%">
+    <img src="..\images\imageslider\slider-2.png" alt="Image 2" style="width:100%">
+    <img src="..\images\imageslider\slider-3.png" alt="Image 3" style="width:100%">
+    <img src="..\images\imageslider\slider-4.png" alt="Image 4" style="width:100%">
+    <img src="..\images\imageslider\slider-5.png" alt="Image 5" style="width:100%">
+  </div>
 
   <!-- slide end -->
   <script>
     var index = 0;
-var images = document.getElementById("slider").children;
-var timer;
+    var images = document.getElementById("slider").children;
+    var timer;
 
-function slide() {
-  for (var i = 0; i < images.length; i++) {
-    images[i].style.display = "none";
-  }
-  index++;
-  if (index >= images.length) {
-    index = 0;
-  }
-  images[index].style.display = "block";
-}
+    function slide() {
+      for (var i = 0; i < images.length; i++) {
+        images[i].style.display = "none";
+      }
+      index++;
+      if (index >= images.length) {
+        index = 0;
+      }
+      images[index].style.display = "block";
+    }
 
-function startTimer() {
-  timer = setInterval(slide, 3000);
-}
+    function startTimer() {
+      timer = setInterval(slide, 3000);
+    }
 
-function stopTimer() {
-  clearInterval(timer);
-}
+    function stopTimer() {
+      clearInterval(timer);
+    }
 
-document.getElementById("slider").addEventListener("mouseenter", stopTimer);
-document.getElementById("slider").addEventListener("mouseleave", startTimer);
+    document.getElementById("slider").addEventListener("mouseenter", stopTimer);
+    document.getElementById("slider").addEventListener("mouseleave", startTimer);
 
-startTimer();
+    startTimer();
   </script>
 
   <!-- our services -->
@@ -157,39 +157,87 @@ startTimer();
 
   <!-- why we choose us start -->
   <div class="why-choose">
-    <div class="container"></div>
-  <div class="dd_heading">
-  <h2 class=" why-main-head">Why We Choose Us</h2>
-<p class=" why-p">When you choose us, you'll feel the benefit of 10 years' experience of Web Development.<br> Because we know the digital world and we know that how to handle it. With working knowledge of online, SEO and social media.</p>
-</div>
-<main class="page-content">
-  <div class="d_card">
-    <div class="why-content">
-      <h2 class="why-heading">Modern Design</h2>
-      <p class="data-content">We use latest technology for the latest world because we know the demand of peoples. </p>
+    <div class="container">
+      <div class="why-heading">
+        <h1>
+          Why Choose Us
+        </h1>
+      </div>
+      <div class="why-para">
+        <h4>We will give you 6 reason to work with us</h4>
+      </div>
+    
+    <div class="col-sm-12">
+      <div class="row why-row ">
+        <div class="col-sm-6  why-col why-col-1 ">
+          <div class="why-col-head">
+            <h3>Quick response</h3>
+          </div>
+        </div>
+        <div class="col-sm-6 why-col why-col-2">
+          <div class="why-col-para">
+            Emergency response time is one hour or less guaranteed. We can log in to your PC or server remotely and resolve many issues immediately.
+          </div>
+        </div>
+        <div class="col-sm-6 why-col why-col-3 ">
+          <div class="why-col-para">
+            Emergency response time is one hour or less guaranteed. We can log in to your PC or server remotely and resolve many issues immediately.
+          </div>
+        </div>
+        <div class="col-sm-6 why-col why-col-4">
+          <div class="why-col-head">
+            <h3>Reputable</h3>
+          </div>
+        </div>
+
+
+        <div class="col-sm-6 why-col why-col-5">
+          <div class="why-col-head">
+            <h3>Experienced</h3>
+          </div>
+        </div>
+        <div class="col-sm-6 why-col why-col-6">
+          <div class="why-col-para">
+            Emergency response time is one hour or less guaranteed. We can log in to your PC or server remotely and resolve many issues immediately.
+          </div>
+        </div>
+        <div class="col-sm-6 why-col why-col-7">
+          <div class="why-col-para">
+            Emergency response time is one hour or less guaranteed. We can log in to your PC or server remotely and resolve many issues immediately.
+          </div>
+        </div>
+        <div class="col-sm-6 why-col why-col-8">
+          <div class="why-col-head">
+            <h3>Business savvy</h3>
+          </div>
+        </div>
+
+        <div class="col-sm-6 why-col why-col-9">
+          <div class="why-col-head">
+            <h3>Proactive</h3>
+          </div>
+        </div>
+        <div class="col-sm-6 why-col why-col-10">
+          <div class="why-col-para">
+            Emergency response time is one hour or less guaranteed. We can log in to your PC or server remotely and resolve many issues immediately.
+          </div>
+        </div>
+      
+        <div class="col-sm-6 why-col why-col-11">
+          <div class="why-col-para">
+            Emergency response time is one hour or less guaranteed. We can log in to your PC or server remotely and resolve many issues immediately.
+          </div>
+        </div>
+        <div class="col-sm-6 why-col why-col-12">
+          <div class="why-col-head">
+            <h3>Comprehensive project management</h3>
+          </div>
+        </div>
+       
+        </div>
+      </div>
     </div>
   </div>
-  <div class="d_card">
-    <div class="why-content">
-      <h2 class="why-heading">Creative Design</h2>
-      <p class="data-content">We are always creative and and always lisen our costomers and we mix these two things and make beast design. </p>
-    </div>
-  </div>
-  <div class="d_card">
-    <div class="why-content">
-      <h2 class="why-heading">Market Strategy</h2>
-      <p class="data-content">Holding back technology to preserve broken business models is like allowing blacksmiths to veto the internal combustion engine in order to protect their horseshoes. </p>
-    </div>
-  </div>
-  <div class="d_card">
-    <div class="why-content">
-      <h2 class="why-heading">Affordable cost</h2>
-      <p class="data-content">Love is a special word, and I use it only when I mean it. You say the word too much and it becomes cheap. </p>
-    </div>
-  </div>
-</main>
-</div>
-</div>
 
   <!-- why we choose us end -->
   <!-- testimonial start -->
@@ -259,7 +307,7 @@ startTimer();
 
 
 
-  
+
 </body>
 <?php
 include_once('footer.php');

@@ -61,7 +61,7 @@
                             <span class="info-detail ">
                                 <table class="info-table">
                                     <tr>
-                                        <td class="info-main "><span class="info-email"> <a href="https://www.w3schools.com/" class="hemail "><i class="fa fa-envelope   info-icon "></i><span class="info-fix">social.seltentechnologies@gmail.com </span></a></span><span class="info-phone"><a href="https://www.youtube.com/" class="hemail "> <i class="fa fa-phone   info-icon "></i><i class="fa-brands fa-whatsapp info-icon p-2"></i><span class="info-fix">+91 9876543210</span></a></span></td>
+                                        <td class="info-main "><span class="info-email"> <a href="https://www.w3schools.com/" class="hemail "><i class="fa fa-envelope   info-icon "></i><span class="info-fix">social.seltentechnologies@gmail.com </span></a></span><span class="info-phone"><a href="https://www.youtube.com/" class="hemail "> <i class="fa fa-phone   info-icon "></i><i class="fa-brands fa-whatsapp info-icon px-1" style="color:white;"></i><span class="info-fix">+91 9876543210</span></a></span></td>
                                     </tr>
                                 </table>
                             </span>
@@ -83,7 +83,8 @@
                             <ul class=" navbar-nav nav-ul navbar-right " id="toggle" style="display: flex !important;">
                                 <li class="nav-item nav-li  <?php echo $GLOBALS['home']; ?>"><a class="nav-link" href="index.php">Home</a></li>
                                 
-                                <li class="nav-item  nav-li <?php echo $GLOBALS['service']; ?>" id="nav-ul"><a class="nav-link " href="#">Services <i class="fa fa-caret-down"></i></a>
+                                <li class="nav-item  nav-li <?php echo $GLOBALS['service']; ?>" id="nav-ul"><a class="nav-link " href="#">Services <i class="fa fa-caret-down" style="
+    opacity: 0.5;"></i></a>
                                 <div class="mega-box">
                                     <div class="mega-content">
                                         

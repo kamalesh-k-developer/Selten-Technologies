@@ -64,8 +64,10 @@ menuItems.forEach(
   }
 )
 // testimonial// 
+
 var btn = document.getElementsByClassName ("btn");
 var testslide = document.getElementById ("testslide")
+
 
 btn [0].onclick = function (){
     testslide.style.transform = "translateX(0px)";
@@ -98,3 +100,14 @@ btn [3].onclick = function (){
       this.classList.add("active-test");
     }
 } 
+
+
+// slider animation//
+var counter = 1
+setInterval(function(){
+  Document.getElementsByClassName('btn' + testslide).checked = true;
+  counter++;
+  if(counter > 4){
+    counter = 1;
+  }
+},3000);
