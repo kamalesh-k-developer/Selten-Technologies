@@ -89,10 +89,20 @@ include_once ('header.php');
 include_once ('footer.php');
 ?>
 <?php
-//db insert query
- include_once('contact.php');
- include 'connect.php';
- if(isset($_POST['submit'])){
+
+   use PHPMailer\PHPMailer\PHPMailer;
+   
+   require_once 'phpMailer/Exception.php';
+   require_once 'phpMailer/PHPMailer.php';
+   require_once 'phpMailer/SMTP.php';
+
+    $mail = new PHPMailer(true);
+    $alert = '';
+
+    //db insert query
+    include_once('contact.php');
+    include 'connect.php';
+    if(isset($_POST['submit'])){
     $FirstName = $_POST['fname'];
     $LastName = $_POST['lname'];
     $Email = $_POST['email'];
@@ -110,5 +120,39 @@ include_once ('footer.php');
        die(mysqli_error($connection,$result));
       }
  }
+
+    // email sending  coding
+    if(isset($_POST['submit'])){
+      $FirstName = $_POST['fname'];
+      $LastName = $_POST['lname'];
+      $Email = $_POST['email'];
+      $PhoneNumber = $_POST['phone_number'];
+      $LookingForServices = $_POST['languages'];
+      $Message = $_POST['message'];
+  
+      try{
+          $mail->isSMTP();
+          $mail->host = 'smtp.gmail.com';
+          $mail->SMTPAuth = true;
+          $mail->Username = 'technologiesselten@gmail.com';
+          $mail->Password = 'RaguKumar@123';
+          $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+          $mail->port = '587';
+  
+          $mail->setform('technologiesselten@gmail.com');
+          $mail->addAddress('technologiesselten@gmail.com');
+  
+          $mail->isHTML(true);
+          $mail->subject = 'Message Received (contact form)';
+          $mail->body = '<h2>First Name : $FirstName <br>Last Name : $LastName <br>Email : $Email <br>Phone Number : $PhoneNumber  <br> Look For Services : $LookingForServices <br> Message : $Message </h2>';
+  
+          $mail->sent();
+          // $alert = '<script> alert("Mail received sucessfully")</script>';
+      } catch (Exception $e){
+          // $alert = '<script> alert(".$e->getMessage().")</script>'
+      }
+  
+    }
+
 ?>
 </html>
