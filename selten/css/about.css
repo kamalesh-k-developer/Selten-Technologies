@@ -545,7 +545,129 @@ transform: rotateY(180deg);
   position: relative;
   left:26px;
 }
+/* our selten */
+/* .miss-img{
+  position: relative;
+  width: 100%;
+}
+.viss-img{
+  position: relative;
+  width: 86%;
+}
+.sel-img{
+  position: relative;
+  width: 100%;
+  top:23px;
+}
+/* h4 */
+/* .our-miss{
+  position: relative;
+  bottom: 80px;
+  left: 125px;
+  font-size: xx-large;
+  font-family: emoji;
+}
+.our-viss{
+  position: relative;
+  left: 126px;
+  bottom: 78px;
+  font-size: xx-large;
+  font-family: auto;
+}
+.our-sel{
+  position: relative;
+    left: 71px;
+    bottom: 47px;
+    font-size: xx-large;
+    font-family: emoji;
+}
+/* logo */
+/* .miss-logo{
+  position: relative;
+  width: 23%;
+  bottom: 97px;
+  left: 16px;
+} */
+ .miss-img{
+  position: relative;
+  width: 80%;
+ }
+ .miss-logo{
+  position: relative;
+  width: 20%;
+  bottom: 128px;
+  left: 15px;
+ }
+ .our-miss{
+
+  position: relative;
+  bottom: 199px;
+  left: 163px;
+  font-size: x-large;
+  font-style: italic;
+  font-family: 'Font Awesome 6 Brands';
+
+ }
+ /* number2 */
+ .viss-img{
+  position: relative;
+  width: 65%;
+  bottom: 141px;
+  left: 98px;
+  
+ }
+ .viss-logo{
+  position: relative;
+  width: 14%;
+  right: 44%;
+  bottom: 146px;
+ 
+ }
+ .our-viss{
+  position: relative;
+  text-align: center;
+  bottom: 221px;
+  left: 50px;
+  font-size: x-large;
+  font-style: italic;
+  font-family: 'Font Awesome 5 Brands';
+  
 
 
+ }
+ .sel-img{
+  position: relative;
+    width: 76%;
+    bottom: 154px;
+ }
+ .our-sel{
 
-
+  position: relative;
+  text-align: center;
+  bottom: 232px;
+  right: 89px;
+  font-size: x-large;
+  font-style: italic;
+  font-family: 'FontAwesome';
+ }
+ .paras{
+  
+  position: relative;
+    width: 544px;
+    height: 247px;
+    font-size: larger;
+    right: 90px;
+  
+    top: 78px;
+}
+ 
+ .para-1{
+  background-image: url("../images/logo/businesswoman-holding-card-text-our-mission-199451995.jpg");
+ 
+}
+.para-2{
+  background-image:url("../images/logo/HR-3.png.crdownload")
+}
+.para-3{
+  background-image: linear-gradient(143deg,#7baeff 74%,#9fc3ff 5%);
+}
