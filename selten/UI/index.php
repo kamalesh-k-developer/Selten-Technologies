@@ -73,7 +73,7 @@ include_once('header.php');
   <!-- our services -->
   <!-- <div class="wrapper"> -->
   <div class=" index-service">
-    <div class="index-ser">
+    <div class="index-ser" data-aos="fade-down">
       <h1>OUR SERVICES</h1>
     </div>
     <div class=" container index-3-service">
@@ -81,9 +81,9 @@ include_once('header.php');
 
       <div class="row index-service-row ">
 
-        <div class="col-md-4  index-col-1 animate__animated animate__fadeInDown">
+        <div class="col-md-4  index-col-1 " data-aos="fade-right">
           <div class="index-main-ser">
-            <div class="card index-serivice-card ">
+            <div class="card index-serivice-card " >
               <div class="our-index-service-icon">
                 <i class="fas fa-desktop"></i>
               </div>
@@ -97,14 +97,14 @@ include_once('header.php');
               </div>
 
             </div>
-            <div class="index-shadowone"></div>
-            <div class="index-shadowtwo"></div>
+            <div class="index-shadowOne"></div>
+            <div class="index-shadowTwo"></div>
 
 
 
           </div>
         </div>
-        <div class="col-md-4 index-col-2 animate__animated animate__fadeInDown ">
+        <div class="col-md-4 index-col-2  "data-aos="fade-up">
           <div class="index-main-ser">
             <div class="card index-serivice-card">
               <div class="our-index-service-icon">
@@ -120,13 +120,13 @@ include_once('header.php');
               </div>
 
             </div>
-            <div class="index-shadowone"></div>
-            <div class="index-shadowtwo"></div>
+            <div class="index-shadowOne"></div>
+            <div class="index-shadowTwo"></div>
 
 
           </div>
         </div>
-        <div class="col-md-4 index-col-3 animate__animated animate__fadeInDown ">
+        <div class="col-md-4 index-col-3  " data-aos="fade-left">
           <div class="index-main-ser ">
             <div class="card index-serivice-card">
               <div class="our-index-service-icon">
@@ -142,8 +142,8 @@ include_once('header.php');
               </div>
 
             </div>
-            <div class="index-shadowone"></div>
-            <div class="index-shadowtwo"></div>
+            <div class="index-shadowOne"></div>
+            <div class="index-shadowTwo"></div>
 
 
           </div>
@@ -170,7 +170,7 @@ include_once('header.php');
     <div class="col-sm-12">
       <div class="row why-row ">
         <div class="col-sm-6  why-col why-col-1 ">
-          <div class="why-col-head">
+          <div class="why-col-head why-col-head-1">
             <h3>Quick response</h3>
           </div>
         </div>
@@ -185,14 +185,14 @@ include_once('header.php');
           </div>
         </div>
         <div class="col-sm-6 why-col why-col-4">
-          <div class="why-col-head">
+          <div class="why-col-head why-col-head-2">
             <h3>Reputable</h3>
           </div>
         </div>
 
 
         <div class="col-sm-6 why-col why-col-5">
-          <div class="why-col-head">
+          <div class="why-col-head why-col-head-3">
             <h3>Experienced</h3>
           </div>
         </div>
@@ -207,13 +207,13 @@ include_once('header.php');
           </div>
         </div>
         <div class="col-sm-6 why-col why-col-8">
-          <div class="why-col-head">
+          <div class="why-col-head why-col-head-4">
             <h3>Business savvy</h3>
           </div>
         </div>
 
         <div class="col-sm-6 why-col why-col-9">
-          <div class="why-col-head">
+          <div class="why-col-head why-col-head-5">
             <h3>Proactive</h3>
           </div>
         </div>
@@ -229,7 +229,7 @@ include_once('header.php');
           </div>
         </div>
         <div class="col-sm-6 why-col why-col-12">
-          <div class="why-col-head">
+          <div class="why-col-head why-col-head-6">
             <h3>Comprehensive project management</h3>
           </div>
         </div>
