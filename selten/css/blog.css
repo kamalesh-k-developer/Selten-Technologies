@@ -1,10 +1,10 @@
 .blog-bannel {
 
-  background-image: url("../images/backroung-image/blog-banner.png");
+  background-image: url("../images/banners/Blog.jpg");
   background-repeat: no-repeat;
   width: 100%;
   background-size: cover;
-  height: 290px;
+  height: 437px;
 }
 
 

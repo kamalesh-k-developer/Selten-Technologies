@@ -1,6 +1,6 @@
 
-.topic{
-    position: relative;
+/* .topic{ */
+    /* position: relative;
     font-size: -webkit-xxx-large;
     font-family: serif;
     font-weight: 900;
@@ -34,13 +34,16 @@
 }
 .top-col{
     /* background-color: #e4e9ff !important; */
-    background-image: linear-gradient(148deg, #e4e9ff 74%,white 2%);
-}
+    /* background-image: linear-gradient(148deg, #e4e9ff 74%,white 2%); */
+} 
 /* .main-about{
     
         background-color: aliceblue;
     
 } */
+.banner-about{
+  position: relative;
+}
 .value-our{
     position: relative;
     left: 48px;
@@ -48,96 +51,8 @@
     font-family: -webkit-body;
     font-weight: 900;
 }
-.inte{
-    width: 66%;
-    position: relative;
-    left: 125px;
-    transition: all 2s;
-}
-.inte:hover{
-    transform: rotateY(180deg);
-}
-.passi{
-    width: 108%;
-    position: relative;
-    left: 186px;
-    bottom: 42px;
-    transition: all 2s;
-}
-.passi:hover{
-    transform: rotateY(180deg);
-}
-.learn{
-    width: 341%;
-    position: relative;
-    left: 255px;
-    bottom: 24px;
-    transition: all 2s;
-}
-.learn:hover{
-    transform: rotateY(180deg);
-}
-.team{
-    width: 249%;
-    position: relative;
-    left: 441px;
-    bottom: 43px;
-    transition: all 2s;
-}
-.team:hover{
-transform: rotateY(180deg);
-}
 
 
-.ourval{
-    position: relative;
-    font-size: xxx-large;
-    font-family: serif;
-    text-align: center;
-
-}
-/* .inte-para{
-    position: relative;
-    font-size: small;
-    left: 101px;
-}
-.pass-para{
-    position: relative;
-    bottom: 87px;
-    font-size: small;
-    left: 221px;
-}
-.learn-para{
-    position: relative;
-    bottom: 45px;
-    left: 344px;
-    font-size: small;
-    width: 143px;
-}
-.team-para{
-    position: relative;
-    bottom: 104px;
-    left: 484px;
-    width: 150px;
-    font-size: small;
-}
-
-.ourgoal{
-    font-size: xxx-large;
-    font-family: serif;
-    position: relative;
-    bottom: 82px;
-}
-.our-para{
-    padding: 38px;
-    width: 62%;
-    left: 19%;
-    position: relative;
-    bottom: 113px;
-    bottom: 90px;
-    background-image: linear-gradient(143deg,white 2%,#72A0C1 74%);
-    border-radius: 54px 121px 143px 134px;
-} */
 
 .found{
     background-color: aliceblue;
@@ -429,7 +344,8 @@ transform: rotateY(180deg);
     position: relative;
     top: 14px;
     font-size: 20px;
-    font-family: cursive;
+    font-family: sans-serif;
+    color:white;
   }
   .new-passi{
      position: relative;
@@ -445,7 +361,8 @@ transform: rotateY(180deg);
     position: relative;
     bottom: 63px;
     font-size: 20px;
-    font-family: cursive;
+    font-family: sans-serif;
+    color:white;
   }
   .new-learn{
      position: relative;
@@ -461,7 +378,8 @@ transform: rotateY(180deg);
     position: relative;
     bottom: 20px;
     font-size: 20px;
-    font-family: cursive;
+    font-family: sans-serif;
+    color:white;
   }
   .new-team{
     
@@ -479,7 +397,8 @@ transform: rotateY(180deg);
     position: relative;
     bottom: 66px;
     font-size: 20px;
-    font-family: cursive;
+    font-family: sans-serif;
+    color:white;
   }
 .our-goal{
   position: relative;
@@ -508,13 +427,13 @@ transform: rotateY(180deg);
 .goal-para{
   position: relative;
   float: left;
-  font-size: 20px;
+  font-size: 25px;
   font-family: serif;
   color: #101628;
   right: 100px;
-  border: 5px solid black;
-  border-radius: 10px 65px 0px 16px;
-  background-color: #FEBE10;
+  bottom: 111px;
+  background-color: #d3d3d3;
+  border-radius: 8px 12px 4px 9px;
 }
 .our-our{
   position: relative;
@@ -525,7 +444,7 @@ transform: rotateY(180deg);
 }
 .ourgoal-right{
   position: relative;
-  background-color:
+  
   top:28px;
 }
 .inte-head{
@@ -545,7 +464,58 @@ transform: rotateY(180deg);
   position: relative;
   left:26px;
 }
+/* our mission and vision */
+.right-img{
 
+  position: relative;
+  width: 50%;
+  left: 110px;
+}
+.left-img{
+  position: relative;
+  width: 53%;
+  left: 100px;
+  bottom: 205px;
+}
+.our-miss{
+  position: relative;
+  text-align: center;
+  bottom: 222px;
+  left: -60px;
+  font-size: xx-large;
+  font-family: sans-serif;
+}
+.our-viss{
+  
+  position: relative;
+  text-align: center;
+  bottom: 447px;
+  left: -52px;
+  font-size: xx-large;
+  font-family: sans-serif;
+}
+.miss-para{
+  position: relative;
+  text-align: center;
+  font-size: x-small;
+  bottom: 218px;
+  left: -55px;
+  color: red;;
+}
+.viss-para{
+  position: relative;
+  text-align: center;
+  bottom: 453px;
+  left: -47px;
+  font-size: x-small;
+  font-family: sans-serif;
+  color: red;
+}
+.pexels-img{
 
-
-
+  /* position: relative;
+  width: 730px;
+  height: 591px;
+  right: 108px;
+  opacity: .7; */
+}
