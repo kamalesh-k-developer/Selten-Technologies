@@ -55,7 +55,10 @@ include_once ('header.php');
             <a href="">SeltenTechnologies</a>
         </div>
     </footer>
-
+    <script>
+  AOS.init();
+</script>
+<script src="..\selten\assets\js\aos.js"></script>
 </body>
 
 </html>

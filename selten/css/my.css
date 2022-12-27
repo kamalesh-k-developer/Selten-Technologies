@@ -22,6 +22,7 @@ body {
 
 .nav-main {
     background-color: #0065c9 !important;
+    
 }
 
 .navbar {
@@ -393,33 +394,41 @@ body {
 /* mega menu */
 .mega-box {
     position: absolute;
-    left: 0;
-    width: 100%;
+    left: -33px;
+    width: 105%;
+    height: 350px;
     padding: 0 30px;
-    top: 100px;
+    top: 122px;
     visibility: hidden;
     border-radius: 10px;
+    background: whitesmoke;
 
 
 }
 
 .mega-content {
-    background: #0067c9;
+    background: whitesmoke;
     border: 10px;
     padding: 25px 40px;
     display: flex;
-    width: 100%;
+    width: 95%;
     justify-content: space-between;
+    border: 3px solid #0067c9;
+    position: relative;
+    left: 36px;
+    border-top: hidden;
 }
 
 .mega-main {
     width: 25%;
     line-height: 45px;
+    position: relative;
+    left: 6%;
 
 }
 
 .mega-main p {
-    color: #c2d8f3 !important;
+    color: #0067c9 !important;
     font-size: 20px;
     font-weight: bold;
     text-align: left;
@@ -440,7 +449,9 @@ body {
 
 .mega-ul {
     list-style: none;
-    margin-right: -42px;
+    /* margin-right: -42px; */
+    position: relative;
+    left: 40px;
 
 }
 
@@ -455,7 +466,7 @@ body {
 }
 
 .mega-li a {
-    color: #f5f5ff !important;
+    color: #0067c9 !important;
     /* font-size: 15px; */
 }
 
@@ -478,7 +489,7 @@ body {
 #nav-ul:hover .mega-box {
     /* transition: all 10s !important; */
     visibility: visible;
-    z-index: 3;
+    z-index: 1;
 }
 
 .mega-link:after {
@@ -490,12 +501,16 @@ body {
     left: 50%;
     position: absolute;
     background: rgb(215, 15, 15);
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition:  transform .5s ease-out;
     width: 0;
 }
 
 .mega-link:hover:after {
-    width: 50%;
+    transform: scaleX(1);
+  transform-origin: bottom left;
+    width: 100%;
     left: 0;
 }
 
@@ -634,7 +649,7 @@ body {
     z-index: -1;
 }
 
-.index-shadowone {
+.index-shadowOne{
     height: 200px;
     width: 80%;
     background-color: #B0C4DE;
@@ -647,7 +662,7 @@ body {
     transition: transform .8s;
 }
 
-.index-shadowtwo {
+.index-shadowTwo {
     height: 200px;
     width: 64%;
     background-color: #B0C4DE;
@@ -664,7 +679,7 @@ body {
     transform: translateY(-50px);
 }
 
-.index-main-ser:hover .index-shadowone {
+.index-main-ser:hover .index-shadowOne {
     transform: translateY(-25px);
 }
 
@@ -944,11 +959,11 @@ body {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 40px;
+    left: 0px;
     width: 2px;
-    margin-left: -1.5px;
+    margin-left: 0px;
     content: "";
-    background-color: #e9ecef;
+    background-color: #0b6bcb;
 } */
 
 .why-col-2,
@@ -961,12 +976,26 @@ body {
     display: flex;
     align-items: center;
 }
+
+
 .why-col-head{
+    display: block;
     height: 150px;
     width: 70%;
     background-color: #008ae2;
     
 }
+.why-col-head-1,.why-col-head-3,.why-col-head-5::before{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40px;
+    width: 2px;
+    margin-left: -1.5px;
+    content: "";
+    background-color: #e9ecef;
+}
+
 
 /* why we choose us end*/
 

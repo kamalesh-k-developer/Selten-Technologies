@@ -4,7 +4,9 @@ include_once('header.php');
 ?>
 
 <body>
-
+<div class="service-banner">
+    <img src="..\images\banners\Serviceus-banner.jpg" alt="" srcset="" style="width:100%;">
+</div>
     <div class="index-ser">
         <h1>OUR SERVICES</h1>
     </div>
@@ -13,7 +15,7 @@ include_once('header.php');
 
         <div class="row service-row">
 
-            <div class="col-md-4  equal-height  animate__animated animate__fadeInDown service-col-1 ">
+            <div class="col-md-4  equal-height  service-col-1 animate__animated animate__fadeInDown">
                 <div class="main-ser w3-animate-left">
                     <div class="card serivice-card ">
                         <div class="our-service-icon">
@@ -34,7 +36,7 @@ include_once('header.php');
 
                 </div>
             </div>
-            <div class="col-md-4  equal-height animate__animated animate__fadeInDown service-col-2 ">
+            <div class="col-md-4  equal-height  service-col-2 animate__animated animate__fadeInDown">
                 <div class="main-ser">
                     <div class="card serivice-card">
                         <div class="our-service-icon">
@@ -55,7 +57,7 @@ include_once('header.php');
 
                 </div>
             </div>
-            <div class="col-md-4  equal-height animate__animated animate__fadeInDown service-col-3">
+            <div class="col-md-4  equal-height  service-col-3 animate__animated animate__fadeInDown">
                 <div class="main-ser w3-animate-right">
                     <div class="card serivice-card">
                         <div class="our-service-icon">
@@ -75,7 +77,7 @@ include_once('header.php');
                     <div class="shadowtwo"></div>
                 </div>
             </div>
-            <div class="col-md-4  equal-height animate__animated animate__fadeInDown service-col-4">
+            <div class="col-md-4  equal-height  service-col-4 animate__animated animate__fadeInDown">
                 <div class="main-ser w3-animate-right">
                     <div class="card serivice-card">
                         <div class="our-service-icon">
@@ -95,7 +97,7 @@ include_once('header.php');
                     <div class="shadowtwo"></div>
                 </div>
             </div>
-            <div class="col-md-4  equal-height animate__animated animate__fadeInDown service-col-5 ">
+            <div class="col-md-4  equal-height  service-col-5 animate__animated animate__fadeInDown">
                 <div class="main-ser w3-animate-right">
                     <div class="card serivice-card">
                         <div class="our-service-icon">
