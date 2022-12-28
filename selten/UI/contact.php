@@ -11,17 +11,14 @@ include_once ('header.php');
   <div class="row contactrow">
               <!-- <div class="col-md-12"> -->
 <div class="col-md-4 contact-form">
-          <!-- alert message -->
-        <div id = "faliure">
-             <?php echo $alert; ?>
-        </div>
-        <div id = "sucess">
-            
-        </div>
-          <!-- alert end --> 
+
+     <div class="alert-success" role="alert" id ="Sucess">
+     <span><strong>Sucessfully</strong>Thanks For Contact</span>
+     </div>
+  
   <h1 class="formhead">Get In Touch</h1>
   <div class="card about-card">
-  <form class="cfeild" method = "POST">
+  <form class="cfeild"  method = "POST">
   <div class="form-group mt-3">
    
     <input type="text" class="form-control cform" id="exampleInputEmail1" name = "fname" aria-describedby="emailHelp" placeholder="First Name" >
@@ -61,7 +58,7 @@ include_once ('header.php');
   </div>
  
   
-  <button type="submit" name = "submit" class="btn btn-primary mt-3">Submit</button>
+  <button type="submit" name = "submit" id = "submit_button" class="btn btn-primary mt-3">Submit</button>
 </form>
 </div>
 </div>
@@ -95,67 +92,34 @@ include_once ('header.php');
 <?php 
 include_once ('footer.php');
 ?>
-<?php
-  
-//     //db insert query
-    include_once('contact.php');
-    include 'connect.php';
-    if(isset($_POST['submit'])){
-    $FirstName = $_POST['fname'];
-    $LastName = $_POST['lname'];
-    $Email = $_POST['gmail'];
-    $PhoneNumber = $_POST['phone_number'];
-    $LookingForServices = $_POST['languages'];
-    $Message = $_POST['message'];
+         <!-- db insert query code start -->
+         <?php 
+        include_once('contact.php');
+        include 'connect.php';
+        //get data from post method in form
+        if(isset($_POST['submit'])){
+           $FirstName = $_POST['fname'];
+           $LastName = $_POST['lname'];
+           $Email = $_POST['gmail'];
+           $PhoneNumber = $_POST['phone_number'];
+           $LookingForServices = $_POST['languages'];
+           $Message = $_POST['message'];
 
-
-    $sql = "INSERT INTO `contact_form`(first_name,last_name,email,phone_number,looking_for_services,message)
-            VALUES ('$FirstName','$LastName','$Email','$PhoneNumber','$LookingForServices','$Message')";
-    $result = mysqli_query($connection,$sql);
-    if($result){
-       echo "<script>alert('Sucessfully!')</script>";
-      }else {
-       die(mysqli_error($connection,$result));
-      }
- }
-
-// use PHPMailer\PHPMailer\PHPMailer;
-// use PHPMailer\PHPMailer\SMTP;
-
-// require_once 'phpMailer/src/Exception.php';
-// require_once 'phpMailer/src/PHPMailer.php';
-// require_once 'phpMailer/src/SMTP.php';
-
-// if(isset($_POST["submit"])){
-//     $FirstName = $_POST['fname'];
-//     $LastName = $_POST['lname'];
-//     $Gmail = $_POST['gmail'];
-//     $PhoneNumber = $_POST['phone_number'];
-//     $LookingForServices = $_POST['languages'];
-//     $Message = $_POST['message'];
-
-//     $mail = new PHPMailer(true);
-
-//        $mail->isSMTP();
-//        $mail->SMTPAuth=true;
-
-//        $mail->host = "smtp.gmail.com";
-//        $mail->SMTPSecure =PHPMailer::ENCRYPTION_STARTTLS;
-//        $mail->port =587;
-
-//        $mail->Username = "technologiesselten@gmail.com";
-//        $mail->Password = "uolevujemfnwodyw";
-
-//        $mail->setFrom($Gmail,$FirstName);
-
-//       //  $mail->addAddress("technologiesselten@gmail.com","selten");
-
-//        $mail->subject = $LookingForServices;
-//        $mail->body = $Message;
-
-//        $mail->sent();
-//        echo "header(location:contact.php?mail send sucessfully!)";
-//    }
-?>
+         $sql = "INSERT INTO `contact_form`(first_name,last_name,email,phone_number,looking_for_services,message)
+                 VALUES ('$FirstName','$LastName','$Email','$PhoneNumber','$LookingForServices','$Message')";
+         $result = mysqli_query($connection,$sql);
+            if($result){
+              echo "Sucessfully received";
+             }else{
+               echo "failed";
+             }
+          }
+        ?>
+      <!-- db insert query code end -->
+<!-- <script>
+   $(document).ready(function(){
+     
+   });
+</script> -->
 
 </html>
