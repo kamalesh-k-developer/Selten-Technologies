@@ -22,7 +22,7 @@ body {
 
 .nav-main {
     background-color: #0065c9 !important;
-    
+
 }
 
 .navbar {
@@ -503,13 +503,13 @@ body {
     background: rgb(215, 15, 15);
     transform: scaleX(0);
     transform-origin: bottom right;
-    transition:  transform .5s ease-out;
+    transition: transform .5s ease-out;
     width: 0;
 }
 
 .mega-link:hover:after {
     transform: scaleX(1);
-  transform-origin: bottom left;
+    transform-origin: bottom left;
     width: 100%;
     left: 0;
 }
@@ -649,7 +649,7 @@ body {
     z-index: -1;
 }
 
-.index-shadowOne{
+.index-shadowOne {
     height: 200px;
     width: 80%;
     background-color: #B0C4DE;
@@ -916,15 +916,77 @@ body {
 
 /* our services end */
 /* why we choose us end*/
+.why-head-1,
+.why-head-3,
+.why-head-5 {
+    position: relative;
+    top: -57%;
+    left: -21%;
+    transform: rotate(-65deg);
+}
+
+.why-head-2,
+.why-head-4,
+.why-head-6 {
+    position: relative;
+    top: 63%;
+    left: 18%;
+    transform: rotate(65deg);
+}
+
+.why-circle {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    background: #0067c9;
+    /* z-index: 1; */
+}
+
+
+
+.why-line {
+    position: absolute;
+    top: 180px;
+    left: 90px;
+    height: 300px;
+    width: 2px;
+    background: #0067c9;
+    z-index: 0;
+}
+
+.why-lip-1,
+.why-lip-3,
+.why-lip-5 h4 {
+    transform: rotate(66deg);
+    text-align: center;
+    position: relative;
+    /* left: -13%; */
+    margin-top: 40%;
+    color: white;
+}
+
+.why-lip-2,
+.why-lip-4,
+.why-lip-6 h4 {
+    transform: rotate(-65deg);
+    text-align: center;
+    position: relative;
+    /* left: -13%; */
+    margin-top: 40%;
+    color: white;
+}
+
 .why-heading,
 .why-para {
     text-align: center;
     font-family: ui-sans-serif;
 
+
 }
 
 .why-row {
-    
+
     justify-content: center;
     margin-top: 50px;
 }
@@ -934,7 +996,7 @@ body {
     /* border: 1px solid; */
     width: 34%;
     height: 200px;
-    
+
 }
 
 .why-col-1,
@@ -942,14 +1004,14 @@ body {
 .why-col-5,
 .why-col-8,
 .why-col-9,
-.why-col-12
-{
+.why-col-12 {
     /* border-radius: 50%; */
     /* background-color: #008ce2; */
     justify-content: center;
     align-items: center;
     padding-top: 30px;
 }
+
 /* .why-col-1,
 .why-col-4,
 .why-col-5,
@@ -971,29 +1033,375 @@ body {
 .why-col-6,
 .why-col-7,
 .why-col-10,
-.why-col-11{
+.why-col-11 {
     padding: 20px;
     display: flex;
     align-items: center;
+    float: left;
 }
 
 
-.why-col-head{
+.why-col-head {
     display: block;
     height: 150px;
     width: 70%;
     background-color: #008ae2;
-    
+
 }
-.why-col-head-1,.why-col-head-3,.why-col-head-5::before{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 40px;
-    width: 2px;
-    margin-left: -1.5px;
-    content: "";
-    background-color: #e9ecef;
+
+
+@media (max-width:1399px) {
+
+    .why-head-1,
+    .why-head-3,
+    .why-head-5 {
+
+        top: -29%;
+        left: -21%;
+
+    }
+
+    .why-head-2,
+    .why-head-4,
+    .why-head-6 {
+
+        top: 46%;
+        left: 33%;
+
+    }
+}
+
+@media (max-width:1199px) {
+
+    .why-row {
+
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .why-head-1,
+    .why-head-3,
+    .why-head-5 {
+
+        top: -29%;
+        left: -21%;
+        transform: rotate(-55deg);
+
+    }
+
+    .why-head-2,
+    .why-head-4,
+    .why-head-6 {
+
+        top: 46%;
+        left: 33%;
+        transform: rotate(60deg);
+
+    }
+
+    .why-lip-1,
+    .why-lip-3,
+    .why-lip-5 h4 {
+        transform: rotate(56deg);
+        text-align: center;
+        position: relative;
+        /* left: -13%; */
+        margin-top: 40%;
+        color: white;
+    }
+
+    .why-lip-2,
+    .why-lip-4,
+    .why-lip-6 h4 {
+        transform: rotate(-59deg);
+        text-align: center;
+        position: relative;
+        /* left: -13%; */
+        margin-top: 40%;
+        color: white;
+    }
+}
+
+@media (max-width:991px) {
+
+    .why-row {
+
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .why-head-1,
+    .why-head-3,
+    .why-head-5 {
+
+        top: 0%;
+        left: -25%;
+        transform: rotate(-55deg);
+
+    }
+
+    .why-head-2,
+    .why-head-4,
+    .why-head-6 {
+
+        top: 27%;
+        left: 68%;
+        transform: rotate(60deg);
+
+    }
+
+    .why-circle {
+        position: absolute;
+        height: 170px;
+        width: 170px;
+        border-radius: 100px;
+        background: #0067c9;
+        /* z-index: 1; */
+    }
+
+
+
+    .why-line {
+        position: absolute;
+        top: 168px;
+        left: 91px;
+        height: 300px;
+        width: 2px;
+        background: #0067c9;
+        z-index: 0;
+    }
+
+    .why-lip-1,
+    .why-lip-3,
+    .why-lip-5 h4 {
+        transform: rotate(56deg);
+        text-align: center;
+        position: relative;
+        /* left: -13%; */
+        margin-top: 40%;
+
+        color: white;
+    }
+
+    .why-lip-2,
+    .why-lip-4,
+    .why-lip-6 h4 {
+        transform: rotate(-60deg);
+        text-align: center;
+        position: relative;
+        /* left: -13%; */
+        margin-top: 40%;
+
+        color: white;
+    }
+
+    .why-head {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:767px) {
+
+    .why-row {
+
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .why-col {
+
+        text-align: center;
+        /* border: 1px solid; */
+        width: 43%;
+        height: 200px;
+
+
+    }
+
+    .why-head-1,
+    .why-head-3,
+    .why-head-5 {
+
+        top: 0%;
+        left: -25%;
+        transform: rotate(-55deg);
+
+    }
+
+    .why-head-2,
+    .why-head-4,
+    .why-head-6 {
+
+        top: 27%;
+        left: 68%;
+        transform: rotate(60deg);
+
+    }
+
+    .why-circle {
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        border-radius: 100px;
+        background: #0067c9;
+        /* z-index: 1; */
+    }
+
+
+
+    .why-line {
+        position: absolute;
+        top: 147px;
+        left: 91px;
+        height: 286px;
+        width: 2px;
+        background: #0067c9;
+        z-index: 0;
+    }
+
+    .why-lip-1,
+    .why-lip-3,
+    .why-lip-5 h4 {
+        transform: rotate(55deg);
+        text-align: center;
+        position: relative;
+        /* left: -13%; */
+        margin-top: 40%;
+
+        color: white;
+    }
+
+    .why-lip-2,
+    .why-lip-4,
+    .why-lip-6 h4 {
+        transform: rotate(-60deg);
+        text-align: center;
+        position: relative;
+        /* left: -13%; */
+        margin-top: 40%;
+
+        color: white;
+    }
+
+    .why-head {
+        font-size: 20px;
+    }
+
+    .why-col-para {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:500px) {
+    .why-col-para {
+        font-size: 13px;
+        margin-top: -24%;
+        margin-left: 17%;
+    }
+}
+
+@media (max-width:465px) {
+
+    .why-row {
+
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .why-col {
+
+        text-align: center;
+        /* border: 1px solid; */
+        width: 48%;
+        height: 200px;
+
+
+    }
+
+    .why-head-1,
+    .why-head-3,
+    .why-head-5 {
+
+        top: 0%;
+        left: -6%;
+        transform: rotate(-48deg);
+
+    }
+
+    .why-head-2,
+    .why-head-4,
+    .why-head-6 {
+
+        top: 23%;
+        left: 48%;
+        transform: rotate(47deg);
+
+    }
+
+    .why-circle {
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        border-radius: 100px;
+        background: #0067c9;
+        /* z-index: 1; */
+    }
+
+
+
+    .why-line {
+        /* display: none; */
+        position: absolute;
+        top: 147px;
+        left: 73px;
+        height: 153px;
+        width: 2px;
+        background: #0067c9;
+        z-index: 0;
+    }
+
+    .why-lip-1,
+    .why-lip-3,
+    .why-lip-5 h4 {
+        transform: rotate(48deg);
+        text-align: center;
+        position: relative;
+        /* left: -13%; */
+        margin-top: 40%;
+
+        color: white;
+    }
+
+    .why-lip-2,
+    .why-lip-4,
+    .why-lip-6 h4 {
+        transform: rotate(-48deg);
+        text-align: center;
+        position: relative;
+        /* left: -13%; */
+        margin-top: 40%;
+
+        color: white;
+    }
+
+    .why-head {
+        font-size: 18px;
+    }
+
+    .why-col-para {
+        font-size: 12px;
+    }
+
+    .why-col-para-2,
+    .why-col-para-4,
+    .why-col-para-6 {
+        position: relative;
+        top: 1%;
+    }
 }
 
 
