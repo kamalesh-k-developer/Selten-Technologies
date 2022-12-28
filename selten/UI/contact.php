@@ -11,7 +11,14 @@ include_once ('header.php');
   <div class="row contactrow">
               <!-- <div class="col-md-12"> -->
 <div class="col-md-4 contact-form">
-  
+          <!-- alert message -->
+        <div id = "faliure">
+             <?php echo $alert; ?>
+        </div>
+        <div id = "sucess">
+            
+        </div>
+          <!-- alert end --> 
   <h1 class="formhead">Get In Touch</h1>
   <div class="card about-card">
   <form class="cfeild" method = "POST">
@@ -27,7 +34,7 @@ include_once ('header.php');
   </div>
   <div class="form-group mt-3">
 
-    <input type="text" class="form-control cform" id="exampleInputPassword1" name = "email" placeholder="Enter The Email">
+    <input type="text" class="form-control cform" id="exampleInputPassword1" name = "gmail" placeholder="Enter The Email">
   </div>
   <div class="form-group mt-3">
    
@@ -89,23 +96,14 @@ include_once ('header.php');
 include_once ('footer.php');
 ?>
 <?php
-
-   use PHPMailer\PHPMailer\PHPMailer;
-   
-   require_once 'phpMailer/Exception.php';
-   require_once 'phpMailer/PHPMailer.php';
-   require_once 'phpMailer/SMTP.php';
-
-    $mail = new PHPMailer(true);
-    $alert = '';
-
-    //db insert query
+  
+//     //db insert query
     include_once('contact.php');
     include 'connect.php';
     if(isset($_POST['submit'])){
     $FirstName = $_POST['fname'];
     $LastName = $_POST['lname'];
-    $Email = $_POST['email'];
+    $Email = $_POST['gmail'];
     $PhoneNumber = $_POST['phone_number'];
     $LookingForServices = $_POST['languages'];
     $Message = $_POST['message'];
@@ -115,44 +113,49 @@ include_once ('footer.php');
             VALUES ('$FirstName','$LastName','$Email','$PhoneNumber','$LookingForServices','$Message')";
     $result = mysqli_query($connection,$sql);
     if($result){
-       echo '<script> alert("data inserted in database sucessfully")</script>';
+       echo "<script>alert('Sucessfully!')</script>";
       }else {
        die(mysqli_error($connection,$result));
       }
  }
 
-    // email sending  coding
-    if(isset($_POST['submit'])){
-      $FirstName = $_POST['fname'];
-      $LastName = $_POST['lname'];
-      $Email = $_POST['email'];
-      $PhoneNumber = $_POST['phone_number'];
-      $LookingForServices = $_POST['languages'];
-      $Message = $_POST['message'];
-  
-      try{
-          $mail->isSMTP();
-          $mail->host = 'smtp.gmail.com';
-          $mail->SMTPAuth = true;
-          $mail->Username = 'technologiesselten@gmail.com';
-          $mail->Password = 'RaguKumar@123';
-          $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-          $mail->port = '587';
-  
-          $mail->setform('technologiesselten@gmail.com');
-          $mail->addAddress('technologiesselten@gmail.com');
-  
-          $mail->isHTML(true);
-          $mail->subject = 'Message Received (contact form)';
-          $mail->body = '<h2>First Name : $FirstName <br>Last Name : $LastName <br>Email : $Email <br>Phone Number : $PhoneNumber  <br> Look For Services : $LookingForServices <br> Message : $Message </h2>';
-  
-          $mail->sent();
-          // $alert = '<script> alert("Mail received sucessfully")</script>';
-      } catch (Exception $e){
-          // $alert = '<script> alert(".$e->getMessage().")</script>'
-      }
-  
-    }
+// use PHPMailer\PHPMailer\PHPMailer;
+// use PHPMailer\PHPMailer\SMTP;
 
+// require_once 'phpMailer/src/Exception.php';
+// require_once 'phpMailer/src/PHPMailer.php';
+// require_once 'phpMailer/src/SMTP.php';
+
+// if(isset($_POST["submit"])){
+//     $FirstName = $_POST['fname'];
+//     $LastName = $_POST['lname'];
+//     $Gmail = $_POST['gmail'];
+//     $PhoneNumber = $_POST['phone_number'];
+//     $LookingForServices = $_POST['languages'];
+//     $Message = $_POST['message'];
+
+//     $mail = new PHPMailer(true);
+
+//        $mail->isSMTP();
+//        $mail->SMTPAuth=true;
+
+//        $mail->host = "smtp.gmail.com";
+//        $mail->SMTPSecure =PHPMailer::ENCRYPTION_STARTTLS;
+//        $mail->port =587;
+
+//        $mail->Username = "technologiesselten@gmail.com";
+//        $mail->Password = "uolevujemfnwodyw";
+
+//        $mail->setFrom($Gmail,$FirstName);
+
+//       //  $mail->addAddress("technologiesselten@gmail.com","selten");
+
+//        $mail->subject = $LookingForServices;
+//        $mail->body = $Message;
+
+//        $mail->sent();
+//        echo "header(location:contact.php?mail send sucessfully!)";
+//    }
 ?>
+
 </html>
