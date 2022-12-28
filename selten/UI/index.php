@@ -83,7 +83,7 @@ include_once('header.php');
 
         <div class="col-md-4  index-col-1 " data-aos="fade-right">
           <div class="index-main-ser">
-            <div class="card index-serivice-card " >
+            <div class="card index-serivice-card ">
               <div class="our-index-service-icon">
                 <i class="fas fa-desktop"></i>
               </div>
@@ -104,7 +104,7 @@ include_once('header.php');
 
           </div>
         </div>
-        <div class="col-md-4 index-col-2  "data-aos="fade-up">
+        <div class="col-md-4 index-col-2  " data-aos="fade-up">
           <div class="index-main-ser">
             <div class="card index-serivice-card">
               <div class="our-index-service-icon">
@@ -166,74 +166,111 @@ include_once('header.php');
       <div class="why-para">
         <h4>We will give you 6 reason to work with us</h4>
       </div>
-    
-    <div class="col-sm-12">
-      <div class="row why-row ">
-        <div class="col-sm-6  why-col why-col-1 ">
-          <div class="why-col-head why-col-head-1">
-            <h3>Quick response</h3>
+
+     
+        <div class="row why-row ">
+          <div class="col-md-6  why-col why-col-1 ">
+            
+            <main class="why-head why-head-1"> 
+              
+            <div class="why-circle">
+                  <div class="why-lip-1">
+
+                    <h4 class="why-head">Quick response</h4>
+                  </div>                
+                </div>
+                <div class="why-line"></div>
+            </main>
           </div>
-        </div>
-        <div class="col-sm-6 why-col why-col-2">
-          <div class="why-col-para">
-            Emergency response time is one hour or less guaranteed. We can log in to your PC or server remotely and resolve many issues immediately.
+          <div class="col-md-6 why-col why-col-2">
+            <div class="why-col-para why-col-para-1">
+              Emergency response time is one hour or less guaranteed. We can log in to your PC or server remotely and resolve many issues immediately.
+            </div>
           </div>
-        </div>
-        <div class="col-sm-6 why-col why-col-3 ">
-          <div class="why-col-para">
-            Emergency response time is one hour or less guaranteed. We can log in to your PC or server remotely and resolve many issues immediately.
+          <div class="col-sm-6 why-col why-col-3 ">
+            <div class="why-col-para why-col-para-2">
+            Our proudest accomplishment is the large number of long term clients who year after year put their trust in us.
+            </div>
           </div>
-        </div>
-        <div class="col-sm-6 why-col why-col-4">
-          <div class="why-col-head why-col-head-2">
-            <h3>Reputable</h3>
+          <div class="col-md-6 why-col why-col-4">
+            <main class="why-head why-head-2">
+            <div class="why-circle">
+                  <div class="why-lip-2"> 
+                     <h4 class="why-head">Reputable</h4>
+                    </div>               
+                </div>
+                <div class="why-line"></div>
+            </main>
           </div>
-        </div>
+          <div class="col-md-6 why-col why-col-5">
+            <main class=" why-head why-head-3">            
+            <div class="why-circle">
+                  <div class="why-lip-3">
+                  <h4 class="why-head">Experienced</h4>
+                  </div>               
+                </div>
+                <div class="why-line"></div>
+            </main>
+          </div>
+          <div class="col-md-6 why-col why-col-6">
+            <div class="why-col-para why-col-para-3">
+            We provide our team with continuing education opportunities on a regular basis to allow them to stay current with the latest technology.
+            </div>
+          </div>
+          <div class="col-md-6 why-col why-col-7">
+            <div class="why-col-para why-col-para-4">
+            We design, evaluate and justify technology solutions from a thorough understanding of the business benefit for your company.
+            </div>
+          </div>
+          <div class="col-md-6 why-col why-col-8">
+            <main class=" why-head why-head-4">            
+            <div class="why-circle">
+                  <div class="why-lip-4">
+                  <h4 class="why-head">Business savvy</h4>
+                  </div>              
+                </div>
+                <div class="why-line"></div>
+            </main>
+          </div>
+
+          <div class="col-md-6 why-col why-col-9">
+            <main class=" why-head why-head-5">              
+            <div class="why-circle">
+                  <div class="why-lip-5">
+                  <h4 class="why-head">Proactive</h4>
+                  </div>              
+                </div>
+                <div class="why-line"></div>
+            </main>
+          </div>
+          <div class="col-md-6 why-col why-col-10">
+            <div class="why-col-para why-col-para-5">
+            Our service philosophy is proactive, not reactive. We manage your network 24/7 to identify issues and address them before they become problems.
+            </div>
+          </div>
+
+          <div class="col-md-6 why-col why-col-11">
+            <div class="why-col-para why-col-para-6">
+            You deserve to have your questions answered in plain English , Hindi. Our team will clearly explain what is happening so you understand.
+            </div>
+          </div>
+          <div class="col-md-6 why-col why-col-12">
+            <main class=" why-head why-head-6">
+
+             
+            <div class="why-circle">
+                  <div class="why-lip-6">
+                  <h4 class="why-head">No geek speak</h4>
+                  </div>
+                
+                </div>
+                
+                
 
 
-        <div class="col-sm-6 why-col why-col-5">
-          <div class="why-col-head why-col-head-3">
-            <h3>Experienced</h3>
-          </div>
-        </div>
-        <div class="col-sm-6 why-col why-col-6">
-          <div class="why-col-para">
-            Emergency response time is one hour or less guaranteed. We can log in to your PC or server remotely and resolve many issues immediately.
-          </div>
-        </div>
-        <div class="col-sm-6 why-col why-col-7">
-          <div class="why-col-para">
-            Emergency response time is one hour or less guaranteed. We can log in to your PC or server remotely and resolve many issues immediately.
-          </div>
-        </div>
-        <div class="col-sm-6 why-col why-col-8">
-          <div class="why-col-head why-col-head-4">
-            <h3>Business savvy</h3>
-          </div>
-        </div>
+            </main>
+         
 
-        <div class="col-sm-6 why-col why-col-9">
-          <div class="why-col-head why-col-head-5">
-            <h3>Proactive</h3>
-          </div>
-        </div>
-        <div class="col-sm-6 why-col why-col-10">
-          <div class="why-col-para">
-            Emergency response time is one hour or less guaranteed. We can log in to your PC or server remotely and resolve many issues immediately.
-          </div>
-        </div>
-      
-        <div class="col-sm-6 why-col why-col-11">
-          <div class="why-col-para">
-            Emergency response time is one hour or less guaranteed. We can log in to your PC or server remotely and resolve many issues immediately.
-          </div>
-        </div>
-        <div class="col-sm-6 why-col why-col-12">
-          <div class="why-col-head why-col-head-6">
-            <h3>Comprehensive project management</h3>
-          </div>
-        </div>
-       
         </div>
       </div>
     </div>
