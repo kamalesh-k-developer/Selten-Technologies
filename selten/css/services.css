@@ -81,6 +81,7 @@
 .our-service-icon i {
     font-size: 50px;
     margin-top: 35px;
+    color: black;
     /* margin-left: 20px; */
     transition: transform 1s;
 
@@ -117,6 +118,9 @@
     left: -5px;
     bottom: -5px;
     z-index: -1;
+}
+.our-service-para{
+    color: black;
 }
 
 .shadowone {

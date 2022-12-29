@@ -26,7 +26,11 @@ body {
 }
 
 .navbar {
-    display: block
+    display: block;
+    position: fixed;
+    z-index: 5;
+    /* overflow: hidden !important; */
+    width: 100%;
 }
 
 .logo img {
@@ -516,10 +520,14 @@ body {
 
 
 /*image  */
+#slider{
+    margin-top: 130px;
+}
 
 #slider img {
     position: relative;
     display: none;
+    width: 100%;
     height: 500px;
 }
 
@@ -610,6 +618,7 @@ body {
 .our-index-service-icon i {
     font-size: 50px;
     margin-top: 35px;
+    color: black;
     /* margin-left: 20px; */
     transition: transform 1s;
 
@@ -647,6 +656,9 @@ body {
     left: -5px;
     bottom: -5px;
     z-index: -1;
+}
+.our-index-service-para{
+    color: black;
 }
 
 .index-shadowOne {
@@ -921,7 +933,7 @@ body {
 .why-head-5 {
     position: relative;
     top: -57%;
-    left: -21%;
+    left: -7.5%;
     transform: rotate(-65deg);
 }
 
@@ -930,7 +942,7 @@ body {
 .why-head-6 {
     position: relative;
     top: 63%;
-    left: 18%;
+    left: 32%;
     transform: rotate(65deg);
 }
 
@@ -940,7 +952,7 @@ body {
     width: 200px;
     border-radius: 100px;
     background: #0067c9;
-    /* z-index: 1; */
+    z-index: 1;
 }
 
 
@@ -950,8 +962,8 @@ body {
     top: 180px;
     left: 90px;
     height: 300px;
-    width: 2px;
-    background: #0067c9;
+    width: 5px;
+    background: #a9c5de;
     z-index: 0;
 }
 
@@ -1158,7 +1170,7 @@ body {
         width: 170px;
         border-radius: 100px;
         background: #0067c9;
-        /* z-index: 1; */
+        z-index: 1;
     }
 
 
@@ -1169,7 +1181,7 @@ body {
         left: 91px;
         height: 300px;
         width: 2px;
-        background: #0067c9;
+        /* background: #dbdde0; */
         z-index: 0;
     }
 
@@ -1247,7 +1259,7 @@ body {
         width: 150px;
         border-radius: 100px;
         background: #0067c9;
-        /* z-index: 1; */
+        z-index: 1;
     }
 
 
@@ -1258,7 +1270,7 @@ body {
         left: 91px;
         height: 286px;
         width: 2px;
-        background: #0067c9;
+        /* background: #dde0e3; */
         z-index: 0;
     }
 
@@ -1348,7 +1360,7 @@ body {
         width: 150px;
         border-radius: 100px;
         background: #0067c9;
-        /* z-index: 1; */
+        z-index: 1;
     }
 
 
@@ -1358,9 +1370,9 @@ body {
         position: absolute;
         top: 147px;
         left: 73px;
-        height: 153px;
+        height: 165px;
         width: 2px;
-        background: #0067c9;
+        /* background: #0067c9; */
         z-index: 0;
     }
 
@@ -1401,6 +1413,112 @@ body {
     .why-col-para-6 {
         position: relative;
         top: 1%;
+    }
+}
+@media (max-width:375px) {
+
+    .why-row {
+
+        position: relative;
+    left: -6%;
+    }
+
+    .why-col {
+
+        text-align: center;
+        /* border: 1px solid; */
+        width: 50%;
+        height: 200px;
+
+
+    }
+
+    .why-head-1,
+    .why-head-3,
+    .why-head-5 {
+
+        top: 0%;
+        left: -6%;
+        transform: rotate(-37deg);
+
+    }
+
+    .why-head-2,
+    .why-head-4,
+    .why-head-6 {
+
+        top: 12%;
+        left: 48%;
+        transform: rotate(47deg);
+
+    }
+
+    .why-circle {
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        border-radius: 100px;
+        background: #0067c9;
+        z-index: 1;
+    }
+
+
+
+    .why-line {
+        /* display: none; */
+        position: absolute;
+        top: 147px;
+        left: 73px;
+        height: 153px;
+        width: 2px;
+        /* background: #0067c9; */
+        z-index: 0;
+    }
+
+    .why-lip-1,
+    .why-lip-3,
+    .why-lip-5 h4 {
+        transform: rotate(37deg);
+        text-align: center;
+        position: relative;
+        /* left: -13%; */
+        margin-top: 40%;
+
+        color: white;
+    }
+
+    .why-lip-2,
+    .why-lip-4,
+    .why-lip-6 h4 {
+        transform: rotate(-47deg);
+        text-align: center;
+        position: relative;
+        /* left: -13%; */
+        margin-top: 40%;
+
+        color: white;
+    }
+
+    .why-head {
+        font-size: 15px;
+    }
+
+    .why-col-para {
+        font-size: 10px;
+    }
+
+    .why-col-para-2,
+    .why-col-para-4,
+    .why-col-para-6 {
+        position: relative;
+        top: 1%;
+    }
+    .why-col-para-1,
+    .why-col-para-3,
+    .why-col-para-5 {
+        position: relative;
+        top: 1%;
+        left: 22%;
     }
 }
 
@@ -1869,6 +1987,7 @@ body {
 
     .active-test {
         width: 11px;
+        height: 20px;
     }
 }
 
@@ -1895,6 +2014,7 @@ body {
     .test-row {
         margin-top: -13%;
         margin-left: 4%;
+        
     }
 
 
@@ -1947,6 +2067,7 @@ body {
     }
 
     .active-test {
-        width: 11px;
+        width: 12px;
+        height: 24px;
     }
 }
