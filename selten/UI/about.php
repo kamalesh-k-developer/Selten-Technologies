@@ -4,18 +4,10 @@ include_once('header.php');
 
 <body>
     <div class="row about-main">
-        <div class="div">
-            <img src="..\images\banners\about us.jpg" class="banner-about" alt="">
+        <div class="about-high">
+            <img src="..\images\banners\about us.jpg" class="ban-aboutus" alt="">
         </div>
-        <!-- <div class="col-md-6 top-col">
-            <h2 class="topic ">Get to know about us and relive our journey</h2>
-            <h4 class="topic2">Get acquainted with our team and understand how we work and<br> proceed towards success.<h4>
-                    <!-- <img src="..\images\banners\starrating-removebg-preview.png" class="rating" alt=""><h6>(4.8 out of 5 ratings)</h6> -->
-                    <!-- <div class="starate-icon">
-                        <i class="fa-solid fa-star "></i><i class="fa-solid fa-star "></i><i class="fa-solid fa-star "></i><i class="fa-solid fa-star "></i><i class="fa-solid fa-star-half-stroke"></i>
-                        <h6>(4.5 out of 5 ratings)</h6>
-                    </div>
-        </div> --> 
+       
 
 
       
@@ -24,46 +16,29 @@ include_once('header.php');
 
     <div class="conatiner-about">
         <div class="row main-about">
-            <div class="col-md-6 techrow">
+            <div class="col-md-6 techrow animate__animated animate__fadeInDown">
                 <div class="row techrow2 ">
                 
                     <h5 class="ourval">our values</h5>
 
-                    <!-- <div class="col-md-4">
-                        <img src="..\images\images\a-integrative-removebg-preview.png" class="inte " alt="">
-                        <p class="inte-para">Our first principal is honesty, which helps us meet the expectations we create.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="..\images\images\a-passion.png" class="passi" alt="">
-                        <p class="pass-para">Passion drives us to perform better,<br> progress continually,<br> and deliver timely.</p>
-                    </div>
-                    <div class="col-md-2">
-                        <img src="..\images\images\a-elearn.png" class="learn" alt="">
-                        <p class="learn-para">Our team is always learning something new to get better at what they do</p>
-                    </div>
+          
 
-                    <div class="col-md-2">
-                        <img src="..\images\images\a-team.png" class="team" alt="">
-                        <p class="team-para">Our team members are all about helping each other.</p>
-                    </div>
- -->
-
-  <div class="col-md-3 inte-head" style="background-image:linear-gradient(147deg, #bdc3c7 2%,  #828280 74% );">
+  <div class="col-md-3 inte-head">
   <center> <img src="..\images\images\a-integrative-removebg-preview.png" class="new-inte" alt=""></center>
    
     <p class="new-para1">Our first principal is honesty, which helps us meet the expectations we create.</p>
   </div>
-  <div class="col-md-3 passi-head" style="background-image:linear-gradient(147deg,#bdc3c7 2%,  #828280 74% );">
+  <div class="col-md-3 passi-head" style="background-image:linear-gradient(147deg,#B8D3FE 2%,  #AECAD6 74%);">
   <center> <img src="..\images\images\a-passion.png" class="new-passi" alt=""></center>
    
    <p class="new-para2">Passion drives us to perform better, progress continually, and deliver timely.</p>
   </div>
-  <div class="col-md-3 learn-head" style="background-image:linear-gradient(147deg, #bdc3c7 2%,  #828280 74%)">
+  <div class="col-md-3 learn-head" style="background-image:linear-gradient(147deg, #B8D3FE 2%,  #AECAD6 74%)">
   <center> <img src="..\images\images\a-elearn.png" class="new-learn" alt=""></center>
    
    <p class="new-para3">learn-para">Our team is always learning something new to get better at what they do.</p>
   </div>
-  <div class="col-md-3 team-head" style="background-image:linear-gradient(147deg,#bdc3c7 2%,  #828280 74% );">
+  <div class="col-md-3 team-head" style="background-image:linear-gradient(147deg,#AACAEF 2%,  #FDE7F9 74% );">
   <center> <img src="..\images\images\a-team.png" class="new-team" alt=""></center>
    
    <p class="new-para4">team-para">Our team members are all about helping each other</p>
@@ -85,24 +60,22 @@ include_once('header.php');
                 </div>
             </div>
             <!-- our mission -->
-            <div class="row">
-                <div class="col-md-6">
-                    
-                    <img src="..\images\logo\roundarrow-removebg-preview.png" class="right-img" alt="">
-                   
-                    <h4 class="our-miss">our mission</h4>
-                    <p class="miss-para">our mission of young minds <br>showcasing our talent to the CRM<br> and Marketing world to ease <br>the processes of clients business<br> and have happy customers.<br> We offer services on various platforms<br> across the globe which includes small,<br> medium and large scale business. </p>
-                    <img src="..\images\logo\greenarrow-removebg-preview.png" class="left-img" alt="">
-                    <h4 class="our-viss">our vission</h4>
-                    <p class="viss-para">our vission of young minds <br>showcasing our talent to the CRM<br> and Marketing world to ease <br>the processes of clients business<br> and have happy customers.<br> We offer services on various platforms<br> across the globe which includes small,<br> medium and large scale business. </p>
-                </div>
-                <div class="col-md-6">
-                    <img src="..\" class="pexels-img" alt="">
-                </div>
+           <div class="row">
+            <div class="col-md-6">
+                <img src="..\images\images\brain3.jpg"  class="pexels-img" alt="">
             </div>
+            <div class="col-md-6">
+              <h4 class="our-miss">our mission</h4>  <img src="..\images\logo\down-removebg-preview.png"class="down-img" alt="">
+              <p class="miss-para">our mission of young minds <br>showcasing our talent to<br> the CRM and Marketing world</p>
+             <i class="fa-regular fa-circle full-circle"></i>
+             <h4 class="our-viss">our vision</h4><p class="viss-para">our mission of young minds <br>showcasing our talent <br>to the CRM and Marketing world</p>
+           
+            
+                </div>
+           </div>
             
             <!-- our journey -->
-            <section class="about-section" id="about">
+            <section class="about-section animate__animated.animate__faster " id="about">
                 <div class="container-about">
                     <div class="about-center">
                         <h2 class="section-heading text-about">About</h2>
@@ -144,20 +117,11 @@ include_once('header.php');
                                 </div>
                             </div>
                         </li>
-                        <!-- <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <h4>
-                                    Be Part
-                                    <br>
-                                    Of Our
-                                    <br>
-                                    Story!
-                                </h4>
-                            </div>
-                        </li> -->
+                       
                     </ul>
                 </div>
             </section>
+            
         </div>
     </div>
 

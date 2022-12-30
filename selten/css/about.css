@@ -1,62 +1,22 @@
-
-/* .topic{ */
-    /* position: relative;
-    font-size: -webkit-xxx-large;
-    font-family: serif;
-    font-weight: 900;
-    left: 63px;
-    top: 82px;
+*{
+  margin: 0%;
+  padding: 0%;
 }
-.topic2{
-    position: relative;
-    top: 74px;
-    font-size: smaller;
-    left: 64px;
-}
-.top-img{
-    width: 107%;
-    height: 100%;
-    position: relative;
-    right: 43px;
-}
-.top-img:hover {
-  transform: scaleX(-1);
-}
-.starate-icon{
+.about-high{
   position: relative;
-  right: -156px;
-  top: 77px;
-  width: 53%;
+  height: 400px;
 }
-.starate-icon i{
-    font-size: medium;
-    color:orange;
-}
-.top-col{
-    /* background-color: #e4e9ff !important; */
-    /* background-image: linear-gradient(148deg, #e4e9ff 74%,white 2%); */
-} 
-/* .main-about{
-    
-        background-color: aliceblue;
-    
-} */
-.banner-about{
+.ban-aboutus{
   position: relative;
-}
-.value-our{
-    position: relative;
-    left: 48px;
-    font-size: -webkit-xxx-large;
-    font-family: -webkit-body;
-    font-weight: 900;
+  height:450px;
 }
 
 
 
-.found{
+
+/* .found{
     background-color: aliceblue;
-}
+} */
 /* our journey */
 .timeline {
     position: relative;
@@ -260,7 +220,7 @@
       font-size: 2.5rem;
       margin-top: 0;
       margin-bottom: 1rem;
-      color: aliceblue;
+      color: rgb(21, 22, 22);
   }
   .text-about {
       text-transform: uppercase !important;
@@ -299,6 +259,7 @@
   .container-sm, .container {
       max-width: 540px;
   }
+
  
   *, *::before, *::after {
       box-sizing: border-box;
@@ -314,44 +275,37 @@
     font-size: xx-large;
     font-weight: 900;
   }
-  .container-about
-  {
-    position: relative;
-    bottom:27px;
-    /* background-image: linear-gradient(147deg, #F0F2F0 2%, #000C40 74%); */
-  
-
-  
-  }
  /* new changs */
   .techrow2{
     position: relative;
-    width: 172%;
-    height: 375px;
+    width: 177%;
+    height: 465px;
     justify-content: center;
-    left: 119px;
+    left: 100px;
+    align-items: center;
   }
   .new-inte{
     position: relative;
-     width:50%;
-     top:10px;
-  transition: all 2s;
+    top: 0px;
+    width: 50%;
+    transition: all 2s;
+    
 }
 .new-inte:hover{
     transform: rotateY(180deg);
 }
   .new-para1{
     position: relative;
-    top: 14px;
+    top: 0px;
     font-size: 20px;
     font-family: sans-serif;
-    color:white;
+    color: rgb(17, 17, 17);
   }
   .new-passi{
-     position: relative;
-     width: 82%;
-     bottom: 24px;
-  transition: all 2s;
+    position: relative;
+    width: 50%;
+    bottom: 0px;
+    transition: all 2s;
 }
 .new-passi:hover{
     transform: rotateY(180deg);
@@ -359,15 +313,15 @@
   .new-para2{
     
     position: relative;
-    bottom: 63px;
+    bottom: 0px;
     font-size: 20px;
     font-family: sans-serif;
-    color:white;
+    color: rgb(17, 17, 17);
   }
   .new-learn{
-     position: relative;
-    width: 115%;
-    right: 20px;
+    position: relative;
+    width: 90%;
+    right: 0px;
     transition: all 2s;
   }
   .new-learn:hover{
@@ -376,17 +330,17 @@
   
   .new-para3{
     position: relative;
-    bottom: 20px;
+    bottom: 0px;
     font-size: 20px;
     font-family: sans-serif;
-    color:white;
+    color: rgb(33, 33, 33);
   }
   .new-team{
     
-     position: relative;
-     width: 82%;
-     bottom: 16px;
-     transition: all 2s;
+    position: relative;
+    width: 69%;
+    bottom: 0px;
+    transition: all 2s;
     }
     .new-team:hover{
         transform: rotateY(180deg);
@@ -395,127 +349,205 @@
   .new-para4{
     
     position: relative;
-    bottom: 66px;
+    bottom: px;
     font-size: 20px;
     font-family: sans-serif;
-    color:white;
+    color: rgb(21, 19, 19);
   }
 .our-goal{
   position: relative;
   font-size: 2.5rem;
-  right: 301px;
+  right: 0px;
   font-family: revert;
   font-style: revert;
-  top: 46px;
+  top: -16px;
+  text-shadow: 2px 2px 5px red;
 }
 .goal-img{
-  /* position: relative;
-    width: 60%;
-    top: 31px; */
-    /* width: 100%;
-    height: 416px;
+  width: 100%;
+    height: 317px;
     position: relative;
-    top: 26px; */
-    width: 52%;
-    height: 311px;
-    position: relative;
-    top: 32px;
-    left: 45px;
-}
+    top: 0px;
+    left: 0px;
+    transition: width 2s;
+  }
+  
+  .goal-img:hover {
+    width: 300px;
+  }
+      
+    
+
 
 
 .goal-para{
   position: relative;
-  float: left;
-  font-size: 25px;
+  font-size: 23px;
   font-family: serif;
   color: #101628;
-  right: 100px;
-  bottom: 111px;
+  right: 0px;
+  bottom: 17px;
   background-color: #d3d3d3;
-  border-radius: 8px 12px 4px 9px;
+  
+  box-shadow: 10px 10px lightblue;
+ 
 }
+
+
+
+
 .our-our{
   position: relative;
-  font-size: large;
-  top: 22px;
-  right: 295px;
-  top: 65px;
+    font-size: x-large;
+    top: 22px;
+    right: 0px;
+    top: 0px;
+    text-shadow: 2px 2px 5px red;
 }
 .ourgoal-right{
-  position: relative;
   
-  top:28px;
+  
+  position: relative;
 }
 .inte-head{
   position: relative;
-  right: 50px;
+  right: 0px;
+  height: 300px;
 }
 .passi-head{
   position: relative;
-  right:21px;
+  right: 0px;
+  height: 300px !important;
 }
 
 .learn-head{
   position: relative;
+  height: 300px;
 }
 
 .team-head{
   position: relative;
-  left:26px;
+  left: 0px;
+  height: 301px;
 }
 /* our mission and vision */
 .right-img{
 
-  position: relative;
+  /* position: relative;
   width: 50%;
-  left: 110px;
+  left: 110px; */
+  /* position: relative;
+    width: 53%;
+   
+    left: 311px; */
 }
+
+
 .left-img{
-  position: relative;
+  /* position: relative;
   width: 53%;
   left: 100px;
-  bottom: 205px;
+  bottom: 205px; */
+  /* width: 42%;
+  position: relative;
+  bottom: 322px;
+  left: 198px; */
 }
 .our-miss{
-  position: relative;
+  /* position: relative;
   text-align: center;
   bottom: 222px;
   left: -60px;
   font-size: xx-large;
   font-family: sans-serif;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; */
+  text-align: center;
+  position: relative;
+  color: rgb(245, 242, 242);
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; 
 }
 .our-viss{
-  
+/*   
   position: relative;
   text-align: center;
-  bottom: 447px;
-  left: -52px;
-  font-size: xx-large;
+  bottom: 449px;
+  left: 211px;
+  font-size: x-large;
   font-family: sans-serif;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; */
+  text-align: center;
+    position: relative;
+    bottom: 111px;
+    color: rgb(254, 252, 252);
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 .miss-para{
-  position: relative;
+  /* position: relative;
   text-align: center;
-  font-size: x-small;
-  bottom: 218px;
-  left: -55px;
-  color: red;;
+  font-size: xx-small;
+  bottom: 283px;
+  left: 165px;
+  color: blue; */
+  position: relative;
+    text-align: center;
+    font-size: x-small;
+    top: 70px;
+    left: 210px;
+    color:blue;
 }
 .viss-para{
-  position: relative;
+  /* position: relative;
   text-align: center;
-  bottom: 453px;
-  left: -47px;
-  font-size: x-small;
+  bottom: 526px;
+  left: 19px;
+  font-size: xx-small;
   font-family: sans-serif;
-  color: red;
+  color:blue; */
+  text-align: center;
+    font-size: x-small;
+    position: relative;
+    bottom: 100px;
+    right: 54px;
+    color:blue;
 }
 .pexels-img{
 
   /* position: relative;
-  width: 730px;
-  height: 591px;
-  right: 108px;
-  opacity: .7; */
+  width: 632px;
+  height: 882px; */
+}
+
+.ourval{
+  position: relative;
+  text-align: center;
+  font-size: xx-large;
+  font-family: sans-serif;
+  font-style: normal;
+  top: 65px;
+}
+/*  */
+body
+{
+  background:url('https://s-media-cache-ak0.pinimg.com/736x/f4/ac/6a/f4ac6aac3afb587f6cae04155656fca3.jpg');
+}
+.down-img{
+  position: relative;
+  width: 43%;
+  float: right;
+  right: 100px;
+}
+.fa-circle:before {
+  
+  font-size: 215px;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  left: 141px;
+  top: 135px;
+  color:#4258e1;
+}
+.our-miss{
+  position: relative;
 }
