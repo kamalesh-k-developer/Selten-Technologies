@@ -1,146 +1,14 @@
-
-.topic{
-    position: relative;
-    font-size: -webkit-xxx-large;
-    font-family: serif;
-    font-weight: 900;
-    left: 63px;
-    top: 82px;
+*{
+  margin: 0%;
+  padding: 0%;
 }
-.topic2{
-    position: relative;
-    top: 74px;
-    font-size: smaller;
-    left: 64px;
-}
-.top-img{
-    width: 107%;
-    height: 100%;
-    position: relative;
-    right: 43px;
-}
-.top-img:hover {
-  transform: scaleX(-1);
-}
-.starate-icon{
+.about-high{
   position: relative;
-  right: -156px;
-  top: 77px;
-  width: 53%;
+  height: 400px;
 }
-.starate-icon i{
-    font-size: medium;
-    color:orange;
-}
-.top-col{
-    /* background-color: #e4e9ff !important; */
-    background-image: linear-gradient(148deg, #e4e9ff 74%,white 2%);
-}
-/* .main-about{
-    
-        background-color: aliceblue;
-    
-} */
-.value-our{
-    position: relative;
-    left: 48px;
-    font-size: -webkit-xxx-large;
-    font-family: -webkit-body;
-    font-weight: 900;
-}
-.inte{
-    width: 66%;
-    position: relative;
-    left: 125px;
-    transition: all 2s;
-}
-.inte:hover{
-    transform: rotateY(180deg);
-}
-.passi{
-    width: 108%;
-    position: relative;
-    left: 186px;
-    bottom: 42px;
-    transition: all 2s;
-}
-.passi:hover{
-    transform: rotateY(180deg);
-}
-.learn{
-    width: 341%;
-    position: relative;
-    left: 255px;
-    bottom: 24px;
-    transition: all 2s;
-}
-.learn:hover{
-    transform: rotateY(180deg);
-}
-.team{
-    width: 249%;
-    position: relative;
-    left: 441px;
-    bottom: 43px;
-    transition: all 2s;
-}
-.team:hover{
-transform: rotateY(180deg);
-}
-
-
-.ourval{
-    position: relative;
-    font-size: xxx-large;
-    font-family: serif;
-    text-align: center;
-
-}
-/* .inte-para{
-    position: relative;
-    font-size: small;
-    left: 101px;
-}
-.pass-para{
-    position: relative;
-    bottom: 87px;
-    font-size: small;
-    left: 221px;
-}
-.learn-para{
-    position: relative;
-    bottom: 45px;
-    left: 344px;
-    font-size: small;
-    width: 143px;
-}
-.team-para{
-    position: relative;
-    bottom: 104px;
-    left: 484px;
-    width: 150px;
-    font-size: small;
-}
-
-.ourgoal{
-    font-size: xxx-large;
-    font-family: serif;
-    position: relative;
-    bottom: 82px;
-}
-.our-para{
-    padding: 38px;
-    width: 62%;
-    left: 19%;
-    position: relative;
-    bottom: 113px;
-    bottom: 90px;
-    background-image: linear-gradient(143deg,white 2%,#72A0C1 74%);
-    border-radius: 54px 121px 143px 134px;
-} */
-
-.found{
-    background-color: aliceblue;
+.ban-aboutus{
+  position: relative;
+  height:450px;
 }
 /* our journey */
 .timeline {
@@ -240,7 +108,6 @@ transform: rotateY(180deg);
     /* background-color: #ccebff; */
     color:rgb(24, 23, 23);
   }
-  
   @media (min-width: 768px) {
     .timeline:before {
       left: 50%;
@@ -312,7 +179,6 @@ transform: rotateY(180deg);
       padding: 0 100px 20px 20px;
     }
   }
-  
   .about-section {
     padding: 6rem 0;
   }
@@ -328,29 +194,24 @@ transform: rotateY(180deg);
     font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     margin-bottom: 4rem;
   }
-  
   @media (min-width: 768px) {
     section {
       padding: 9rem 0;
     }
   }
-  
   .about-center {
       text-align: center !important;
       position: relative;
-
   }
-  
   .about-section h2.section-heading, .about-section .section-heading h2 {
       font-size: 2.5rem;
       margin-top: 0;
       margin-bottom: 1rem;
-      color: aliceblue;
+      color: rgb(21, 22, 22);
   }
   .text-about {
       text-transform: uppercase !important;
   }
-  
   .about-section h3.section-subheading, .about-section .section-subheading h3 {
       font-size: -6.5rem;
       color: rgb(17, 17, 17);
@@ -358,33 +219,11 @@ transform: rotateY(180deg);
       font-style: italic;
       font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
       margin-bottom: 4rem;
-  }
-  
+  } 
   .text-jourey {
       --bs-text-opacity: 1;
       color: #114c80 !important;
   }
-  @media (min-width: 1400px)
-  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-      max-width: 1320px;
-  }
-  @media (min-width: 1200px)
-  .container-xl, .container-lg, .container-md, .container-sm, .container {
-      max-width: 1140px;
-  }
-  @media (min-width: 992px)
-  .container-lg, .container-md, .container-sm, .container {
-      max-width: 960px;
-  }
-  @media (min-width: 768px)
-  .container-md, .container-sm, .container {
-      max-width: 720px;
-  }
-  @media (min-width: 576px)
-  .container-sm, .container {
-      max-width: 540px;
-  }
- 
   *, *::before, *::after {
       box-sizing: border-box;
   }
@@ -399,43 +238,37 @@ transform: rotateY(180deg);
     font-size: xx-large;
     font-weight: 900;
   }
-  .container-about
-  {
-    position: relative;
-    bottom:27px;
-    /* background-image: linear-gradient(147deg, #F0F2F0 2%, #000C40 74%); */
-  
-
-  
-  }
  /* new changs */
   .techrow2{
     position: relative;
-    width: 172%;
-    height: 375px;
+    width: 177%;
+    height: 465px;
     justify-content: center;
-    left: 119px;
+    left: 100px;
+    align-items: center;
   }
   .new-inte{
     position: relative;
-     width:50%;
-     top:10px;
-  transition: all 2s;
+    top: 0px;
+    width: 50%;
+    transition: all 2s;
+    
 }
 .new-inte:hover{
     transform: rotateY(180deg);
 }
   .new-para1{
     position: relative;
-    top: 14px;
+    top: 0px;
     font-size: 20px;
-    font-family: cursive;
+    font-family: sans-serif;
+    color: rgb(17, 17, 17);
   }
   .new-passi{
-     position: relative;
-     width: 82%;
-     bottom: 24px;
-  transition: all 2s;
+    position: relative;
+    width: 50%;
+    bottom: 0px;
+    transition: all 2s;
 }
 .new-passi:hover{
     transform: rotateY(180deg);
@@ -443,14 +276,15 @@ transform: rotateY(180deg);
   .new-para2{
     
     position: relative;
-    bottom: 63px;
+    bottom: 0px;
     font-size: 20px;
-    font-family: cursive;
+    font-family: sans-serif;
+    color: rgb(17, 17, 17);
   }
   .new-learn{
-     position: relative;
-    width: 115%;
-    right: 20px;
+    position: relative;
+    width: 90%;
+    right: 0px;
     transition: all 2s;
   }
   .new-learn:hover{
@@ -459,16 +293,17 @@ transform: rotateY(180deg);
   
   .new-para3{
     position: relative;
-    bottom: 20px;
+    bottom: 0px;
     font-size: 20px;
-    font-family: cursive;
+    font-family: sans-serif;
+    color: rgb(33, 33, 33);
   }
   .new-team{
     
-     position: relative;
-     width: 82%;
-     bottom: 16px;
-     transition: all 2s;
+    position: relative;
+    width: 69%;
+    bottom: 0px;
+    transition: all 2s;
     }
     .new-team:hover{
         transform: rotateY(180deg);
@@ -477,197 +312,205 @@ transform: rotateY(180deg);
   .new-para4{
     
     position: relative;
-    bottom: 66px;
+    bottom: px;
     font-size: 20px;
-    font-family: cursive;
+    font-family: sans-serif;
+    color: rgb(21, 19, 19);
   }
 .our-goal{
   position: relative;
   font-size: 2.5rem;
-  right: 301px;
+  right: 0px;
   font-family: revert;
   font-style: revert;
-  top: 46px;
+  top: -16px;
+  text-shadow: 2px 2px 5px red;
 }
 .goal-img{
-  /* position: relative;
-    width: 60%;
-    top: 31px; */
-    /* width: 100%;
-    height: 416px;
+  width: 100%;
+    height: 317px;
     position: relative;
-    top: 26px; */
-    width: 52%;
-    height: 311px;
-    position: relative;
-    top: 32px;
-    left: 45px;
-}
+    top: 0px;
+    left: 0px;
+    transition: width 2s;
+  }
+  
+  .goal-img:hover {
+    width: 300px;
+  }
+      
+    
+
 
 
 .goal-para{
   position: relative;
-  float: left;
-  font-size: 20px;
+  font-size: 23px;
   font-family: serif;
   color: #101628;
-  right: 100px;
-  border: 5px solid black;
-  border-radius: 10px 65px 0px 16px;
-  background-color: #FEBE10;
+  right: 0px;
+  bottom: 17px;
+  background-color: #d3d3d3;
+  
+  box-shadow: 10px 10px lightblue;
+ 
 }
+
+
+
+
 .our-our{
   position: relative;
-  font-size: large;
-  top: 22px;
-  right: 295px;
-  top: 65px;
+    font-size: x-large;
+    top: 22px;
+    right: 0px;
+    top: 0px;
+    text-shadow: 2px 2px 5px red;
 }
 .ourgoal-right{
+  
+  
   position: relative;
-  background-color:
-  top:28px;
 }
 .inte-head{
   position: relative;
-  right: 50px;
+  right: 0px;
+  height: 300px;
 }
 .passi-head{
   position: relative;
-  right:21px;
+  right: 0px;
+  height: 300px !important;
 }
 
 .learn-head{
   position: relative;
+  height: 300px;
 }
 
 .team-head{
   position: relative;
-  left:26px;
+  left: 0px;
+  height: 301px;
 }
-/* our selten */
-/* .miss-img{
-  position: relative;
-  width: 100%;
+/* our mission and vision */
+.right-img{
+
+  /* position: relative;
+  width: 50%;
+  left: 110px; */
+  /* position: relative;
+    width: 53%;
+   
+    left: 311px; */
 }
-.viss-img{
+
+
+.left-img{
+  /* position: relative;
+  width: 53%;
+  left: 100px;
+  bottom: 205px; */
+  /* width: 42%;
   position: relative;
-  width: 86%;
+  bottom: 322px;
+  left: 198px; */
 }
-.sel-img{
-  position: relative;
-  width: 100%;
-  top:23px;
-}
-/* h4 */
-/* .our-miss{
-  position: relative;
-  bottom: 80px;
-  left: 125px;
+.our-miss{
+  /* position: relative;
+  text-align: center;
+  bottom: 222px;
+  left: -60px;
   font-size: xx-large;
-  font-family: emoji;
+  font-family: sans-serif;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; */
+  text-align: center;
+  position: relative;
+  color: rgb(245, 242, 242);
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; 
 }
 .our-viss{
+/*   
   position: relative;
-  left: 126px;
-  bottom: 78px;
+  text-align: center;
+  bottom: 449px;
+  left: 211px;
+  font-size: x-large;
+  font-family: sans-serif;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; */
+  text-align: center;
+    position: relative;
+    bottom: 111px;
+    color: rgb(254, 252, 252);
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.miss-para{
+  /* position: relative;
+  text-align: center;
+  font-size: xx-small;
+  bottom: 283px;
+  left: 165px;
+  color: blue; */
+  position: relative;
+    text-align: center;
+    font-size: x-small;
+    top: 70px;
+    left: 210px;
+    color:blue;
+}
+.viss-para{
+  /* position: relative;
+  text-align: center;
+  bottom: 526px;
+  left: 19px;
+  font-size: xx-small;
+  font-family: sans-serif;
+  color:blue; */
+  text-align: center;
+    font-size: x-small;
+    position: relative;
+    bottom: 100px;
+    right: 54px;
+    color:blue;
+}
+.pexels-img{
+
+  /* position: relative;
+  width: 632px;
+  height: 882px; */
+}
+
+.ourval{
+  position: relative;
+  text-align: center;
   font-size: xx-large;
-  font-family: auto;
+  font-family: sans-serif;
+  font-style: normal;
+  top: 65px;
 }
-.our-sel{
-  position: relative;
-    left: 71px;
-    bottom: 47px;
-    font-size: xx-large;
-    font-family: emoji;
+/*  */
+body
+{
+  background:url('https://s-media-cache-ak0.pinimg.com/736x/f4/ac/6a/f4ac6aac3afb587f6cae04155656fca3.jpg');
 }
-/* logo */
-/* .miss-logo{
+.down-img{
   position: relative;
-  width: 23%;
-  bottom: 97px;
-  left: 16px;
-} */
- .miss-img{
-  position: relative;
-  width: 80%;
- }
- .miss-logo{
-  position: relative;
-  width: 20%;
-  bottom: 128px;
-  left: 15px;
- }
- .our-miss{
-
-  position: relative;
-  bottom: 199px;
-  left: 163px;
-  font-size: x-large;
-  font-style: italic;
-  font-family: 'Font Awesome 6 Brands';
-
- }
- /* number2 */
- .viss-img{
-  position: relative;
-  width: 65%;
-  bottom: 141px;
-  left: 98px;
+  width: 43%;
+  float: right;
+  right: 100px;
+}
+.fa-circle:before {
   
- }
- .viss-logo{
-  position: relative;
-  width: 14%;
-  right: 44%;
-  bottom: 146px;
- 
- }
- .our-viss{
-  position: relative;
+  font-size: 215px;
+  align-items: center;
   text-align: center;
-  bottom: 221px;
-  left: 50px;
-  font-size: x-large;
-  font-style: italic;
-  font-family: 'Font Awesome 5 Brands';
-  
-
-
- }
- .sel-img{
   position: relative;
-    width: 76%;
-    bottom: 154px;
- }
- .our-sel{
-
+  left: 141px;
+  top: 135px;
+  color:#4258e1;
+}
+.our-miss{
   position: relative;
-  text-align: center;
-  bottom: 232px;
-  right: 89px;
-  font-size: x-large;
-  font-style: italic;
-  font-family: 'FontAwesome';
- }
- .paras{
-  
-  position: relative;
-    width: 544px;
-    height: 247px;
-    font-size: larger;
-    right: 90px;
-  
-    top: 78px;
-}
- 
- .para-1{
-  background-image: url("../images/logo/businesswoman-holding-card-text-our-mission-199451995.jpg");
- 
-}
-.para-2{
-  background-image:url("../images/logo/HR-3.png.crdownload")
-}
-.para-3{
-  background-image: linear-gradient(143deg,#7baeff 74%,#9fc3ff 5%);
 }

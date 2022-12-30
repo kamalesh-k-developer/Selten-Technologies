@@ -1,4 +1,5 @@
 
+
 .contactrow{
     /* background: red;
     background-image: linear-gradient(147deg, white 0%, rgb(18, 18, 43) 74%); */
@@ -16,6 +17,7 @@
     justify-content: center;
     padding-top: 5%;
     color: rgb(8, 9, 9);
+    height: 108px;
   
 }
 .about-card{
