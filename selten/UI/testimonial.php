@@ -1,3 +1,59 @@
+<div class="container">
+    <section id="testim" class="testim" style="padding: 0px;">
+        <div class="testim-cover">
+            <div class="wrap">
+
+                <span id="right-arrow" class="arrow right fa fa-chevron-right" style="display:none;"></span>
+                <span id="left-arrow" class="arrow left fa fa-chevron-left " style="display:none;"></span>
+                <ul id="testim-dots" class="dots">
+                    <li class="dot active"></li>
+                    <!--
+                    -->
+                    <li class="dot"></li>
+                    <!--
+                    -->
+                    <li class="dot"></li>
+                    <!--
+                    -->
+                    <li class="dot"></li>
+                    <!--
+                    -->
+
+                </ul>
+                <div id="testim-content" class="cont">
+
+                    <div class="active">
+                        <div class="img"><img src="..\images\images\test-p2.jpg" alt=""></div>
+                        <h2>Mark</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    </div>
+
+                    <div>
+                        <div class="img"><img src="..\images\images\test2.jfif" alt=""></div>
+                        <h2>Random</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    </div>
+
+                    <div>
+                        <div class="img"><img src="..\images\images\test-p.jpg" alt=""></div>
+                        <h2>Bilgates</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    </div>
+
+                    <div>
+                        <div class="img"><img src="..\images\images\test-p2.jpg" alt=""></div>
+                        <h2>Mark</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>
 <style>
     /* *,
     *:after,
@@ -28,11 +84,10 @@
         height: auto;
         font-size: 14px;
         /*     font-family: Dubai-Light; */
-        /* background: #fff;
+    /* background: #fff;
         overflow: hidden;
-    } */ */
-
-    .testim {
+    /* } */
+    */ .testim {
         width: 100%;
         position: absolute;
         top: 50%;
@@ -77,7 +132,7 @@
     }
 
     .testim .arrow:hover {
-        color: green;
+        color: #006bc9;
     }
 
 
@@ -106,7 +161,7 @@
         width: 12px;
         height: 12px;
         border-radius: 50%;
-        border: 1px solid green;
+        border: 1px solid #006bc9;
         margin: 0 10px;
         cursor: pointer;
         -webkit-transition: all .5s ease-in-out;
@@ -119,8 +174,8 @@
 
     .testim .dots .dot.active,
     .testim .dots .dot:hover {
-        background: green;
-        border-color: green;
+        background: #0069c9;
+        border-color: #006bc9;
     }
 
     .testim .dots .dot.active {
@@ -165,7 +220,7 @@
     }
 
     .testim .cont div h2 {
-        color: green;
+        color: #006bc9;
         font-size: 1em;
         margin: 15px 0;
     }
@@ -621,175 +676,82 @@
     }
 </style>
 <!------------Design By Pradeep Singh Tomar----------->
-<div class="container">
-    <section id="testim" class="testim">
-        <div class="testim-cover">
-            <div class="wrap">
 
-                <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
-                <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
-                <ul id="testim-dots" class="dots">
-                    <li class="dot active"></li>
-                    <!--
-                    -->
-                    <li class="dot"></li>
-                    <!--
-                    -->
-                    <li class="dot"></li>
-                    <!--
-                    -->
-                    <li class="dot"></li>
-                    <!--
-                    -->
-                    <li class="dot"></li>
-                </ul>
-                <div id="testim-content" class="cont">
-
-                    <div class="active">
-                        <div class="img"><img src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/kartik-aaryan-1045198-08-12-2017-06-34-11.jpg" alt=""></div>
-                        <h2>Lorem P. Ipsum</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                    </div>
-
-                    <div>
-                        <div class="img"><img src="https://timesofindia.indiatimes.com/thumb/msid-75752690,width-800,height-600,resizemode-4/75752690.jpg" alt=""></div>
-                        <h2>Mr. Lorem Ipsum</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                    </div>
-
-                    <div>
-                        <div class="img"><img src="https://p16.muscdn.com/img/musically-maliva-obj/1627333501517830~c5_720x720.jpeg" alt=""></div>
-                        <h2>Lorem Ipsum</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                    </div>
-
-                    <div>
-                        <div class="img"><img src="https://p16-sg-default.akamaized.net/aweme/1080x1080/tiktok-obj/1666413671597057.jpeg" alt=""></div>
-                        <h2>Lorem De Ipsum</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                    </div>
-
-                    <div>
-                        <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSKLJe1Lrz2N3ufVSwQokSJ79jGBbIptXuVnsdxMmNUlE14ohwp&usqp=CAU" alt=""></div>
-                        <h2>Ms. Lorem R. Ipsum</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-    </section>
-</div>
 <script src="https://use.fontawesome.com/1744f3f671.js"></script>
 <script>
     // vars
-'use strict'
-var	testim = document.getElementById("testim"),
-		testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
-    testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
-    testimLeftArrow = document.getElementById("left-arrow"),
-    testimRightArrow = document.getElementById("right-arrow"),
-    testimSpeed = 4500,
-    currentSlide = 0,
-    currentActive = 0,
-    testimTimer,
-		touchStartPos,
-		touchEndPos,
-		touchPosDiff,
-		ignoreTouch = 30;
-;
+    'use strict'
+    var testim = document.getElementById("testim"),
+        testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
+        testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
+        testimLeftArrow = document.getElementById("left-arrow"),
+        testimRightArrow = document.getElementById("right-arrow"),
+        testimSpeed = 2000,
+        currentSlide = 0,
+        currentActive = 0,
+        testimTimer,
+        touchStartPos,
+        touchEndPos,
+        touchPosDiff,
+        ignoreTouch = 30;;
 
-window.onload = function() {
+    window.onload = function() {
 
-    // Testim Script
-    function playSlide(slide) {
-        for (var k = 0; k < testimDots.length; k++) {
-            testimContent[k].classList.remove("active");
-            testimContent[k].classList.remove("inactive");
-            testimDots[k].classList.remove("active");
+        // Testim Script
+        function playSlide(slide) {
+            for (var k = 0; k < testimDots.length; k++) {
+                testimContent[k].classList.remove("active");
+                testimContent[k].classList.remove("inactive");
+                testimDots[k].classList.remove("active");
+            }
+
+            if (slide < 0) {
+                slide = currentSlide = testimContent.length - 1;
+            }
+
+            if (slide > testimContent.length - 1) {
+                slide = currentSlide = 0;
+            }
+
+            if (currentActive != currentSlide) {
+                testimContent[currentActive].classList.add("inactive");
+            }
+            testimContent[slide].classList.add("active");
+            testimDots[slide].classList.add("active");
+
+            currentActive = currentSlide;
+
+            clearTimeout(testimTimer);
+            testimTimer = setTimeout(function() {
+                playSlide(currentSlide += 1);
+            }, testimSpeed)
         }
 
-        if (slide < 0) {
-            slide = currentSlide = testimContent.length-1;
-        }
-
-        if (slide > testimContent.length - 1) {
-            slide = currentSlide = 0;
-        }
-
-        if (currentActive != currentSlide) {
-            testimContent[currentActive].classList.add("inactive");            
-        }
-        testimContent[slide].classList.add("active");
-        testimDots[slide].classList.add("active");
-
-        currentActive = currentSlide;
-    
-        clearTimeout(testimTimer);
-        testimTimer = setTimeout(function() {
-            playSlide(currentSlide += 1);
-        }, testimSpeed)
-    }
-
-    testimLeftArrow.addEventListener("click", function() {
-        playSlide(currentSlide -= 1);
-    })
-
-    testimRightArrow.addEventListener("click", function() {
-        playSlide(currentSlide += 1);
-    })    
-
-    for (var l = 0; l < testimDots.length; l++) {
-        testimDots[l].addEventListener("click", function() {
-            playSlide(currentSlide = testimDots.indexOf(this));
+        testimLeftArrow.addEventListener("click", function() {
+            playSlide(currentSlide -= 1);
         })
-    }
 
-    playSlide(currentSlide);
+        testimRightArrow.addEventListener("click", function() {
+            playSlide(currentSlide += 1);
+        })
 
-    // keyboard shortcuts
-    document.addEventListener("keyup", function(e) {
-        switch (e.keyCode) {
-            case 37:
-                testimLeftArrow.click();
-                break;
-                
-            case 39:
-                testimRightArrow.click();
-                break;
-
-            case 39:
-                testimRightArrow.click();
-                break;
-
-            default:
-                break;
+        for (var l = 0; l < testimDots.length; l++) {
+            testimDots[l].addEventListener("click", function() {
+                playSlide(currentSlide = testimDots.indexOf(this));
+            })
         }
-    })
-		
-		testim.addEventListener("touchstart", function(e) {
-				touchStartPos = e.changedTouches[0].clientX;
-		})
-	
-		testim.addEventListener("touchend", function(e) {
-				touchEndPos = e.changedTouches[0].clientX;
-			
-				touchPosDiff = touchStartPos - touchEndPos;
-			
-				console.log(touchPosDiff);
-				console.log(touchStartPos);	
-				console.log(touchEndPos);	
+        playSlide(currentSlide);
 
-			
-				if (touchPosDiff > 0 + ignoreTouch) {
-						testimLeftArrow.click();
-				} else if (touchPosDiff < 0 - ignoreTouch) {
-						testimRightArrow.click();
-				} else {
-					return;
-				}
-			
-		})
-}
+        function stopTimer() {
+            clearInterval(testimTimer);
+        }
+
+        function startTimer() {
+            playSlide(currentSlide);
+        }
+        document.getElementById("testim-content").addEventListener("mouseenter", stopTimer);
+        document.getElementById("testim-content").addEventListener("mouseleave", startTimer);
+
+
+    }
 </script>

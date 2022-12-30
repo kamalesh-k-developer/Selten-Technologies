@@ -81,7 +81,7 @@ include_once('header.php');
 
       <div class="row index-service-row ">
 
-        <div class="col-md-4  index-col-1 " data-aos="fade-right">
+        <div class="col-md-4  index-col-1 " data-aos="fade-up">
           <a href="">
             <div class="index-main-ser">
               <div class="card index-serivice-card ">
@@ -130,7 +130,7 @@ include_once('header.php');
             </div>
           </a>
         </div>
-        <div class="col-md-4 index-col-3  " data-aos="fade-left">
+        <div class="col-md-4 index-col-3  " data-aos="fade-up">
           <a href="">
             <div class="index-main-ser ">
               <div class="card index-serivice-card">
@@ -164,8 +164,8 @@ include_once('header.php');
   <!-- why we choose us start -->
   <div class="why-choose">
     <div class="container">
-      <div class="why-heading" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1500">
-        <h1>
+      <div class="why-heading " data-aos="fade-in" data-aos-delay="300" data-aos-duration="1500">
+        <h1 >
           Why Choose Us
         </h1>
       </div>
@@ -288,6 +288,7 @@ include_once('header.php');
     <div class="testimonials-head">
       <h1>TESTIMONIAL</h1>
     </div>
+    
     <?php
     include_once('testimonial.php');
     ?>
