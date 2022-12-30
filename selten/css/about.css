@@ -10,13 +10,6 @@
   position: relative;
   height:450px;
 }
-
-
-
-
-/* .found{
-    background-color: aliceblue;
-} */
 /* our journey */
 .timeline {
     position: relative;
@@ -115,7 +108,6 @@
     /* background-color: #ccebff; */
     color:rgb(24, 23, 23);
   }
-  
   @media (min-width: 768px) {
     .timeline:before {
       left: 50%;
@@ -187,7 +179,6 @@
       padding: 0 100px 20px 20px;
     }
   }
-  
   .about-section {
     padding: 6rem 0;
   }
@@ -203,19 +194,15 @@
     font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     margin-bottom: 4rem;
   }
-  
   @media (min-width: 768px) {
     section {
       padding: 9rem 0;
     }
   }
-  
   .about-center {
       text-align: center !important;
       position: relative;
-
   }
-  
   .about-section h2.section-heading, .about-section .section-heading h2 {
       font-size: 2.5rem;
       margin-top: 0;
@@ -225,7 +212,6 @@
   .text-about {
       text-transform: uppercase !important;
   }
-  
   .about-section h3.section-subheading, .about-section .section-subheading h3 {
       font-size: -6.5rem;
       color: rgb(17, 17, 17);
@@ -233,34 +219,11 @@
       font-style: italic;
       font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
       margin-bottom: 4rem;
-  }
-  
+  } 
   .text-jourey {
       --bs-text-opacity: 1;
       color: #114c80 !important;
   }
-  @media (min-width: 1400px)
-  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-      max-width: 1320px;
-  }
-  @media (min-width: 1200px)
-  .container-xl, .container-lg, .container-md, .container-sm, .container {
-      max-width: 1140px;
-  }
-  @media (min-width: 992px)
-  .container-lg, .container-md, .container-sm, .container {
-      max-width: 960px;
-  }
-  @media (min-width: 768px)
-  .container-md, .container-sm, .container {
-      max-width: 720px;
-  }
-  @media (min-width: 576px)
-  .container-sm, .container {
-      max-width: 540px;
-  }
-
- 
   *, *::before, *::after {
       box-sizing: border-box;
   }

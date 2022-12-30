@@ -32,11 +32,11 @@ include_once('header.php');
 
   <!-- slider -->
   <div id="slider">
-    <img src="..\images\imageslider\slider-1.png" alt="Image 1" style="width:100%">
-    <img src="..\images\imageslider\slider-2.png" alt="Image 2" style="width:100%">
-    <img src="..\images\imageslider\slider-3.png" alt="Image 3" style="width:100%">
-    <img src="..\images\imageslider\slider-4.png" alt="Image 4" style="width:100%">
-    <img src="..\images\imageslider\slider-5.png" alt="Image 5" style="width:100%">
+    <img src="..\images\imageslider\slider-1.png" alt="Image 1" style="width:100%; height:100%;">
+    <img src="..\images\imageslider\slider-2.png" alt="Image 2" style="width:100%; height:100%;">
+    <img src="..\images\imageslider\slider-3.png" alt="Image 3" style="width:100%; height:100%;">
+    <img src="..\images\imageslider\slider-4.png" alt="Image 4" style="width:100%; height:100%;">
+    <img src="..\images\imageslider\slider-5.png" alt="Image 5" style="width:100%; height:100%;">
   </div>
 
   <!-- slide end -->
@@ -57,7 +57,7 @@ include_once('header.php');
     }
 
     function startTimer() {
-      timer = setInterval(slide, 3000);
+      timer = setInterval(slide, 6000);
     }
 
     function stopTimer() {
@@ -73,7 +73,7 @@ include_once('header.php');
   <!-- our services -->
   <!-- <div class="wrapper"> -->
   <div class=" index-service">
-    <div class="index-ser">
+    <div class="index-ser" data-aos='slide-up'>
       <h1>OUR SERVICES</h1>
     </div>
     <div class=" container index-3-service">
@@ -81,72 +81,78 @@ include_once('header.php');
 
       <div class="row index-service-row ">
 
-        <div class="col-md-4  index-col-1 animate__animated animate__fadeInDown">
-          <div class="index-main-ser">
-            <div class="card index-serivice-card ">
-              <div class="our-index-service-icon">
-                <i class="fas fa-desktop"></i>
+        <div class="col-md-4  index-col-1 " data-aos="fade-right">
+          <a href="">
+            <div class="index-main-ser">
+              <div class="card index-serivice-card ">
+                <div class="our-index-service-icon">
+                  <i class="fas fa-desktop"></i>
+                </div>
+                <div class=" our-index-service-heading">
+                  <h4>CRM service</h4>
+                </div>
+                <div class=" our-index-service-para">
+                  <p>
+                    CRM Services provided by Selten Technologies dssdsfsfsffsds comes in three distinct modules: Marketing, Sales, and Customer Service. Every one of these modules helps organizations to store and deal with their contacts, customize email campaigns, and examine it for effective marketing. CRM is generally being embraced by the vast majority of the organizations to make a strong promotion and deals intended to drive in higher incomes.
+                  </p>
+                </div>
+
               </div>
-              <div class=" our-index-service-heading">
-                <h4>CRM service</h4>
-              </div>
-              <div class=" our-index-service-para">
-                <p>
-                  CRM Services provided by Selten Technologies dssdsfsfsffsds comes in three distinct modules: Marketing, Sales, and Customer Service. Every one of these modules helps organizations to store and deal with their contacts, customize email campaigns, and examine it for effective marketing. CRM is generally being embraced by the vast majority of the organizations to make a strong promotion and deals intended to drive in higher incomes.
-                </p>
-              </div>
+              <div class="index-shadowOne"></div>
+              <div class="index-shadowTwo"></div>
+
+
 
             </div>
-            <div class="index-shadowone"></div>
-            <div class="index-shadowtwo"></div>
-
-
-
-          </div>
+          </a>
         </div>
-        <div class="col-md-4 index-col-2 animate__animated animate__fadeInDown ">
-          <div class="index-main-ser">
-            <div class="card index-serivice-card">
-              <div class="our-index-service-icon">
-                <i class="fas fa-bullhorn "></i>
+        <div class="col-md-4 index-col-2  " data-aos="fade-up">
+          <a href="">
+            <div class="index-main-ser">
+              <div class="card index-serivice-card">
+                <div class="our-index-service-icon">
+                  <i class="fas fa-bullhorn "></i>
+                </div>
+                <div class=" our-index-service-heading">
+                  <h4>Digital Marketing</h4>
+                </div>
+                <div class=" our-index-service-para">
+                  <p>
+                    CRM services provided by Selten Technologies dssdsfsfsffsds comes in three distinct modules: Marketing, Sales, and Customer Service. Every one of these modules helps organizations to store and deal with their contacts, customize email campaigns, and examine it for effective marketing. CRM is generally being embraced by the vast majority of the organizations to make a strong promotion and deals intended to drive in higher incomes.
+                  </p>
+                </div>
+
               </div>
-              <div class=" our-index-service-heading">
-                <h4>Digital Marketing</h4>
-              </div>
-              <div class=" our-index-service-para">
-                <p>
-                  CRM services provided by Selten Technologies dssdsfsfsffsds comes in three distinct modules: Marketing, Sales, and Customer Service. Every one of these modules helps organizations to store and deal with their contacts, customize email campaigns, and examine it for effective marketing. CRM is generally being embraced by the vast majority of the organizations to make a strong promotion and deals intended to drive in higher incomes.
-                </p>
-              </div>
+              <div class="index-shadowOne"></div>
+              <div class="index-shadowTwo"></div>
+
 
             </div>
-            <div class="index-shadowone"></div>
-            <div class="index-shadowtwo"></div>
-
-
-          </div>
+          </a>
         </div>
-        <div class="col-md-4 index-col-3 animate__animated animate__fadeInDown ">
-          <div class="index-main-ser ">
-            <div class="card index-serivice-card">
-              <div class="our-index-service-icon">
-                <i class="fa-solid fa-earth-americas"></i>
+        <div class="col-md-4 index-col-3  " data-aos="fade-left">
+          <a href="">
+            <div class="index-main-ser ">
+              <div class="card index-serivice-card">
+                <div class="our-index-service-icon">
+                  <i class="fa-solid fa-earth-americas"></i>
+                </div>
+                <div class=" our-index-service-heading">
+                  <h4>Web Development</h4>
+                </div>
+                <div class=" our-index-service-para">
+                  <p>
+                    CRM services provided by Selten Technologies dssdsfsfsffsds comes in three distinct modules: Marketing, Sales, and Customer Service. Every one of these modules helps organizations to store and deal with their contacts, customize email campaigns, and examine it for effective marketing. CRM is generally being embraced by the vast majority of the organizations to make a strong promotion and deals intended to drive in higher incomes.
+                  </p>
+                </div>
+
               </div>
-              <div class=" our-index-service-heading">
-                <h4>Web Development</h4>
-              </div>
-              <div class=" our-index-service-para">
-                <p>
-                  CRM services provided by Selten Technologies dssdsfsfsffsds comes in three distinct modules: Marketing, Sales, and Customer Service. Every one of these modules helps organizations to store and deal with their contacts, customize email campaigns, and examine it for effective marketing. CRM is generally being embraced by the vast majority of the organizations to make a strong promotion and deals intended to drive in higher incomes.
-                </p>
-              </div>
+              <div class="index-shadowOne"></div>
+              <div class="index-shadowTwo"></div>
+
 
             </div>
-            <div class="index-shadowone"></div>
-            <div class="index-shadowtwo"></div>
-
-
-          </div>
+          </a>
         </div>
 
       </div>
@@ -158,7 +164,7 @@ include_once('header.php');
   <!-- why we choose us start -->
   <div class="why-choose">
     <div class="container">
-      <div class="why-heading">
+      <div class="why-heading" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1500">
         <h1>
           Why Choose Us
         </h1>
@@ -166,74 +172,111 @@ include_once('header.php');
       <div class="why-para">
         <h4>We will give you 6 reason to work with us</h4>
       </div>
-    
-    <div class="col-sm-12">
+
+
       <div class="row why-row ">
-        <div class="col-sm-6  why-col why-col-1 ">
-          <div class="why-col-head">
-            <h3>Quick response</h3>
-          </div>
+        <div class="col-md-6  why-col why-col-1 ">
+
+          <main class="why-head why-head-1">
+
+            <div class="why-circle">
+              <div class="why-lip-1">
+
+                <h4 class="why-head">Quick response</h4>
+              </div>
+            </div>
+            <div class="why-line"></div>
+          </main>
         </div>
-        <div class="col-sm-6 why-col why-col-2">
-          <div class="why-col-para">
+        <div class="col-md-6 why-col why-col-2">
+          <div class="why-col-para why-col-para-1">
             Emergency response time is one hour or less guaranteed. We can log in to your PC or server remotely and resolve many issues immediately.
           </div>
         </div>
         <div class="col-sm-6 why-col why-col-3 ">
-          <div class="why-col-para">
-            Emergency response time is one hour or less guaranteed. We can log in to your PC or server remotely and resolve many issues immediately.
+          <div class="why-col-para why-col-para-2">
+            Our proudest accomplishment is the large number of long term clients who year after year put their trust in us.
           </div>
         </div>
-        <div class="col-sm-6 why-col why-col-4">
-          <div class="why-col-head">
-            <h3>Reputable</h3>
+        <div class="col-md-6 why-col why-col-4">
+          <main class="why-head why-head-2">
+            <div class="why-circle">
+              <div class="why-lip-2">
+                <h4 class="why-head">Reputable</h4>
+              </div>
+            </div>
+            <div class="why-line"></div>
+          </main>
+        </div>
+        <div class="col-md-6 why-col why-col-5">
+          <main class=" why-head why-head-3">
+            <div class="why-circle">
+              <div class="why-lip-3">
+                <h4 class="why-head">Experienced</h4>
+              </div>
+            </div>
+            <div class="why-line"></div>
+          </main>
+        </div>
+        <div class="col-md-6 why-col why-col-6">
+          <div class="why-col-para why-col-para-3">
+            We provide our team with continuing education opportunities on a regular basis to allow them to stay current with the latest technology.
+          </div>
+        </div>
+        <div class="col-md-6 why-col why-col-7">
+          <div class="why-col-para why-col-para-4">
+            We design, evaluate and justify technology solutions from a thorough understanding of the business benefit for your company.
+          </div>
+        </div>
+        <div class="col-md-6 why-col why-col-8">
+          <main class=" why-head why-head-4">
+            <div class="why-circle">
+              <div class="why-lip-4">
+                <h4 class="why-head">Business savvy</h4>
+              </div>
+            </div>
+            <div class="why-line"></div>
+          </main>
+        </div>
+
+        <div class="col-md-6 why-col why-col-9">
+          <main class=" why-head why-head-5">
+            <div class="why-circle">
+              <div class="why-lip-5">
+                <h4 class="why-head">Proactive</h4>
+              </div>
+            </div>
+            <div class="why-line"></div>
+          </main>
+        </div>
+        <div class="col-md-6 why-col why-col-10">
+          <div class="why-col-para why-col-para-5">
+            Our service philosophy is proactive, not reactive. We manage your network 24/7 to identify issues and address them before they become problems.
           </div>
         </div>
 
+        <div class="col-md-6 why-col why-col-11">
+          <div class="why-col-para why-col-para-6">
+            You deserve to have your questions answered in plain English , Hindi. Our team will clearly explain what is happening so you understand.
+          </div>
+        </div>
+        <div class="col-md-6 why-col why-col-12">
+          <main class=" why-head why-head-6">
 
-        <div class="col-sm-6 why-col why-col-5">
-          <div class="why-col-head">
-            <h3>Experienced</h3>
-          </div>
-        </div>
-        <div class="col-sm-6 why-col why-col-6">
-          <div class="why-col-para">
-            Emergency response time is one hour or less guaranteed. We can log in to your PC or server remotely and resolve many issues immediately.
-          </div>
-        </div>
-        <div class="col-sm-6 why-col why-col-7">
-          <div class="why-col-para">
-            Emergency response time is one hour or less guaranteed. We can log in to your PC or server remotely and resolve many issues immediately.
-          </div>
-        </div>
-        <div class="col-sm-6 why-col why-col-8">
-          <div class="why-col-head">
-            <h3>Business savvy</h3>
-          </div>
-        </div>
 
-        <div class="col-sm-6 why-col why-col-9">
-          <div class="why-col-head">
-            <h3>Proactive</h3>
-          </div>
-        </div>
-        <div class="col-sm-6 why-col why-col-10">
-          <div class="why-col-para">
-            Emergency response time is one hour or less guaranteed. We can log in to your PC or server remotely and resolve many issues immediately.
-          </div>
-        </div>
-      
-        <div class="col-sm-6 why-col why-col-11">
-          <div class="why-col-para">
-            Emergency response time is one hour or less guaranteed. We can log in to your PC or server remotely and resolve many issues immediately.
-          </div>
-        </div>
-        <div class="col-sm-6 why-col why-col-12">
-          <div class="why-col-head">
-            <h3>Comprehensive project management</h3>
-          </div>
-        </div>
-       
+            <div class="why-circle">
+              <div class="why-lip-6">
+                <h4 class="why-head">No geek speak</h4>
+              </div>
+
+            </div>
+
+
+
+
+          </main>
+
+
         </div>
       </div>
     </div>
@@ -245,9 +288,11 @@ include_once('header.php');
     <div class="testimonials-head">
       <h1>TESTIMONIAL</h1>
     </div>
+    <?php
+    include_once('testimonial.php');
+    ?>
 
-
-    <div class="container test-container">
+    <!-- <div class="container test-container">
 
 
       <div class="testimonial">
@@ -265,7 +310,18 @@ include_once('header.php');
           <div class="test-col">
             <div class="test-user">
               <p>We Built a CRM for Call centre to manage the leads and Integrating with Twilio and Vici dial. Selten Technologies provided the timely solution for better integration of CRM and leads management.</p>
-              <h3>Ranaldo</h3>
+              <h3>Bilgates</h3>
+
+            </div>
+            <div class="test-img">
+              <img src="..\images\images\test2.jfif" alt="" srcset="">
+            </div>
+          </div>
+
+          <div class="test-col">
+            <div class="test-user">
+              <p>We Built a CRM for Call centre to manage the leads and Integrating with Twilio and Vici dial. Selten Technologies provided the timely solution for better integration of CRM and leads management.</p>
+              <h3>Ambani</h3>
 
             </div>
             <div class="test-img">
@@ -276,34 +332,26 @@ include_once('header.php');
           <div class="test-col">
             <div class="test-user">
               <p>We Built a CRM for Call centre to manage the leads and Integrating with Twilio and Vici dial. Selten Technologies provided the timely solution for better integration of CRM and leads management.</p>
-              <h3>Ranaldo</h3>
+              <h3>Dhoni</h3>
 
             </div>
             <div class="test-img">
-              <img src="..\images\images\test-p.jpg" alt="" srcset="">
-            </div>
-          </div>
-
-          <div class="test-col">
-            <div class="test-user">
-              <p>We Built a CRM for Call centre to manage the leads and Integrating with Twilio and Vici dial. Selten Technologies provided the timely solution for better integration of CRM and leads management.</p>
-              <h3>Ranaldo</h3>
-
-            </div>
-            <div class="test-img">
-              <img src="..\images\images\test-p.jpg" alt="" srcset="">
+              <img src="..\images\images\test2.jfif" alt="" srcset="">
             </div>
           </div>
         </div>
       </div>
-      <div class="test-indicator">
+      <div class="test-indicator" id="testindicator">
         <span class="btn test-btn active-test"> </span>
         <span class="btn test-btn"> </span>
         <span class="btn test-btn"> </span>
         <span class="btn test-btn"> </span>
       </div>
-    </div>
+    </div> -->
   </div>
+  <script>
+
+  </script>
 
 
 

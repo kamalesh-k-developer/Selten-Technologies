@@ -67,7 +67,7 @@ menuItems.forEach(
 
 var btn = document.getElementsByClassName ("btn");
 var testslide = document.getElementById ("testslide")
-
+var timer;
 
 btn [0].onclick = function (){
     testslide.style.transform = "translateX(0px)";
@@ -75,6 +75,7 @@ btn [0].onclick = function (){
       btn[i].classList.remove("active-test");
       this.classList.add("active-test");
     }
+    
 }
 btn [1].onclick = function (){
     testslide.style.transform = "translateX(-800px)";
@@ -100,6 +101,7 @@ btn [3].onclick = function (){
       this.classList.add("active-test");
     }
 } 
+
 
 
 // slider animation//
