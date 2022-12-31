@@ -5,7 +5,11 @@ include_once('header.php');
 
 <body>
 <div class="service-banner">
-    <img src="..\images\banners\Serviceus-banner.jpg" alt="" srcset="" style="width:100%;">
+    <img src="..\images\banners\Serviceus-banner.jpg" alt="" srcset="" style="width:100%;" usemap="#image_map">
+    <!-- <img src="Serviceus-banner.jpg" > -->
+<map name="image_map">
+  <area alt="" title="" href="http://localhost/seltenwebsite/Selten-Technologies/selten/UI/contact.php" coords="749,372,73" shape="circle">
+</map>
 </div>
     <div class="index-ser">
         <h1>OUR SERVICES</h1>

@@ -9,7 +9,7 @@ body {
     max-width: 100%;
     padding: 0px;
     margin: 0%;
-    overflow: auto;
+    /* overflow: auto; */
     text-decoration: none;
     background-color: white;
     overflow-x: hidden;
@@ -27,8 +27,8 @@ body {
 
 .navbar {
     display: block;
-    position: fixed;
-    z-index: 5;
+    /* position: fixed; */
+    /* z-index: 5; */
     /* overflow: hidden !important; */
     width: 100%;
 }
@@ -521,7 +521,7 @@ body {
 
 /*image  */
 #slider{
-    margin-top: 130px;
+    /* margin-top: 130px; */
 }
 
 #slider img {
@@ -539,7 +539,14 @@ body {
 
 /* our services */
 
-
+.index-service{
+    background-image: url("../images/images/service-bg.jpg");
+    background-size: cover;
+    
+}
+.index-service-row{
+    margin-bottom: 50px;
+}
 .index-ser {
     text-align: center;
     font-size: 22% !important;
@@ -547,6 +554,7 @@ body {
     font-family: sans-serif;
     position: relative;
     top: 20px;
+    padding-top: 40px;
 
 }
 
@@ -928,6 +936,71 @@ body {
 
 /* our services end */
 /* why we choose us end*/
+.why-choose{
+    background-image: url("../images/images/why-we-choose\ -bg\ image.webp");
+    background-size: cover;
+}
+.why-heading h1{
+    padding-top: 60px;
+}
+.why-heading,
+.why-para {
+    text-align: center;
+    font-family: ui-sans-serif;
+
+
+}
+
+.why-row {
+
+    justify-content: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.why-col {
+    text-align: center;
+    /* border: 1px solid; */
+    width: 34%;
+    height: 200px;
+
+}
+
+.why-col-1,
+.why-col-4,
+.why-col-5,
+.why-col-8,
+.why-col-9,
+.why-col-12 {
+    /* border-radius: 50%; */
+    /* background-color: #008ce2; */
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+
+
+.why-col-2,
+.why-col-3,
+.why-col-6,
+.why-col-7,
+.why-col-10,
+.why-col-11 {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    float: left;
+}
+
+
+.why-col-head {
+    display: block;
+    height: 150px;
+    width: 70%;
+    background-color: #008ae2;
+
+}
 .why-head-1,
 .why-head-3,
 .why-head-5 {
@@ -989,77 +1062,7 @@ body {
     color: white;
 }
 
-.why-heading,
-.why-para {
-    text-align: center;
-    font-family: ui-sans-serif;
 
-
-}
-
-.why-row {
-
-    justify-content: center;
-    margin-top: 50px;
-}
-
-.why-col {
-    text-align: center;
-    /* border: 1px solid; */
-    width: 34%;
-    height: 200px;
-
-}
-
-.why-col-1,
-.why-col-4,
-.why-col-5,
-.why-col-8,
-.why-col-9,
-.why-col-12 {
-    /* border-radius: 50%; */
-    /* background-color: #008ce2; */
-    justify-content: center;
-    align-items: center;
-    padding-top: 30px;
-}
-
-/* .why-col-1,
-.why-col-4,
-.why-col-5,
-.why-col-8,
-.why-col-9,
-.why-col-12::before{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0px;
-    width: 2px;
-    margin-left: 0px;
-    content: "";
-    background-color: #0b6bcb;
-} */
-
-.why-col-2,
-.why-col-3,
-.why-col-6,
-.why-col-7,
-.why-col-10,
-.why-col-11 {
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    float: left;
-}
-
-
-.why-col-head {
-    display: block;
-    height: 150px;
-    width: 70%;
-    background-color: #008ae2;
-
-}
 
 
 @media (max-width:1399px) {
@@ -1531,7 +1534,7 @@ body {
     box-sizing: content-box;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 618px;
+    height: 100%;
     width: 100%;
 
 }
@@ -1557,7 +1560,7 @@ body {
     font-size: 30px;
 }
 
-.testimonial {
+/* .testimonial {
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -1685,7 +1688,7 @@ body {
 @media (max-width:767px) {
     .testimonial-start {
 
-        height: 418px;
+        height: 100%;
         width: 100%;
 
     }
@@ -1773,7 +1776,7 @@ body {
 
     .testimonial-start {
 
-        height: 418px;
+        height: 100%;
         width: 100%;
 
     }
@@ -1850,7 +1853,7 @@ body {
 
     .testimonial-start {
 
-        height: 418px;
+        height: 100%;
         width: 100%;
 
     }
@@ -1928,7 +1931,7 @@ body {
 
     .testimonial-start {
 
-        height: 316px;
+        height: 100%;
         width: 100%;
 
     }
@@ -2006,7 +2009,7 @@ body {
 
     .testimonial-start {
 
-        height: 316px;
+        height: 100%;
         width: 100%;
 
     }
@@ -2070,4 +2073,4 @@ body {
         width: 12px;
         height: 24px;
     }
-}
+} */
