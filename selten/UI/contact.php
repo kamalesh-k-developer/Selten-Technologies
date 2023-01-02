@@ -2,7 +2,7 @@
 $GLOBALS['contact'] = 'active';
 include_once('header.php');
 ?>
-
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <body>
 
   <div class="cbanner">
@@ -27,7 +27,7 @@ include_once('header.php');
       </div>
       <!-- <div class="col-md-12"> -->
       <div class="col-md-4 contact-form">
-
+        
         <h1 class="formhead">Get In Touch</h1>
         <div class="card about-card">
           <form class="cfeild" method="POST">
@@ -70,7 +70,7 @@ include_once('header.php');
             </div>
 
 
-            <button type="submit" name="submit" class="btn btn-primary mt-3">Submit</button>
+            <button type="submit" name="submit" id = "submit" class="btn btn-primary mt-3">Submit</button>
           </form>
         </div>
       </div>
@@ -104,17 +104,38 @@ if (isset($_POST['submit'])) {
   $LookingForServices = $_POST['languages'];
   $Message = $_POST['message'];
 
-
+  if(empty($FirstName) || empty($Email) || empty($PhoneNumber)){
+    echo "<script>
+           swal({
+               title: 'Failed!',
+               text: 'Some Details Are Missing, PLEASE FILL THE FORM',
+               icon: 'warning',
+               button: 'ok',
+           });
+          </script>";
+  } else {
   $sql = "INSERT INTO `contact_form`(first_name,last_name,email,phone_number,looking_for_services,message)
             VALUES ('$FirstName','$LastName','$Email','$PhoneNumber','$LookingForServices','$Message')";
   $result = mysqli_query($connection, $sql);
   if ($result) {
-    echo '<script> alert("data inserted in database sucessfully")</script>';
-  } else {
+     echo "<script>
+           swal({
+             title: 'success!',
+             text: 'Thank You,keep In touch',
+             icon: 'success',
+             button: 'ok',
+    });
+          </script>";
+  } else{
     die(mysqli_error($connection, $result));
   }
 }
-
+}
 ?>
 
+<script>
+  if(window.history.replaceState){
+    window.history.replaceState(null,null,window.location.href);
+  }
+</script>
 </html>

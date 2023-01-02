@@ -82,7 +82,7 @@ include_once('header.php');
         </div>
       </div>
     </div>
-    <!-- ....................... -->
+    <!-- ..........ABOUT US............. -->
     <!DOCTYPE html>
 
     <div class="aboutus-section">
@@ -141,7 +141,7 @@ include_once('header.php');
             </div>
         </div>
 </div>
-<!-- ............................. -->
+<!-- .........OUR GOAL STATEMENT................ -->
 
 
 <div class="container">
