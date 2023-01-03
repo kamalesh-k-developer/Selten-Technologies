@@ -12,22 +12,69 @@
 .crm-content{
     height: 400px;
     width: 550px;
-    float: right;
+   float: right;
     padding: 30px;
+    margin-top: -3%;
+    margin-right: 36px;
 }
 .crm-Head{
     padding: 12px;
-    border: 1px solid #009bed;
+    border: 5px solid #89cee6;
     width: 155px;
     background-color: #009bed;
-    border-radius: 10px;
-   
-    margin-left: 123px;
+    border-radius: 24px 24px 1px 1px;
+    margin-left: 212px;
+    position: relative;
+    top: 20px;
 }
 .crm-para{
-    padding: 12px;
-    border: 1px solid #009bed;
-    width: 500px;
+    padding: 39px;
+    border: 5px solid #89cee6;
+    width: 552px;
     background-color: #009bed;
-    border-radius: 10px;
+    border-radius: 78px;
+    position: relative;
+}
+.crm-key-head{
+    text-align: center;  
+    margin: 30px;
+    width: 227px;
+    margin-left: 43%;
+    padding: 20px;
+    background-color: #00a1ee;
+}
+.crm-key-content {
+    text-align: center;
+    
+    
+}
+.crm-key-subrow{
+    display: flex;
+    justify-content: center;
+    background-color: #00a1ee;
+    border: 3px solid #1dd3e9;
+    border-radius: 77px;
+    margin-bottom: 50px;
+    
+}
+.crm-key-subhead {
+    background-color: #009eed;
+    padding: 15px;
+    border-radius: 20px 20px 1px 1px;
+    width: 250px;
+    margin-left: 20%;
+    border: 2px solid #6bd0e7;
+    position: relative;
+    top: 8px;
+}
+.crm-key-img1{
+    height: 250px;
+    width: 300px;
+    padding: 30px;
+}
+.crm-key-para1 {
+    padding: 30px;
+    width: 700px;
+    display: flex;
+    align-items: center;
 }
