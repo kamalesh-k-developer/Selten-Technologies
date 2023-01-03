@@ -67,7 +67,7 @@ menuItems.forEach(
 
 var btn = document.getElementsByClassName ("btn");
 var testslide = document.getElementById ("testslide")
-var timer;
+
 
 btn [0].onclick = function (){
     testslide.style.transform = "translateX(0px)";
