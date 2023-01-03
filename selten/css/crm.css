@@ -1,0 +1,33 @@
+.crm-services{
+    background-image: url(../images/backroung-image/crm-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 550px;
+}
+.crm-col{
+    padding: 30px;
+}
+.crm-content{
+    height: 400px;
+    width: 550px;
+    float: right;
+    padding: 30px;
+}
+.crm-Head{
+    padding: 12px;
+    border: 1px solid #009bed;
+    width: 155px;
+    background-color: #009bed;
+    border-radius: 10px;
+   
+    margin-left: 123px;
+}
+.crm-para{
+    padding: 12px;
+    border: 1px solid #009bed;
+    width: 500px;
+    background-color: #009bed;
+    border-radius: 10px;
+}

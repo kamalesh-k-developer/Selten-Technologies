@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="..\assets\css\newAnimate.css">
     <link rel="stylesheet" href="..\css\blog.css">
     <link rel="stylesheet" href="..\css\about.css">
+    <link rel="stylesheet" href="..\css\crm.css">
 
 
     <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
